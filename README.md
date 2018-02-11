@@ -1,13 +1,20 @@
-第一次提交 
-----------------
-<hr>
-### 测试markdown 语法
+# 第一次提交 
 
-* git 提交
-* 2qweqwe
+## git 使用前准备
+* node 环境
+* git
 
-> ```
-	<p>这是一段代码</p><p>这是一段代码</p>
-```
+#### 克隆 
+> `$ git clone https://github.com/yanzikai/yanzikai.github.io.git`
+#### 检查状态
+> `$ git status `
+#### 选择修改文件
+> `$ git add .`
+#### 将修改从暂存区提交到本地版本库 添加备注
+> `$ git commit -m "描述信息"`
+#### 将本地版本库推送到远程服务器
+> `$ git push `
 
-[点击打开预览](https://yanzikai.github.io "这是主页链接")
+[主页链接](https://yanzikai.github.io '主页链接')
+
+#### ---未完待续
