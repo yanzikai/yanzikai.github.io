@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<select class="form-control" id="companyId">
+  <option value="">选择所属企业</option>
+  <option value="0">企业A</option>
+  <option value="1">企业B</option>
+  <option value="2">企业C</option>
+  <option value="3">企业D</option>
+</select>
+
+
+<script>
+//定义获取保育员价格方法
+var getPrice_param={};
+var getPrice = function (data) {
+  console.log('getPrice')
+};
+$("#companyId").change(function () {
+    console.log('change');
+  if ($(this).val() == "") {
+    alert("请选择所属企业");
+    return false;
+  } else if ($(this).val() == "1") {
+    getPrice_param.companyId = 1;
+    getPrice(getPrice_param);
+  } else if ($(this).val() == "2") {
+    getPrice_param.companyId = 2;
+    getPrice(getPrice_param);
+  } else if ($(this).val() == "3") {
+    getPrice_param.companyId = 3;
+    getPrice(getPrice_param);
+  }
+});
+
+</script>
+
+</body>
+</html>
