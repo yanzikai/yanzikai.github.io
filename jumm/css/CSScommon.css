@@ -1,4 +1,4 @@
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0;}  /* åˆå§‹åŒ–æ ‡ç­¾åœ¨æ‰€æœ‰æµè§ˆå™¨ä¸­çš„marginã€paddingå€¼ */
+﻿body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0;}  /* åˆå§‹åŒ–æ ‡ç­¾åœ¨æ‰€æœ‰æµè§ˆå™¨ä¸­çš„marginã€paddingå€¼ */
 fieldset,img {border:0 none}  /* é‡ç½®fieldsetï¼ˆè¡¨å•åˆ†ç»„ï¼‰ã€å›¾ç‰‡çš„è¾¹æ¡†ä¸º0*/  
 dl,ul,ol,menu,li {list-style:none}   /* é‡ç½®ç±»è¡¨å‰å¯¼ç¬¦å·ä¸ºonne,menuåœ¨HTML5ä¸­æœ‰æ•ˆ */
 blockquote, q {quotes: none}   /* é‡ç½®åµŒå¥—å¼•ç”¨çš„å¼•å·ç±»åž‹ */  
@@ -6,7 +6,7 @@ blockquote:before, blockquote:after,q:before, q:after {content:'';content:none} 
 input,select,textarea,button {vertical-align:middle}  /* é‡ç½®è¡¨å•æŽ§ä»¶åž‚ç›´å±…ä¸­*/  
 button {border:0 none;background-color:transparent;cursor:pointer}  /* é‡ç½®è¡¨å•buttonæŒ‰é’®æ•ˆæžœ */  
 body {background:#fff}   /* é‡ç½®body é¡µé¢èƒŒæ™¯ä¸ºç™½è‰² */  
-body,th,td,input,select,textarea,button {font-family:"å¾®è½¯é›…é»‘", "é»‘ä½“","å®‹ä½“";color:#232323;} /* é‡ç½®é¡µé¢æ–‡å­—å±žæ€§ */
+body,th,td,input,select,textarea,button {font-family:"Microsoft YaHei", "SimHei";color:#232323;} /* é‡ç½®é¡µé¢æ–‡å­—å±žæ€§ */
 a {color:#c4c4c4;text-decoration:none}  /* é‡ç½®é“¾æŽ¥aæ ‡ç­¾ */
 a:active, a:hover {text-decoration:none}   /* é‡ç½®é“¾æŽ¥aæ ‡ç­¾çš„é¼ æ ‡æ»‘åŠ¨æ•ˆæžœ */  
 address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}  /* é‡ç½®æ ·å¼æ ‡ç­¾çš„æ ·å¼ */  
