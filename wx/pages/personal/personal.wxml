@@ -1,0 +1,73 @@
+<!--pages/personal/personal.wxml-->
+<view class='permain'>
+  <view class='pmheader'>
+    <view class='ph-left'>
+      <view>
+        <text class='ph-name'>珺墨网络</text><image src='http://jys.m0571.com/img/jt1.png'></image>
+      </view>
+      <view class='ph-num'>
+        <text>我的推荐人/</text><text class='ph-num1'>69人</text>
+      </view>
+    </view>
+
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像</button>
+      <block wx:else>
+        <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      </block>
+    </view>
+    
+
+
+  </view>
+  <view class='statusslide'>
+    <scroll-view scroll-x="true" class='statusbox'  style="white-space: nowrap; display: flex;">
+    <!--status -start-  -->
+      <view class='status'>
+        <view class='statushead'>
+          <image src='http://jys.m0571.com/img/daifk2.png'></image><text>代付款</text>
+        </view>
+        <image class='hastip' src='http://jys.m0571.com/img/mrdd.png'></image>
+        <text class='snum'>5</text>
+      </view>
+    <!--status -end-  -->
+      <view class='status'>
+        <view class='statushead'>
+          <image src='http://jys.m0571.com/img/daifk2.png'></image><text>代付款</text>
+        </view>
+        <image class='hastip' src='http://jys.m0571.com/img/mrdd.png'></image>
+        <text class='snum'>5</text>
+      </view>
+      <view class='status'>
+        <view class='statushead'>
+          <image src='http://jys.m0571.com/img/daifk2.png'></image><text>代付款</text>
+        </view>
+        <image class='hastip' src='http://jys.m0571.com/img/mrdd.png'></image>
+        <text class='snum'>5</text>
+      </view>
+      <view class='status'>
+        <view class='statushead'>
+          <image src='http://jys.m0571.com/img/daifk2.png'></image><text>代付款</text>
+        </view>
+        <image class='hastip' src='http://jys.m0571.com/img/mrdd.png'></image>
+        <text class='snum'>5</text>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+<view class='rec'>
+  <text class='rec-text'>我的推荐</text>
+  <image class='dian' src='http://jys.m0571.com/img/dian1.png'></image>
+  <text class='rec-num'>6</text>
+  <view class='rec-imgs'>
+    <image src='http://jys.m0571.com/img/tx.png'></image>
+    <image src='http://jys.m0571.com/img/tx.png'></image>
+    <image src='http://jys.m0571.com/img/tx.png'></image>
+  </view>
+</view>
+<view class='rec rec1'>
+  <text class='rec-text'>收货地址</text>
+  <image class='dian' src='http://jys.m0571.com/img/dian1.png'></image>
+  <image class='addr' src='http://jys.m0571.com/img/shdz.png'></image>
+</view>

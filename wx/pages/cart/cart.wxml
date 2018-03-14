@@ -1,0 +1,50 @@
+<!--pages/cart/cart.wxml-->
+<view class='cartmain'>
+  <view class='cartheader'>
+    <view class='ch-left'>
+      <image src="http://jys.m0571.com/img/cart1.png"></image>
+      <text class='ch-num'>{{headernum}}</text>
+    </view>
+    <view class='ch-right'>
+      <image src="http://jys.m0571.com/img/dian.png"></image>
+    </view>
+  </view>
+  <view class='cartbox'>
+    <view class='cartone' wx:for="{{goodslist}}" wx:key="index">
+      <view wx:if="{{item.isselect}}" class='cartselect'>
+        <image src='http://jys.m0571.com/img/gwc11.png'></image>
+      </view>
+      <view wx:else class='cartselect'>
+        <image src='http://jys.m0571.com/img/gwc22.png'></image>
+      </view>
+      <text class='cfrom'>{{item.country}}</text>
+      <view class='cartimgbox'>
+        <image src='http://jys.m0571.com/img/wine.png' mode="aspectFit"></image>
+      </view>
+      <view class='cart-type'>
+        <view class='cprice'>
+          <text class='cprice2'>￥</text><text class='cprice1'>{{item.price}}.</text><text class='cprice2'>00</text>
+        </view>
+        <view class='ct-type'>
+          <text>{{item.title}}</text><text>{{item.size}}</text>
+        </view>
+        <view class='stock'>
+          <text>库存/{{item.stock}}</text>
+        </view>
+
+      </view>
+      <view class='connum'>
+        <image class='connum1' src='http://jys.m0571.com/img/j2.png'></image>
+        <text class='cntext'>{{item.num}}</text>
+        <image class='connum2' src='http://jys.m0571.com/img/j1.png'></image>
+      </view>
+    </view>
+    <view class='cartbom'>
+      <text >Cart </text><text class='cprice2'>￥</text><text class='cprice1'>{{totalprice}}.</text><text class='cprice2'>00</text>
+    </view>
+  </view>
+</view>
+<view class='cartfixed'>
+  <text class='cf-left'>计算(6)·￥689.00</text>
+  <image src='http://jys.m0571.com/img/jt11.png'></image>
+</view>

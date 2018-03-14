@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/shop/shop",
+    "pages/cart/cart",
+    "pages/personal/personal",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "酒钥匙",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color":"#000",
+    "selectedColor":"#7e50ff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"image/sy.png",
+        "text":"首页",
+        "selectedIconPath":"image/sy1.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "iconPath": "image/sc.png",
+        "text":"商城",
+        "selectedIconPath": "image/sc1.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "image/gwc.png",
+        "text":"购物车",
+        "selectedIconPath": "image/gwc1.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "image/wd.png",
+        "text":"个人中心",
+        "selectedIconPath": "image/wd1.png"
+      }
+    ]
+  },
+  "debug": true
+}

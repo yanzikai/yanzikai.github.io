@@ -1,0 +1,150 @@
+<!--index.wxml-->
+<view class='indexmain'>
+  <!-- 顶部 swiper  -->
+  <swiper class='swiper-box' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+    <block wx:for="{{imgarr}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" data-src='{{item}}' class="slide-image"  bindtap='previewImage'/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- news  -->
+  <view class='indexnews'>
+    <image src='http://jys.m0571.com/img/sgsj.png'></image>
+    <text class='dian'>·</text>
+    <swiper class='swiper-new' indicator-dots="{{indicatorDots}}" vertical="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+      <view wx:for="{{textarr}}" wx:key="index">
+        <swiper-item>
+          <text>{{item.text}}</text>
+        </swiper-item>
+      </view>
+    </swiper>
+  </view>
+  <!-- 认识的人  -->
+  <view class='peoples'>
+    <view class='peo-one po1'>
+      <view class='pnum'>0</view>
+      <view class='ptext'>TA的顾客</view>
+      <view class='pbom'></view>
+    </view>
+    <view class='peo-one po2'>
+      <view class='pnum'>0</view>
+      <view class='ptext'>WO认识的人</view>
+      <view class='pbom'></view>
+    </view>
+  </view>
+  <scroll-view scroll-x="true" class='peos' >
+    <view class='peos-one'>
+      <image src='http://jys.m0571.com/img/peo1.png'></image>
+      <view>刘德华</view>
+    </view>
+    <view class='peos-one'>
+      <image src='http://jys.m0571.com/img/peo1.png'></image>
+      <view>刘德华</view>
+    </view>
+    <view class='peos-one'>
+      <image src='http://jys.m0571.com/img/peo1.png'></image>
+      <view>刘德华</view>
+    </view>
+    <view class='peos-one'>
+      <image src='http://jys.m0571.com/img/peo1.png'></image>
+      <view>刘德华</view>
+    </view>
+    <view class='peos-one'>
+      <image src='http://jys.m0571.com/img/peo1.png'></image>
+      <view>刘德华</view>
+    </view>
+  </scroll-view>
+
+  <!-- 活动 activity   -->
+  <view class='indexactivity'>
+    <view class='ia-title'>
+      <text>活动</text>
+      <navigator>查看更多活动></navigator>
+    </view>
+  </view>
+
+  <scroll-view class='actives' scroll-x="true">
+    <view class='act-one'>
+      <image src='http://jys.m0571.com/img/active1.png'></image>
+      <view class='act-meg'>这是活动页面，这是活动页面</view>
+      <view class='act-from'>来自酒钥匙</view>
+    </view>
+    <view class='act-one'>
+      <image src='http://jys.m0571.com/img/active1.png'></image>
+      <view class='act-meg'>这是活动页面，这是活动页面</view>
+      <view class='act-from'>来自酒钥匙</view>
+    </view><view class='act-one'>
+      <image src='http://jys.m0571.com/img/active1.png'></image>
+      <view class='act-meg'>这是活动页面，这是活动页面</view>
+      <view class='act-from'>来自酒钥匙</view>
+    </view><view class='act-one'>
+      <image src='http://jys.m0571.com/img/active1.png'></image>
+      <view class='act-meg'>这是活动页面，这是活动页面</view>
+      <view class='act-from'>来自酒钥匙</view>
+    </view><view class='act-one'>
+      <image src='http://jys.m0571.com/img/active1.png'></image>
+      <view class='act-meg'>这是活动页面，这是活动页面</view>
+      <view class='act-from'>来自酒钥匙</view>
+    </view><view class='act-one'>
+      <image src='http://jys.m0571.com/img/active1.png'></image>
+      <view class='act-meg'>这是活动页面，这是活动页面  500ml</view>
+      <view class='act-from'>来自酒钥匙</view>
+    </view>
+  </scroll-view>
+
+  <view class='rtitle'>
+    <view class='rt-title'>掌柜推荐</view>
+    <view>RECOMMEND</view>
+  </view>
+</view>
+<view class='wines'>
+  <view class='wines-one'>
+    <text class='cfrom'>美国</text>
+    <view class='cartimgbox'>
+      <image src='http://jys.m0571.com/img/wine.png' mode="aspectFit"></image>
+    </view>
+    <view class='wprice'>
+      <text>￥</text><text class='wsnum'>689.</text><text>00</text>
+      <view class='wmsg'><text>这是一段奥斯卡拉啊实打实大师的阿大声道</text></view>
+    </view>
+  </view>
+  <view class='wines-one'>
+    <text class='cfrom'>美国</text>
+    <view class='cartimgbox'>
+      <image src='http://jys.m0571.com/img/wine.png' mode="aspectFit"></image>
+    </view>
+    <view class='wprice'>
+      <text>￥</text><text class='wsnum'>689.</text><text>00</text>
+      <view class='wmsg'><text>这是一段奥斯卡拉啊实打实大师的阿大声道</text></view>
+    </view>
+  </view><view class='wines-one'>
+    <text class='cfrom'>美国</text>
+    <view class='cartimgbox'>
+      <image src='http://jys.m0571.com/img/wine.png' mode="aspectFit"></image>
+    </view>
+    <view class='wprice'>
+      <text>￥</text><text class='wsnum'>689.</text><text>00</text>
+      <view class='wmsg'><text>这是一段奥斯卡拉啊实打实大师的阿大声道</text></view>
+    </view>
+  </view>
+  <view class='wines-one'>
+    <text class='cfrom'>美国</text>
+    <view class='cartimgbox'>
+      <image src='http://jys.m0571.com/img/wine.png' mode="aspectFit"></image>
+    </view>
+    <view class='wprice'>
+      <text>￥</text><text class='wsnum'>689.</text><text>00</text>
+      <view class='wmsg'><text>这是一段奥斯卡拉啊实打实大师的阿大声道这是一段奥斯卡拉啊实打实大师的阿大声道</text></view>
+    </view>
+  </view>
+</view>
+
+<view class='alink'>
+  <view class='alink-left'>
+    <view class='al-title'>天佑德 青稞酒</view>
+    <view class='alt2'>青藏高原冰雪溶液</view>
+    <text class='abtn'>点击查看</text>
+  </view>
+  <image src='http://jys.m0571.com/img/alink1.png' mode="aspectFit"></image>
+</view>
