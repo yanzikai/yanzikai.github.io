@@ -1,56 +1,18 @@
-// pages/cart/cart.js
+// pages/advertdetail/advertdetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    headernum:6,
-    totalprice:950,
-    goodslist:[{
-      country:'美国', 
-      isselect:true,
-      price:'689.00',
-      title:'贵州茅台集团中华典藏阿斯顿撒',
-      size:'500ml',
-      stock:600,  // 库存
-      num:6
-    },
-    {
+    goodslist: [{
       country: '美国',
-      isselect: false,
+      isselect: true,
       price: '689.00',
       title: '贵州茅台集团中华典藏阿斯顿撒',
       size: '500ml',
       stock: 600,  // 库存
       num: 6
-      },
-      {
-        country: '美国',
-        isselect: false,
-        price: '689.00',
-        title: '贵州茅台集团中华典藏阿斯顿撒',
-        size: '500ml',
-        stock: 600,  // 库存
-        num: 6
-    },
-    {
-      country: '美国',
-      isselect: false,
-      price: '689.00',
-      title: '贵州茅台集团中华典藏阿斯顿撒',
-      size: '500ml',
-      stock: 600,  // 库存
-      num: 6
-      },
-      {
-        country: '美国',
-        isselect: false,
-        price: '689.00',
-        title: '贵州茅台集团中华典藏阿斯顿撒',
-        size: '500ml',
-        stock: 600,  // 库存
-        num: 6
     },
     {
       country: '美国',
@@ -62,12 +24,7 @@ Page({
       num: 6
     }]
   },
-  // 跳转到提交订单页面
-  goorder:function(){
-    vx:wx.navigateTo({
-      url: '../order/order'
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

@@ -44,7 +44,7 @@
     </view>
   </view>
 </view>
-<view class='cartfixed'>
+<view class='cartfixed' bindtap='goorder'>
   <text class='cf-left'>计算(6)·￥689.00</text>
   <image src='http://jys.m0571.com/img/jt11.png'></image>
 </view>

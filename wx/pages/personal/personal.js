@@ -50,6 +50,22 @@ Page({
       hasUserInfo: true
     })
   },
+  // 跳转到address
+  toaddress:function(){
+    wx:wx.navigateTo({
+      url: '../address/address'
+    })
+  },
+  tocustomer: function () {
+    wx: wx.navigateTo({
+      url: '../customer/customer'
+    })
+  },
+  tomyorder: function () {
+    wx: wx.navigateTo({
+      url: '../myorder/myorder'
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -8,17 +8,14 @@
 }
 /* swiper  */
 .swiper-box .slide-image{
-  margin: 20rpx;
-  width: 710rpx;
-  border-radius: 20rpx;
-  height: 340rpx;
-   box-shadow:0 10rpx 40rpx 10rpx #ddd;
-  -webkit-box-shadow:0 10rpx 40rpx 10rpx #ddd;
+  width: 750rpx;
+  height: 416rpx;
 }
 .swiper-box{
   position: relative;
   height: 420rpx;
   padding-bottom: 35rpx;
+  padding-top: 20rpx;
 }
 .swiper-box .wx-swiper-dots.wx-swiper-dots-horizontal{
      position: absolute;

@@ -1,2 +1,79 @@
 <!--pages/shop/shop.wxml-->
-<text>pages/shop/shop.wxml</text>
+<view class='shopmain'>
+  <view class='searchview'>
+    <input class='shopsearch' type='text' confirm-type="search" placeholder='请输入关键词' placeholder-class="placeholder"/>
+  </view>
+  <view class='search-words'  >
+    <scroll-view class='keywords' scroll-x="true">
+      <view class='active'>最新</view>
+      <view>最新</view>
+      <view>最新</view>
+      <view>最新</view>
+      <view>最新</view>
+      <view>最新</view>
+      <view>最新</view>
+      <view>最新</view>
+      <view>最新</view>
+      <view>最新</view>
+    </scroll-view>
+    <view class='sws'>
+      <image class='sw1' src='http://jys.m0571.com/img/dhfgx.png'></image>
+      <image class='sw2' src='http://jys.m0571.com/img/sx.png'></image>
+    </view>
+  </view>
+  <view class='shopbox'>
+    <swiper class='shop-swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+      <block wx:for="{{imgarr}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" data-src='{{item}}' class="slide-image"  bindtap='previewImage'/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class='rtitle'>
+      <view class='rt-title'>精品推荐</view>
+      <view>RECOMMEND</view>
+    </view>
+  </view>
+</view>
+
+<view class='wines'>
+  <view class='wines-one'>
+    <text class='cfrom'>美国</text>
+    <view class='cartimgbox'>
+      <image src='http://jys.m0571.com/img/wine.png' mode="aspectFit"></image>
+    </view>
+    <view class='wprice'>
+      <text>￥</text><text class='wsnum'>689.</text><text>00</text>
+      <view class='wmsg'><text>这是一段奥斯卡拉啊实打实大师的阿大声道</text></view>
+    </view>
+  </view>
+  <view class='wines-one'>
+    <text class='cfrom'>美国</text>
+    <view class='cartimgbox'>
+      <image src='http://jys.m0571.com/img/wine.png' mode="aspectFit"></image>
+    </view>
+    <view class='wprice'>
+      <text>￥</text><text class='wsnum'>689.</text><text>00</text>
+      <view class='wmsg'><text>这是一段奥斯卡拉啊实打实大师的阿大声道</text></view>
+    </view>
+  </view><view class='wines-one'>
+    <text class='cfrom'>美国</text>
+    <view class='cartimgbox'>
+      <image src='http://jys.m0571.com/img/wine.png' mode="aspectFit"></image>
+    </view>
+    <view class='wprice'>
+      <text>￥</text><text class='wsnum'>689.</text><text>00</text>
+      <view class='wmsg'><text>这是一段奥斯卡拉啊实打实大师的阿大声道</text></view>
+    </view>
+  </view>
+  <view class='wines-one'>
+    <text class='cfrom'>美国</text>
+    <view class='cartimgbox'>
+      <image src='http://jys.m0571.com/img/wine.png' mode="aspectFit"></image>
+    </view>
+    <view class='wprice'>
+      <text>￥</text><text class='wsnum'>689.</text><text>00</text>
+      <view class='wmsg'><text>这是一段奥斯卡拉啊实打实大师的阿大声道这是一段奥斯卡拉啊实打实大师的阿大声道</text></view>
+    </view>
+  </view>
+</view>

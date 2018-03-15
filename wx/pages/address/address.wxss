@@ -1,0 +1,89 @@
+/* pages/address/address.wxss */
+.address{
+  margin-top: 20rpx;
+  padding-bottom: 40rpx;
+  position: relative;
+}
+.address .address-one{
+  height: 260rpx;
+  width: 710rpx;
+  margin-left: 20rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+switch{
+  color: #7e50ff;
+  position: absolute;
+  right: 30rpx;
+  top: 30rpx;
+}
+.wx-switch-input{
+  width: 70rpx !important;
+  height: 32rpx !important;
+}
+.wx-switch-input::before{
+  
+  width: 70rpx !important;
+  height: 32rpx !important;
+}
+.wx-switch-input::after{
+  
+  width: 28rpx !important;
+  height: 28rpx !important;
+}
+.ao-left{
+  margin-left: 48rpx;
+  padding-top: 64rpx;
+}
+
+.ao-left .isdefault{
+  height: 28rpx;
+  line-height: 28rpx;
+  background: #7e50ff;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  border-radius: 12rpx;
+  font-size: 20rpx;
+  box-shadow:0 4rpx 10rpx 2rpx #d6ccf4;
+  -webkit-box-shadow:0 4rpx 10rpx 2rpx #d6ccf4;
+  padding: 0 20rpx;
+  margin-left: 20rpx;
+  position: relative;
+  top: -4rpx;
+}
+.ao-left .ao-name{
+  font-size: 38rpx;
+  font-weight: bold;
+  line-height: 68rpx;
+}
+.ao-left .ao-detail{
+  font-size: 28rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+}
+.ao-left .ad{
+  width: 600rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.ao-left .ao-tel{
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #cccccc;
+}
+/* 添加地址 */
+.adda{
+  width: 100%;
+  text-align: center;
+  height: 155rpx;
+  padding-top: 40rpx;
+}
+.adda image{
+  width: 155rpx;
+  height: 155rpx;
+  display: inline-block;
+}

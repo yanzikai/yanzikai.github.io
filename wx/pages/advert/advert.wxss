@@ -1,0 +1,46 @@
+/* pages/advert/advert.wxss */
+.advertbox{
+  padding: 40rpx 0;
+}
+.advert-one{
+  height: 280rpx;
+  width: 710rpx;
+  margin-left: 20rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  box-shadow:3rpx 5rpx 30rpx 6rpx #eee;
+  -webkit-box-shadow:3rpx 5rpx 30rpx 6rpx #eee;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.advert-one image{
+  width: 220rpx;
+  height: 280rpx;
+  float: left;
+}
+.advert-one .aright{
+  padding-left: 40rpx;
+  float: left;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  padding-top: 42rpx;
+}
+.advert-one .afrom{
+  font-size: 22rpx;
+  color: #ccc;
+}
+.advert-one .adetail{
+  width: 410rpx;
+}
+.advert-one .atime{
+  position: absolute;
+  right: 32rpx;
+  bottom: 32rpx;
+  color: #f6f6f6;
+}
+.advert-one .atm{
+  font-size: 50rpx;
+}
+.advert-one .atd{
+  font-size: 20rpx;
+}

@@ -1,0 +1,11 @@
+<!--pages/advert/advert.wxml 广告页面-->
+<view class='advertbox'>
+  <view class='advert-one' wx:for="{{advertarr}}" wx:key="index" bindtap='toadvertdetail'>
+    <image src="{{item.imgsrc}}"></image>
+    <view class='aright'>
+      <view class='adetail'>{{item.detail}} {{item.size}}</view>
+      <view class='afrom'>来自{{item.from}}</view>
+    </view>
+    <view class='atime'><text class='atm'>{{item.month}}</text><text class='atd'>/{{item.day}}</text></view>
+  </view>
+</view>

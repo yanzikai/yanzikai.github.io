@@ -1,0 +1,14 @@
+<!--pages/address/address.wxml-->
+<view class='address'>
+  <view class='address-one' wx:for="{{addressarr}}" wx:key="index">
+    <view class='ao-left'>
+      <view><text class='ao-name'>{{item.name}}</text><text class='isdefault' wx:if="{{item.isdefault}}">默认</text></view>
+      <view class='ad'><text class='ao-detail'>{{item.detail}}</text></view>
+      <view><text class='ao-tel'>{{item.tel}}</text></view>
+    </view>
+    <switch color="#7e50ff" checked="{{item.isselected}}" bindchange="switch1Change"/>
+  </view>
+  <view class='adda' bindtap='toaddaddress'>
+    <image src='http://jys.m0571.com/img/zjdz.png'></image>
+  </view>
+</view>

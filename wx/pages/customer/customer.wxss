@@ -1,0 +1,98 @@
+/* pages/customer/customer.wxss */
+page{
+  background: #fff;
+}
+.choosebox{
+  height: 80rpx;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  padding-top: 30rpx;
+}
+.choosebox view{
+  width: 200rpx;
+  height: 60rpx;
+  color: #000;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  text-align: center;
+  background: #fff;
+  display: inline-block;
+  flex: 0 0 1;
+  margin: 0 20rpx;
+  border-radius: 30rpx;
+}
+.choosebox view.active{
+  color: #fff;
+  background: #7e50ff;
+  box-shadow:0 4rpx 10rpx 2rpx #d6ccf4;
+  -webkit-box-shadow:0 4rpx 10rpx 2rpx #d6ccf4;
+}
+.peosbox .peos{
+  height: 278rpx;
+  white-space: nowrap;
+  text-align: center;
+  width:710rpx;
+  padding: 0 20rpx;
+}
+.peosbox .peos .peos-one{
+  width: 171rpx;
+  height: 278rpx;
+  display: inline-block;
+  margin-right: 10rpx;
+}
+.peosbox .peos .peos-one image{
+  width: 140rpx;
+  height: 140rpx;
+  display: inline-block;
+  margin-top: 40rpx;
+  border-radius: 50%;
+  box-shadow:0 10rpx 40rpx 10rpx #e6e6e6;
+  -webkit-box-shadow:0 10rpx 40rpx 10rpx #e6e6e6;
+
+}
+.peosbox .peos .peos-one view{
+  font-size: 28rpx;
+  line-height: 60rpx;
+}
+
+.br{
+  width: 670rpx;
+  height: 1rpx;
+  background: #000;
+  display: inline-block;
+}
+
+/* 推荐的个人信息  */
+.intro{
+  padding-top: 30rpx;
+}
+.intro .intro-one{
+  height: 160rpx;
+  width: 100%;  
+  padding-top:20rpx;
+}
+.intro .intro-one image{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  box-shadow:0 10rpx 40rpx 10rpx #e6e6e6;
+  -webkit-box-shadow:0 10rpx 40rpx 10rpx #e6e6e6;
+  float: left;
+  margin-left: 30rpx;
+}
+.intro .intro-one .iobox{
+  float: left;
+  margin-left: 30rpx;
+}
+.intro .intro-one .io-name{
+  font-size: 38rpx;
+  font-weight: bold;
+  line-height: 70rpx;
+  margin-top: 20rpx;
+  
+}
+.intro .intro-one .io-msg{
+  font-size: 30rpx;
+  color: #ccc;
+}

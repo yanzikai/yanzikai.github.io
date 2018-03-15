@@ -1,20 +1,22 @@
-// pages/cart/cart.js
+// pages/order/order.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    headernum:6,
-    totalprice:950,
-    goodslist:[{
-      country:'美国', 
-      isselect:true,
-      price:'689.00',
-      title:'贵州茅台集团中华典藏阿斯顿撒',
-      size:'500ml',
-      stock:600,  // 库存
-      num:6
+    hasaddress:false,
+    name:'刘德华',
+    detail:'钱江世纪城港丽望京大厦C1座3201室',
+    tel:'18558484888',
+    goodslist: [{
+      country: '美国',
+      isselect: true,
+      price: '689.00',
+      title: '贵州茅台集团中华典藏阿斯顿撒',
+      size: '500ml',
+      stock: 600,  // 库存
+      num: 6
     },
     {
       country: '美国',
@@ -24,33 +26,6 @@ Page({
       size: '500ml',
       stock: 600,  // 库存
       num: 6
-      },
-      {
-        country: '美国',
-        isselect: false,
-        price: '689.00',
-        title: '贵州茅台集团中华典藏阿斯顿撒',
-        size: '500ml',
-        stock: 600,  // 库存
-        num: 6
-    },
-    {
-      country: '美国',
-      isselect: false,
-      price: '689.00',
-      title: '贵州茅台集团中华典藏阿斯顿撒',
-      size: '500ml',
-      stock: 600,  // 库存
-      num: 6
-      },
-      {
-        country: '美国',
-        isselect: false,
-        price: '689.00',
-        title: '贵州茅台集团中华典藏阿斯顿撒',
-        size: '500ml',
-        stock: 600,  // 库存
-        num: 6
     },
     {
       country: '美国',
@@ -62,10 +37,15 @@ Page({
       num: 6
     }]
   },
-  // 跳转到提交订单页面
-  goorder:function(){
-    vx:wx.navigateTo({
-      url: '../order/order'
+  change:function(){
+    let has = this.data.hasaddress;
+    this.setData({
+      hasaddress:!has
+    })
+  },
+  toaddress:function(){
+    wx:wx.navigateTo({
+      url: '../address/address'
     })
   },
   /**

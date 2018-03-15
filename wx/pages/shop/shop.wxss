@@ -1,1 +1,185 @@
 /* pages/shop/shop.wxss */
+.shopmain{
+  padding-top: 30rpx;
+  background: #fff;
+  padding-bottom: 100rpx;
+  border-radius:0 0 40rpx 40rpx;
+  box-shadow:0 0rpx 40rpx 10rpx #e6e6e6;
+  -webkit-box-shadow:0 0rpx 40rpx 10rpx #e6e6e6;
+}
+.searchview{
+  width: 710rpx;
+  height: 90rpx;
+  margin: 20rpx;
+  background: #fff url("http://jys.m0571.com/img/syfdj.png");
+  background-repeat: no-repeat;
+  background-size: 31rpx 33rpx;
+  background-position: 27rpx 28rpx;
+  border-radius: 20rpx;
+  box-shadow:0 5rpx 20rpx 8rpx #f1f1f1;
+  -webkit-box-shadow:0 5rpx 20rpx 8rpx #f1f1f1;
+  margin-top: 0;
+}
+.shopsearch{
+  width: 635rpx;
+  height: 90rpx;
+  padding-left: 75rpx;
+  font-size: 26rpx;
+  border-radius: 20rpx;
+}
+.placeholder{
+  color: #000;
+  font-size: 26rpx;
+}
+
+/* 关键词搜索  */
+.search-words{
+  width: 710rpx;
+  margin-left: 20rpx;
+  overflow: hidden;
+  
+}
+.search-words .keywords{
+  white-space: nowrap;
+  display: flex;
+  height: 80rpx;
+  font-size: 28rpx;
+  width: 610rpx;
+  float: left;
+}
+.search-words .keywords view{
+  display: inline-block;
+  margin: 0 25rpx;
+  padding-bottom:30rpx;
+  
+}
+.search-words .keywords view.active{
+  background:url("http://jys.m0571.com/img/dhx.png") center 45rpx no-repeat;
+  background-size:52rpx 23rpx;
+  color: #7e50ff;
+}
+.sws{
+  width: 90rpx;
+  float: right;
+  margin-top: 5rpx;
+}
+.sws .sw1{
+  width: 14rpx;
+  height: 32rpx;
+  margin-right: 30rpx;
+}
+.sws .sw2{
+  width: 31rpx;
+  height: 31rpx;
+}
+
+/*轮播  */
+
+.shop-swiper{
+  position: relative;
+  height: 500rpx;
+  padding-bottom: 115rpx;
+}
+.shop-swiper .slide-image{
+  width: 750rpx;
+  height: 376rpx;
+}
+
+.shop-swiper .wx-swiper-dots.wx-swiper-dots-horizontal{
+     position: absolute;
+     bottom: 0rpx;
+}
+.shop-swiper .wx-swiper-dot{
+    width:24rpx;
+    display: inline-flex;
+    height: 4rpx;
+    margin-left: -6rpx;
+    justify-content:space-between;
+}
+.shop-swiper .wx-swiper-dot::before{
+    content: '';
+    flex-grow: 1; 
+    background: rgba(48,50,55,0.8);
+    border-radius: 2rpx
+}
+.shop-swiper .wx-swiper-dot-active::before{
+    background:rgba(126,80,255,0.8); 
+}
+.shop-swiper .wx-swiper-dot-active{
+    width:43rpx;  
+}
+.shopbox .rtitle{
+
+  text-align: center;
+  font-size: 16rpx;
+  width: 100%;
+  color: #000;
+  margin-top: -250rpx;
+}
+.shopbox .rtitle .rt-title{
+  font-size: 40rpx;
+  line-height: 60rpx;
+}
+
+/* 商品列表 winds  */
+.wines{
+  margin-top: 35rpx;
+  background: #f6f6f6;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:0 20rpx;
+}
+.wines .wines-one{
+  width: 345rpx;
+  height: 540rpx;
+  position: relative;
+  background: #fff;
+  border-radius: 20rpx;
+  display: block;
+  margin-bottom: 20rpx;
+}
+.wines .cfrom{
+  height: 28rpx;
+  line-height: 28rpx;
+  background: #7e50ff;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  top: 30rpx;
+  left: 30rpx;
+  border-radius: 12rpx;
+  font-size: 20rpx;
+  box-shadow:0 4rpx 10rpx 2rpx #d6ccf4;
+  -webkit-box-shadow:0 4rpx 10rpx 2rpx #d6ccf4;
+  padding: 0 20rpx;
+  
+}
+.wines .cartimgbox{
+  height: 280rpx;
+  width: 200rpx;
+  margin-left: 70rpx;
+  padding-top: 70rpx;
+}
+.wines .cartimgbox image{
+  height: 280rpx;
+  width: 200rpx;
+}
+.wines .wprice{
+  padding-left: 34rpx;
+  margin-top: 25rpx;
+  font-size: 16rpx;
+  line-height: 50rpx;
+}
+.wines .wprice .wsnum{
+  font-size: 34rpx;
+}
+.wines .wprice .wmsg{
+  font-size: 26rpx;
+  line-height: 38rpx;
+  height: 72rpx;
+  overflow: hidden;
+  white-space: pre-wrap;
+}

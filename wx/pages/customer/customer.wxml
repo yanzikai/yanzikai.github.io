@@ -1,0 +1,64 @@
+<!--pages/customer/customer.wxml-->
+<view class='choosebox'>
+  <view class='active'>TA的顾客</view>
+  <view>WO推荐的</view>
+  <view>WO认识的</view>
+</view>
+<view class='peosbox'>
+  <scroll-view scroll-x="true" class='peos' >
+    <view class='peos-one'>
+      <image src='http://jys.m0571.com/img/peo1.png'></image>
+      <view>刘德华</view>
+    </view>
+    <view class='peos-one'>
+      <image src='http://jys.m0571.com/img/peo1.png'></image>
+      <view>刘德华</view>
+    </view>
+    <view class='peos-one'>
+      <image src='http://jys.m0571.com/img/peo1.png'></image>
+      <view>刘德华</view>
+    </view>
+    <view class='peos-one'>
+      <image src='http://jys.m0571.com/img/peo1.png'></image>
+      <view>刘德华</view>
+    </view>
+    <view class='peos-one'>
+      <image src='http://jys.m0571.com/img/peo1.png'></image>
+      <view>刘德华</view>
+    </view>
+  </scroll-view>
+</view>
+<view class='center'>
+  <view class='br'></view>
+</view>
+
+<view class='intro'>
+  <view class='intro-one' >
+    <image src='http://jys.m0571.com/img/peo1.png'></image>
+    <view class='iobox'>
+      <view class='io-name'>刘德华</view>
+      <view class='io-msg'>The Song art</view>
+    </view>
+  </view>
+  <view class='intro-one' >
+    <image src='http://jys.m0571.com/img/peo1.png'></image>
+    <view class='iobox'>
+      <view class='io-name'>刘德华</view>
+      <view class='io-msg'>The Song art</view>
+    </view>
+  </view>
+  <view class='intro-one' >
+    <image src='http://jys.m0571.com/img/peo1.png'></image>
+    <view class='iobox'>
+      <view class='io-name'>刘德华</view>
+      <view class='io-msg'>The Song art</view>
+    </view>
+  </view>
+  <view class='intro-one' >
+    <image src='http://jys.m0571.com/img/peo1.png'></image>
+    <view class='iobox'>
+      <view class='io-name'>刘德华</view>
+      <view class='io-msg'>The Song art</view>
+    </view>
+  </view>
+</view>

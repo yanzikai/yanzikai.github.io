@@ -4,7 +4,15 @@
     "pages/shop/shop",
     "pages/cart/cart",
     "pages/personal/personal",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/address/address",
+    "pages/addaddress/addaddress",
+    "pages/customer/customer",
+    "pages/order/order",
+    "pages/advert/advert",
+    "pages/advertdetail/advertdetail",
+    "pages/myorder/myorder",
+    "pages/pay/pay"
   ],
   "window":{
     "backgroundTextStyle":"light",

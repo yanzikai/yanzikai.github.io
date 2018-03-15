@@ -58,14 +58,14 @@
 
   <!-- 活动 activity   -->
   <view class='indexactivity'>
-    <view class='ia-title'>
+    <view class='ia-title' bindtap='toadvert'>
       <text>活动</text>
       <navigator>查看更多活动></navigator>
     </view>
   </view>
 
-  <scroll-view class='actives' scroll-x="true">
-    <view class='act-one'>
+  <scroll-view class='actives' scroll-x="true" >
+    <view class='act-one' >
       <image src='http://jys.m0571.com/img/active1.png'></image>
       <view class='act-meg'>这是活动页面，这是活动页面</view>
       <view class='act-from'>来自酒钥匙</view>

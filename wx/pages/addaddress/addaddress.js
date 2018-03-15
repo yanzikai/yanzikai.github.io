@@ -1,20 +1,11 @@
-// pages/shop/shop.js
+// pages/addaddress/addaddress.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgarr: [
-      'http://jys.m0571.com/img/gg2.png',
-      'http://jys.m0571.com/img/gg2.png',
-      'http://jys.m0571.com/img/gg2.png',
-      'http://jys.m0571.com/img/gg2.png'
-    ],
-    autoplay: false,
-    interval: 5000,
-    duration: 1000,
-    indicatorDots: true
+  
   },
 
   /**
