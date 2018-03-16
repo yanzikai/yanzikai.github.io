@@ -1,4 +1,7 @@
 /* pages/detail/detail.wxss */
+page{
+  background: #fff;
+}
 .detailhead{
   padding: 40rpx;
   padding-bottom: 15rpx;
@@ -149,4 +152,129 @@
   right: 0;
   width: 232rpx;
   height: 244rpx;
+}
+
+
+.dfixedbox{
+  background: rgba(0,0,0,.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.dfixedbox .close{
+  width: 100%;
+  height: 60rpx;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: -100rpx;
+
+}
+.dfixedbox .close image{
+  width: 60rpx;
+  height: 60rpx;
+  display: inline-block;
+}
+.dfixed{
+  padding: 80rpx 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 40rpx 40rpx 0 0;
+  background: #fff;
+}
+.dft{
+  font-size: 40rpx;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 70rpx;
+}
+.df-type{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 650rpx;
+  margin-left: 50rpx;
+}
+.df-type view{
+  margin: 0 5rpx 30rpx 5rpx;
+  width: 200rpx;
+  height: 62rpx;
+  background: #7e50ff;
+  color: #fff;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 62rpx;
+  border-radius: 30rpx;
+}
+.dfn{
+  font-size: 32rpx;
+  text-align: center;
+  width: 100%;
+  padding: 70rpx 0 60rpx;
+}
+.ctrnum{
+  background: #f6f6f6;
+  height: 90rpx;
+  width: 600rpx;
+  border-radius: 45rpx;
+  margin-left: 75rpx;
+}
+.cartfixed1{
+  margin-top: 40rpx;
+  width: 600rpx;
+  height: 90rpx;
+  background: #7e50ff;
+  box-shadow:0 10rpx 40rpx 1rpx #c0afef;
+  -webkit-box-shadow:0 10rpx 40rpx 1rpx #c0afef;
+  border-radius: 45rpx;
+  color: #fff;
+  margin-left: 75rpx;
+}
+.cartfixed1 text{
+  margin-left: 50rpx;
+  float: left;
+  font-size: 30rpx;
+  line-height: 90rpx;
+  height: 90rpx;
+}
+.cartfixed1 image{
+  height: 30rpx;
+  width: 110rpx;
+  float: right;
+  padding: 30rpx 40rpx;
+}
+.cartfixed1 .cf-left{
+  display: inline-block;
+}
+.cartfixed1 .cf2{
+  font-size: 34rpx;
+  margin-left: 25rpx;
+}
+.ctrnum{
+  position: relative;
+}
+.ctrnum image{
+  width: 34rpx;
+  height: 34rpx;
+}
+.ctrnum .ctrnum1{
+  position:absolute;
+  left:40rpx;
+  top:28rpx;
+}
+.ctrnum .ctrnum2{
+  position:absolute;
+  right:40rpx;
+  top:28rpx;
+}
+.ctrnum text{
+  width: 100%;
+  text-align: center;
+  line-height: 90rpx;
+  font-size: 38rpx;
+  display: inline-block;
 }

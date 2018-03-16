@@ -83,7 +83,30 @@
 
 </view>
 
-
-
+<!-- 选择规格  -->
+<view class='dfixedbox'>
+  <view class='dfixed'>
+    <view class='close'><image src='http://jys.m0571.com/img/gb.png'></image></view>
+    <view class='df-con'>
+      <view class='dft'>选择规格</view>
+      <view class='df-type'>
+        <view>56度/箱</view>
+        <view>56度/箱</view>
+        <view>56度/箱</view>
+        <view>56度/箱</view>
+        <view>56度/箱</view>
+        <view>56度/箱</view>
+      </view>
+      <view class='dfn'>数量选择</view>
+      <view class='ctrnum'>
+        <image class='ctrnum1' src='http://jys.m0571.com/img/j22.png'></image><text>6</text><image src='http://jys.m0571.com/img/j1.png' class='ctrnum2'></image>
+      </view>
+      <view class='cartfixed1'>
+        <view class='cf-left'><text class='cf1'>计算(6)</text><text class='cf2'>￥689.00</text></view>
+        <image src='http://jys.m0571.com/img/jt11.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
 
 <image class='adfixed' src='http://jys.m0571.com/img/gwcan1.png'></image>
