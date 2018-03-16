@@ -5,9 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    haschecked:false
   },
-
+  switch1Change: function (e) {
+    console.log('switch1 发生 change 事件，携带值为', e.detail.value)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

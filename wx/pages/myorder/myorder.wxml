@@ -27,7 +27,7 @@
       <text></text>
     </view>
     <view class="mo-pay">
-      <view class='apaybox'>支付</view>
+      <view class='apaybox' bindtap='gopay'>支付</view>
     </view>
   </view>
 </view>

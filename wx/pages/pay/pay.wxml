@@ -1,2 +1,25 @@
 <!--pages/pay/pay.wxml-->
-<text>pages/pay/pay.wxml</text>
+<view class='payheade'>
+  <view class='pht'>总金额</view>
+  <view class='phs'><text class='ph1'>￥</text><text class='ph2'>386.00</text></view>
+</view>
+<view class='orderid'>
+  <text>订单编号/</text><text>165465465464600</text>
+</view>
+<!-- 支付方式  -->
+<view class='wx'>
+  <image src='http://jys.m0571.com/img/wx1.png'></image>
+  <view class='wxpay'>微信支付</view>
+  <switch color="#7e50ff" checked="true" bindchange="switch1Change"/>
+</view>
+<view class='zfb'>
+  <image src='http://jys.m0571.com/img/zfb.png'></image>
+  <view class='zfbpay'>支付宝支付</view>
+  <switch color="#7e50ff" checked="{{haschecked}}" bindchange="switch1Change"/>
+</view>
+
+
+<view class='cartfixed'>
+  <view class='cf-left'><text class='cf1'>计算(6)</text><text class='cf2'>￥689.00</text></view>
+  <image src='http://jys.m0571.com/img/jt11.png'></image>
+</view>

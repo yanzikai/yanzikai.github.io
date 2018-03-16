@@ -1,1 +1,137 @@
 /* pages/pay/pay.wxss */
+.payheade{
+  padding:80rpx 0;
+  border-radius:0 0 40rpx 40rpx;
+  background: #fff;
+  box-shadow:0 0rpx 40rpx 10rpx #e6e6e6;
+  -webkit-box-shadow:0 0rpx 40rpx 10rpx #e6e6e6;
+  text-align: center;
+}
+.payheade view{
+  width: 100%;
+}
+.payheade .pht{
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+.payheade .phs{
+  height: 80rpx;
+  color: #7e50ff;
+}
+.payheade .ph1{
+  font-size: 30rpx;
+  line-height: 80rpx;
+}
+.payheade .ph2{
+  font-size: 80rpx;
+  line-height: 80rpx;
+}
+
+/*   */
+.orderid{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #ccc;
+  text-align: center;
+}
+
+/* 支付方式  */
+.wx{
+  width: 710rpx;
+  height: 160rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  margin-bottom: 2rpx;
+  position: relative;
+  overflow: hidden;
+  margin-left: 20rpx;
+}
+.wx image{
+  margin-top:30rpx;
+  width: 100rpx;
+  height: 100rpx;
+  float: left;
+  margin-left: 33rpx;
+}
+.wx .wxpay{
+  line-height: 160rpx;
+  font-size: 34rpx;
+  float: left;
+  margin-left: 20rpx;
+}
+.zfb{
+  width: 710rpx;
+  height: 160rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  position: relative;
+  overflow: hidden;
+  margin-left: 20rpx;
+}
+.zfb .zfbpay{
+  line-height: 160rpx;
+  font-size: 34rpx;
+  float: left;
+  margin-left: 20rpx;
+}
+.zfb image{
+  margin-top:30rpx;
+  width: 100rpx;
+  height: 100rpx;
+  float: left;
+  margin-left: 33rpx;
+}
+switch{
+  color: #7e50ff;
+  position: absolute;
+  right: 30rpx;
+  top: 64rpx;
+}
+.wx-switch-input{
+  width: 70rpx !important;
+  height: 32rpx !important;
+}
+.wx-switch-input::before{
+  
+  width: 70rpx !important;
+  height: 32rpx !important;
+}
+.wx-switch-input::after{
+  
+  width: 28rpx !important;
+  height: 28rpx !important;
+}
+/* 底部固定  */
+.cartfixed{
+  margin-top: 120rpx;
+  margin-left: 75rpx;
+  width: 600rpx;
+  height: 90rpx;
+  background: #7e50ff;
+  box-shadow:0 10rpx 40rpx 1rpx #c0afef;
+  -webkit-box-shadow:0 10rpx 40rpx 1rpx #c0afef;
+  border-radius: 45rpx;
+  color: #fff;
+}
+.cartfixed text{
+  margin-left: 50rpx;
+  float: left;
+  font-size: 30rpx;
+  line-height: 90rpx;
+  height: 90rpx;
+}
+.cartfixed image{
+  height: 30rpx;
+  width: 110rpx;
+  float: right;
+  padding: 30rpx 40rpx;
+
+}
+.cartfixed .cf-left{
+  display: inline-block;
+}
+.cartfixed .cf2{
+  font-size: 34rpx;
+  margin-left: 25rpx;
+}

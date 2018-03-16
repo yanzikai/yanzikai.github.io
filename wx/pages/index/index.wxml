@@ -12,7 +12,7 @@
   <view class='indexnews'>
     <image src='http://jys.m0571.com/img/sgsj.png'></image>
     <text class='dian'>·</text>
-    <swiper class='swiper-new' indicator-dots="{{indicatorDots}}" vertical="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+    <swiper class='swiper-new' indicator-color="#000" indicator-active-color="#7e50ff" indicator-dots="{{indicatorDots}}" vertical="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
       <view wx:for="{{textarr}}" wx:key="index">
         <swiper-item>
           <text>{{item.text}}</text>

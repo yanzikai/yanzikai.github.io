@@ -187,3 +187,11 @@
   float: right;
   padding: 30rpx 40rpx;
 }
+.cartfixed .cf-left{
+  display: inline-block;
+}
+.cartfixed .cf2{
+  font-size: 34rpx;
+  margin-left: 25rpx;
+}
+

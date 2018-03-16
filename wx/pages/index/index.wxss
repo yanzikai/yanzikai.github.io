@@ -59,19 +59,20 @@
   font-weight: bold;
 }
 /* 自定义 swiper 下的点  */
-/* .swiper-new .wx-swiper-dots.wx-swiper-dots-horizontal{
-     position: absolute;
-     right: 100rpx;
-}
-.swiper-new .wx-swiper-dot::before{
-    background: rgba(0,0,0);
-}
+
 .swiper-new .wx-swiper-dot{
-    margin-left: -6rpx;
+    margin-top: -10rpx;
+    width: 12rpx;
+    height:12rpx;
+    margin-left: 1rpx;
+    position: relative;
+    top: 4rpx;
 }
-.swiper-new .wx-swiper-dot-active::before{
-    background:rgba(126,80,255,0.8); 
-} */
+.swiper-new .wx-swiper-dot-active{
+    width: 12rpx;
+    height:12rpx;
+}
+
 .swiper-new swiper-item{
   width: 520rpx;
 }

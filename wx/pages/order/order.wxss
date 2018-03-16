@@ -183,14 +183,15 @@
 /* 底部固定  */
 .cartfixed{
   position: fixed;
-  left: 35rpx;
+  left: 75rpx;
   bottom: 44rpx;
-  width: 680rpx;
+  width: 600rpx;
   height: 90rpx;
   background: #7e50ff;
   box-shadow:0 10rpx 40rpx 1rpx #c0afef;
   -webkit-box-shadow:0 10rpx 40rpx 1rpx #c0afef;
   border-radius: 45rpx;
+  line-height: 90rpx;
   color: #fff;
 }
 .cartfixed text{
@@ -206,3 +207,11 @@
   float: right;
   padding: 30rpx 40rpx;
 }
+.cartfixed .cf-left{
+  display: inline-block;
+}
+.cartfixed .cf2{
+  font-size: 34rpx;
+  margin-left: 25rpx;
+}
+

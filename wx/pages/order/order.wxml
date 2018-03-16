@@ -53,7 +53,7 @@
 
 <!-- 底部固定  -->
 <view class='cartfixed' bindtap='change'>
-  <text class='cf-left'>计算(6)·￥689.00</text>
+  <view class='cf-left'><text class='cf1'>计算(6)</text><text class='cf2'>￥689.00</text></view>
   <image src='http://jys.m0571.com/img/jt11.png'></image>
 </view>
 
