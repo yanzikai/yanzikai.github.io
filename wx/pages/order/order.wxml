@@ -52,7 +52,7 @@
 </view>
 
 <!-- 底部固定  -->
-<view class='cartfixed' bindtap='change'>
+<view class='cartfixed' bindtap='gopay'>
   <view class='cf-left'><text class='cf1'>计算(6)</text><text class='cf2'>￥689.00</text></view>
   <image src='http://jys.m0571.com/img/jt11.png'></image>
 </view>

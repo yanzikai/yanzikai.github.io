@@ -37,10 +37,9 @@ Page({
       num: 6
     }]
   },
-  change:function(){
-    let has = this.data.hasaddress;
-    this.setData({
-      hasaddress:!has
+  gopay:function(){
+    wx:wx.navigateTo({
+      url: '../pay/pay'
     })
   },
   toaddress:function(){

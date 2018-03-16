@@ -35,6 +35,11 @@ Page({
       url: '../detail/detail'
     })
   },
+  onReachBottom:function(){
+    wx.showLoading({
+      title: '玩命加载中',
+    })  
+  },
   previewImage: function (e) {
     var current = e.target.dataset.src;
     wx.previewImage({

@@ -64,7 +64,7 @@
     </view>
   </view>
 
-  <scroll-view class='actives' scroll-x="true" >
+  <scroll-view class='actives' scroll-x="true" bindtap='goadvert'>
     <view class='act-one' >
       <image src='http://jys.m0571.com/img/active1.png'></image>
       <view class='act-meg'>这是活动页面，这是活动页面</view>
@@ -147,4 +147,10 @@
     <text class='abtn'>点击查看</text>
   </view>
   <image src='http://jys.m0571.com/img/alink1.png' mode="aspectFit"></image>
+</view>
+
+<view class='bottom'>
+  <image src='http://jys.m0571.com/img/jh.png'></image>
+  <view class='phone'>000-000-0000</view>
+  <view class='lx'>联系方式</view>
 </view>

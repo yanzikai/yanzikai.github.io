@@ -84,9 +84,9 @@
 </view>
 
 <!-- 选择规格  -->
-<view class='dfixedbox'>
+<view class='dfixedbox' wx:if="{{showType}}">
   <view class='dfixed'>
-    <view class='close'><image src='http://jys.m0571.com/img/gb.png'></image></view>
+    <view class='close' bindtap='showtype'><image src='http://jys.m0571.com/img/gb.png'></image></view>
     <view class='df-con'>
       <view class='dft'>选择规格</view>
       <view class='df-type'>
@@ -108,5 +108,6 @@
     </view>
   </view>
 </view>
+<image class='adfixed'  wx:else bindtap='showtype'  src='http://jys.m0571.com/img/gwcan1.png'></image>
 
-<image class='adfixed' src='http://jys.m0571.com/img/gwcan1.png'></image>
+

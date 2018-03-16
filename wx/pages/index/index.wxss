@@ -56,7 +56,6 @@
   margin-left: 140rpx;
   font-size: 32rpx;
   line-height: 100rpx;
-  font-weight: bold;
 }
 /* 自定义 swiper 下的点  */
 
@@ -329,4 +328,29 @@
   -webkit-box-shadow:0 4rpx 10rpx 2rpx #d6ccf4;
   padding: 0 20rpx;
   margin-top: 12rpx;
+}
+
+.bottom{
+  text-align: center;
+}
+.bottom image{
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+}
+.bottom .phone{
+  font-size: 34rpx;
+  color: #7e50ff;
+  
+}
+.lx{
+  margin: 10rpx 0 60rpx;
+  display: inline-block;
+  height: 30rpx;
+  width: 110rpx;
+  border:2rpx solid #000;
+  border-radius: 15rpx;
+  line-height: 30rpx;
+  font-size: 20rpx;
+  
 }

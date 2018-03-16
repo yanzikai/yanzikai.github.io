@@ -36,8 +36,8 @@
   </view>
 </view>
 
-<view class='wines'>
-  <view class='wines-one'>
+<view class='wines' bindtap='godetail'>
+  <view class='wines-one' >
     <text class='cfrom'>美国</text>
     <view class='cartimgbox'>
       <image src='http://jys.m0571.com/img/wine.png' mode="aspectFit"></image>

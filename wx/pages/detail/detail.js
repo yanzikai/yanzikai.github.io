@@ -11,6 +11,7 @@ Page({
       'http://jys.m0571.com/img/wine.png',
       'http://jys.m0571.com/img/gg1.png'
     ],
+    showType:false,
     textarr: [{
       text: '这是新闻一'
     },
@@ -30,6 +31,12 @@ Page({
     wx.previewImage({
       current: current,
       urls: this.data.imgarr
+    })
+  },
+  showtype:function(){
+    var showtype = this.data.showType;
+    this.setData({
+      showType: !showtype
     })
   },
   /**
