@@ -5,24 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goodslist: [{
-      country: '美国',
-      isselect: true,
-      price: '689.00',
-      title: '贵州茅台集团中华典藏阿斯顿撒',
-      size: '500ml',
-      stock: 600,  // 库存
-      num: 6
-    },
-    {
-      country: '美国',
-      isselect: false,
-      price: '689.00',
-      title: '贵州茅台集团中华典藏阿斯顿撒',
-      size: '500ml',
-      stock: 600,  // 库存
-      num: 6
-    }]
+    
   },
 
   /**

@@ -1,27 +1,4 @@
 <!--pages/advertdetail/advertdetail.wxml-->
-<view class='detailbox'>
-  <view class='active'>待付款</view>
-  <view>待发货</view>
-  <view>待收货</view>
-  <view>待评价</view>
-</view>
-<!-- 商品列表  -->
-<view class='orderlist'>
-  <view class='cartone' wx:for="{{goodslist}}" wx:key="index">
-    <text class='cfrom'>{{item.country}}</text>
-    <view class='cartimgbox'>
-      <image src='http://jys.m0571.com/img/wine.png' mode="aspectFit"></image>
-    </view>
-    <view class='cart-type'>
-      <view class='cprice'>
-        <text class='cprice2'>￥</text><text class='cprice1'>{{item.price}}.</text><text class='cprice2'>00</text>
-      </view>
-      <view class='ct-type'>
-        <text>{{item.title}}</text><text>{{item.size}}</text>
-      </view>
-      <view class='stock'>
-        <text>库存/{{item.stock}}</text>
-      </view>
-    </view>
-  </view>
+<view class='adheade'>
+  <image src='http://jys.m0571.com/img/indexbanner1.png'></image>
 </view>
