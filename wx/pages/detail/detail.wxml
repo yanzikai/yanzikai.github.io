@@ -1,0 +1,89 @@
+<!--pages/detail/detail.wxml-->
+<view class='detailbox'>
+  <view class='detailhead'>
+    <text class='dname'>贵州茅台冰冰凉凉茅台集团阿斯达斯巴达阿斯达 500ml</text><text class='dfrom'>美国</text>
+    <view class='dnum'>库存/16900</view>
+    <view class='dstar'>
+      <view>
+        <image src='http://jys.m0571.com/img/wjx1.png'></image>
+      </view>
+      <view>
+        <image src='http://jys.m0571.com/img/wjx1.png'></image>
+      </view>
+      <view>
+        <image src='http://jys.m0571.com/img/wjx1.png'></image>
+      </view>
+      <view>
+        <image src='http://jys.m0571.com/img/wjx1.png'></image>
+      </view>
+      <view>
+        <image src='http://jys.m0571.com/img/wjx1.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='detailimgs'>
+    <swiper class='swiper-box' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+      <block wx:for="{{imgarr}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" data-src='{{item}}' mode="aspectFit" class="slide-image"  bindtap='previewImage'/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='dprice'>
+    <text class='cprice2'>￥</text><text class='cprice1'>590.</text><text class='cprice2'>00</text>
+  </view>
+  <view class='dmoney'>库存/16900</view>
+  <view class='br'>
+    <text></text>
+  </view>
+</view>
+
+<view class='intro'>
+  <view class='rtitle'>
+    <view class='rt-title'>全部评价</view>
+    <view>RECOMMEND</view>
+  </view>
+  <view class='in-one'>
+    <view class='ione'>
+      <text>中文名称 / 海之蓝石榴酒葡萄酒</text>
+    </view>
+    <view class='ione'>
+      <text>中文名称 / 海之蓝石榴酒葡萄酒</text>
+    </view>
+    <view class='ione'>
+      <text>中文名称 / 海之蓝石榴酒葡萄酒</text>
+    </view>
+    <view class='ione'>
+      <text>中文名称 / </text><view class='dstar1'>
+        <view>
+          <image src='http://jys.m0571.com/img/wjx1.png'></image>
+        </view>
+        <view>
+          <image src='http://jys.m0571.com/img/wjx1.png'></image>
+        </view>
+        <view>
+          <image src='http://jys.m0571.com/img/wjx1.png'></image>
+        </view>
+        <view>
+          <image src='http://jys.m0571.com/img/wjx1.png'></image>
+        </view>
+        <view>
+          <image src='http://jys.m0571.com/img/wjx1.png'></image>
+        </view>
+      </view>
+    </view>
+    <view class='ione'>
+      <text>中文名称 / 海之蓝石榴酒葡萄酒</text>
+    </view>
+    <view class='ione'>
+      <text>中文名称 / 海之蓝石榴酒葡萄酒</text>
+    </view>
+  </view>
+
+</view>
+
+
+
+
+<image class='adfixed' src='http://jys.m0571.com/img/gwcan1.png'></image>

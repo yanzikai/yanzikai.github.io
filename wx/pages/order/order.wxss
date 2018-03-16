@@ -145,7 +145,6 @@
 .br{
   width: 100%;
   text-align: center;
-  height: 1rpx;
 }
 .br text{
   width: 670rpx;

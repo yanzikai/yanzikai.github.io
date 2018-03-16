@@ -58,7 +58,7 @@
 
   <!-- 活动 activity   -->
   <view class='indexactivity'>
-    <view class='ia-title' bindtap='toadvert'>
+    <view class='ia-title' bindtap='goadvert'>
       <text>活动</text>
       <navigator>查看更多活动></navigator>
     </view>
@@ -98,7 +98,7 @@
     <view>RECOMMEND</view>
   </view>
 </view>
-<view class='wines'>
+<view class='wines' bindtap='godetail'>
   <view class='wines-one'>
     <text class='cfrom'>美国</text>
     <view class='cartimgbox'>
