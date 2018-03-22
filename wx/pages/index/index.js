@@ -1,10 +1,12 @@
 // pages/index/index.js
+var Mock = require("../../utils/mock.js");
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    page:1,
     imgarr: [
       'http://jys.m0571.com/img/gg1.png',
       'http://jys.m0571.com/img/gg1.png',
@@ -35,11 +37,6 @@ Page({
       url: '../detail/detail'
     })
   },
-  onReachBottom:function(){
-    wx.showLoading({
-      title: '玩命加载中',
-    })  
-  },
   previewImage: function (e) {
     var current = e.target.dataset.src;
     wx.previewImage({
@@ -51,7 +48,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var res = Mock.mock({
+      "code":0,
+      "msg":'请求成功',
+      "arr|3-6":[{
+        "text ": 'acolor',
+        "imgsrc": "@IMG(200x200)"
+      }]
+    })
+    console.log(res);
   },
 
   /**
@@ -93,7 +98,12 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    wx.showLoading({
+      title: '玩命加载中',
+    })  
+    setTimeout(function(){
+      wx.hideLoading()
+    },2000)
   },
 
   /**

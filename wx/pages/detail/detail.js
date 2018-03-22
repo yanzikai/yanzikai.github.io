@@ -33,6 +33,11 @@ Page({
       urls: this.data.imgarr
     })
   },
+  gopay:function(){
+    wx:wx.navigateTo({
+      url: '../pay/pay'
+    })
+  },
   showtype:function(){
     var showtype = this.data.showType;
     this.setData({

@@ -10,9 +10,9 @@
 <view class='wx'>
   <image src='http://jys.m0571.com/img/wx1.png'></image>
   <view class='wxpay'>微信支付</view>
-  <switch color="#7e50ff" checked="true" bindchange="switch1Change"/>
+  <switch color="#7e50ff" checked="{{!haschecked}}" bindchange="switch1Change"/>
 </view>
-<view class='zfb'>
+<view class='zfb' wx:if='{{haschecked}}'>
   <image src='http://jys.m0571.com/img/zfb.png'></image>
   <view class='zfbpay'>支付宝支付</view>
   <switch color="#7e50ff" checked="{{haschecked}}" bindchange="switch1Change"/>

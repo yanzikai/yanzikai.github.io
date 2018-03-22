@@ -55,7 +55,7 @@ page{
 }
 .swiper-box{
   position: relative;
-  height: 680rpx;
+  height: 720rpx;
 }
 .swiper-box .wx-swiper-dots.wx-swiper-dots-horizontal{
      position: absolute;

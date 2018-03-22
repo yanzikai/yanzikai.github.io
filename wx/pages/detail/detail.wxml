@@ -101,7 +101,7 @@
       <view class='ctrnum'>
         <image class='ctrnum1' src='http://jys.m0571.com/img/j22.png'></image><text>6</text><image src='http://jys.m0571.com/img/j1.png' class='ctrnum2'></image>
       </view>
-      <view class='cartfixed1'>
+      <view class='cartfixed1' bindtap='gopay'>
         <view class='cf-left'><text class='cf1'>计算(6)</text><text class='cf2'>￥689.00</text></view>
         <image src='http://jys.m0571.com/img/jt11.png'></image>
       </view>
