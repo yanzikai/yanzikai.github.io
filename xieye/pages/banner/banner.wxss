@@ -1,0 +1,58 @@
+/* pages/banner/banner.wxss */
+page{
+  background: #f6f6f6;
+}
+.bbox{
+  padding:0 20rpx; 
+  background: #fff;
+}
+image{
+  display: block;
+}
+.bbox .btitle{
+  font-size: 32rpx;
+  height:70rpx;
+  line-height:70rpx;
+  color: #666;
+  border-bottom: 2rpx solid #f6f6f6;
+}
+.bbox .box-con{
+  overflow: hidden;
+  padding: 20rpx 0;
+}
+.bbox .box-con image{
+  float: left;
+  height: 100rpx;
+  width: 100rpx;
+  background: #ddd;
+}
+.bbox .box-con .bc-box{
+  float: left;
+  width: 590rpx;
+  padding-left: 20rpx;
+}
+.bbox .box-con .bc1{
+  font-size: 28rpx;
+  color: #111;
+  line-height: 50rpx;
+}
+.bbox .box-con .bc2{
+  font-size: 24rpx;
+  color: #666;  
+  margin-top: 10rpx;
+}
+.openapp{
+  height:60rpx;
+  font-size:30rpx;
+  line-height:58rpx;
+  width: 240rpx;
+  border-radius: 60rpx;
+  border: 1rpx solid #ddd;
+  background: #f6f6f6;
+  margin-top: 40rpx;
+  color: #666;
+  padding: 0 32rpx;
+}
+button[class="openapp"]::after {
+  border: 0;
+} 

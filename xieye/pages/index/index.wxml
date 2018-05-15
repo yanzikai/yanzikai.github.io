@@ -1,0 +1,115 @@
+
+<!--index.wxml-->
+<view style='overflow:hidden;'>
+  <!-- 头部左侧选择地址 -->
+  <view class='pickerbox'>
+    <view class="picker" data-address='{{address}}' bindtap='search'>
+      {{address}}<text></text>
+    </view>
+  </view>
+  <!--头部中心切换  -->
+  <scroll-view scroll-left="{{-move}}" scroll-with-animation="true" scroll-x style="width:500rpx;white-space:nowrap;float:left;" class="swiper-tab">
+      <block wx:for="{{nav}}" wx:key="index">
+        <view class="swiper-tab-list {{currentTab == index ? 'on' : ''}}" data-current="{{index}}" bindtap="swichNav">{{item}}</view>
+      </block>
+  </scroll-view>
+  <!--头部右侧下拉按钮  -->
+  <view class='xialabox' bindtap="xiala">
+    <view class="xiala {{xiala==1? 'active':''}}" style=''></view>
+  </view>
+</view>
+<!-- 下拉菜单遮罩层 -->
+<view class='zhe' bindtap='xiala' style="display: {{xiala==1? 'block':'none'}}"></view>
+<!--下拉菜单容器  -->
+<view class='xialafixed' style="display: {{xiala==1? 'block':'none'}};transition:.6s all;">
+  <block wx:for="{{nav}}" wx:key="index">
+    <view bindtap='checked' data-cur="{{index}}">{{item}}</view>
+  </block>
+</view>
+<!--主体swiper  -->
+<swiper  current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 40}}px;" bindchange="bindChange">
+  <!--内容  -->
+  <swiper-item>
+    <view class='publish'>发布</view>
+    <!--可滑动视图  -->
+    <scroll-view scroll-y style='height:100%;'>
+      <!--广告图片  -->
+      <navigator url="../banner/banner?tel=18357017267" style='position:relative;'>
+        <image src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill' style='width:100%;height:300rpx;'></image>
+        <view></view>
+        <view></view>
+      </navigator>
+      <!-- 单个容器  -->
+      <view class='item-one'>
+        <navigator url="../detail/detail?tel=18357017267" style='position:relative;'>
+          <image class='io-image' src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill'></image>
+        </navigator>
+        <view class='io-right'>
+          <view class='io-title'>鞋讯通广告发布</view>
+          <view class='io-con'>找底，<text bindtap="phone" data-tel="18356416544">18356416544</text></view>
+          <view class='imgbox'>
+            <block wx:for="{{imgarr}}" wx:key="index">
+              <image mode='aspectFill' src="{{item}}" data-src='{{item}}'  bindtap='previewImage'/>
+            </block>
+          </view>
+          <view class='mark'>#找底</view>
+          <text class='time'>15小时前</text><icon type='success' size='16' color='green'></icon><text class='share'>分享到微信</text>
+        </view>
+      </view>
+       <view class='item-one'>
+        <navigator url="../detail/detail?tel=18357017267" style='position:relative;'>
+          <image class='io-image' src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill'></image>
+        </navigator>
+        <view class='io-right'>
+          <view class='io-title'>鞋讯通广告发布</view>
+          <view class='io-con'>找底，<text bindtap="phone" data-tel="18356416544">18356416544</text></view>
+          <view class='imgbox'>
+            <block wx:for="{{imgarr}}" wx:key="index">
+              <image mode='aspectFill' src="{{item}}" data-src='{{item}}'  bindtap='previewImage'/>
+            </block>
+          </view>
+          <view class='mark'>#找底</view>
+          <text class='time'>15小时前</text><icon type='success' size='16' color='green'></icon><text class='share'>分享到微信</text>
+        </view>
+      </view>
+       <view class='item-one'>
+        <navigator url="../detail/detail?tel=18357017267" style='position:relative;'>
+          <image class='io-image' src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill'></image>
+        </navigator>
+        <view class='io-right'>
+          <view class='io-title'>鞋讯通广告发布</view>
+          <view class='io-con'>找底，<text bindtap="phone" data-tel="18356416544">18356416544</text></view>
+          <view class='imgbox'>
+            <block wx:for="{{imgarr}}" wx:key="index">
+              <image mode='aspectFill' src="{{item}}" data-src='{{item}}'  bindtap='previewImage'/>
+            </block>
+          </view>
+          <view class='mark'>#找底</view>
+          <text class='time'>15小时前</text><icon type='success' size='16' color='green'></icon><text class='share'>分享到微信</text>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+<swiper-item>
+    <view class='publish'>发布</view>
+  </swiper-item>
+  <swiper-item>
+    <view class='publish'>发布</view>
+  </swiper-item>
+  <swiper-item>
+    <view class='publish'>发布</view>
+  </swiper-item>
+  <!-- 我是呵呵 -->
+  <swiper-item>
+    <view class='publish'>发布</view>
+  </swiper-item>
+  <!-- 我是嘿嘿 -->
+  <swiper-item>
+    <view class='publish'>发布</view>
+  </swiper-item>
+  <!-- 我是哼哼-->
+  <swiper-item>
+    <view class='publish'>发布</view>
+  </swiper-item>
+  <!-- 我是吼吼 -->
+</swiper>

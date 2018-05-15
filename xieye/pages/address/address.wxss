@@ -1,0 +1,29 @@
+/* pages/address/address.wxss */
+.viewbox{
+  height:100%;
+  width:100%;
+}
+.viewbox .vb{
+  display: flex;
+  display: -webkit-flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  padding: 32rpx;
+}
+.viewbox .vb view{
+  height: 58rpx;
+  line-height: 58rpx;
+  width: 198rpx;
+  border:1rpx solid #efefef;
+  margin: 16rpx 0;
+  border-radius: 58rpx;
+  color: #000;
+  font-size: 24rpx;
+  text-align: center;
+  background: #fff;
+}
+.viewbox .vb view.active{
+  color: #fff;
+  background: #e94a44;
+  border:1rpx solid #df4c45;
+}

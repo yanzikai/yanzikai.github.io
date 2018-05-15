@@ -1,0 +1,30 @@
+/* pages/detail/detail.wxss */
+.imgbox{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  margin-top: -200rpx;
+  text-align: center;
+}
+image{
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 50%;
+  display: inline-block;
+}
+.imgbox view{
+  font-size: 28rpx;
+  line-height: 100rpx;
+}
+.tel{
+  color: #fff;
+  background: #faaf5f;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

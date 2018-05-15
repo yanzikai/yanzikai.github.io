@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/banner/banner",
+    "pages/address/address"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "鞋业圈",
+    "navigationBarTextStyle":"black"
+  }
+}
