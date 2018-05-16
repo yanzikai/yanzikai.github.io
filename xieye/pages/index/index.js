@@ -12,9 +12,12 @@ Page({
     move: 0,  // 顶部移动的距离
     imgarr: [
       'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1665207864,746409922&fm=27&gp=0.jpg',
+      'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1665207864,746409922&fm=27&gp=0.jpg',
+      'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1665207864,746409922&fm=27&gp=0.jpg',
       'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1105037253,1131367531&fm=27&gp=0.jpg',
       'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=398952501,2656845064&fm=27&gp=0.jpg'
-    ]
+    ],
+    localarr:[]
   },
   onLoad: function (options) {
     if (options.address){
@@ -23,7 +26,11 @@ Page({
         address: address
       })
     }
-    
+    var localarr = this.data.localarr;
+    localarr[0]='已请求到值';
+    this.setData({
+      localarr: localarr
+    })
     var that = this;
     //获取系统信息 
     wx.getSystemInfo({
@@ -38,6 +45,21 @@ Page({
     // this.setData({
     //   currentTab: 3
     // })
+  },
+  /**
+  * 生命周期函数--监听页面显示
+  */
+  onShow: function () {
+    var that = this;
+    wx.getStorage({
+      key: 'address',
+      success: function (res) {
+        that.setData({
+          address: res.data
+        })
+      }
+    })
+    console.log(this.data.localarr)
   },
   // 拨打电话
   phone: function (e) {
@@ -64,6 +86,21 @@ Page({
   },
   // 左右滑动触发条件   --todo
   bindChange: function (e) {
+    // 判断原有的数据是否加载 若没有数据则将请求的数据放到localarr
+    var localarr = this.data.localarr;
+    if (!localarr[e.detail.current]){
+      localarr[e.detail.current] = '进入当前分类 -> 请求值';
+      this.setData({
+        localarr: localarr
+      })
+    }else{
+      localarr[e.detail.current] = '再次进入 不再请求';
+      this.setData({
+        localarr: localarr
+      })
+    }
+    console.log(this.data.localarr)
+    // 跳转到当前分类 并修改上放滚动条位置
     var that = this;
     that.setData({
       currentTab: e.detail.current

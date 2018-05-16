@@ -5,7 +5,7 @@
     text-align: center;  
     line-height: 68rpx;}  
 .swiper-tab-list{  
-    font-size: 30rpx;  
+    font-size: 28rpx;  
     display: inline-block;  
     color: #777777;  
     width:60rpx;
@@ -13,7 +13,7 @@
 
 }  
 .on{ color: red;  
-    border-bottom: 5rpx solid red;}  
+    border-bottom: 6rpx solid red;}  
   
 .swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }  
 page{
@@ -77,6 +77,36 @@ page{
   -webkit-transform: rotate(-45deg);
   top: 32rpx;
 }
+.n1{
+  position: absolute;
+  right: 12rpx;
+  top: 12rpx;
+  width: 170rpx;
+  height: 40rpx;
+  color: #fff;
+  background: rgba(255, 255, 255, .2);
+  border: 2rpx solid rgba(255, 255, 255, .3);
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 24rpx;
+}
+.n2{
+  position: absolute;
+  left: 0rpx;
+  bottom: 0rpx;
+  width: 100%;
+  height: 72rpx;
+  color: #fff;
+  background: rgba(0 , 0, 0, .4);
+  text-align: center;
+  line-height: 72rpx;
+  font-size: 24rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  box-sizing: border-box;
+  padding:0 20rpx;
+}
 .zhe{
   position: fixed;
   z-index: 5;
@@ -120,8 +150,8 @@ image{
   border-bottom: 2rpx solid #f6f6f6;
 }
 .item-one .io-image{
-  width: 100rpx;
-  height: 100rpx;
+  width: 90rpx;
+  height: 90rpx;
   float: left;
 }
 .item-one .io-right{
@@ -133,7 +163,7 @@ image{
 } 
 .item-one .io-right .io-title{
   font-size: 30rpx;
-  color: #808ca3;
+  color: #374970;
   line-height: 50rpx;
 }
 .item-one .io-right .io-con{
@@ -153,22 +183,33 @@ image{
   margin-bottom: 10rpx;
 }
 .mark{
-  color: #4fbfe9;
+  color: #2c50ea;
   font-size: 24rpx;
   margin-top: 20rpx;
   line-height: 26rpx;
 }
 .io-right .time{
-  color: #ccc;
-  font-size: 28rpx;
+  color: #8d8d8d;
+  font-size: 24rpx;
 }
 .io-right .share{
-  color: #ccc;
-  font-size: 28rpx;
+  color: #8d8d8d;
+  font-size: 24rpx;
 }
-.io-right icon{
+.io-right .see{
+  color: #8d8d8d;
+  font-size: 24rpx;
+}
+.io-right .icon2{
+  width:24rpx;height:24rpx;display:inline-block;
   position: relative;
-  top: 4rpx;
+  top: 2rpx;
+  padding: 0 10rpx 0 20rpx; 
+}
+.io-right .icon1{
+  width:31rpx;height:21rpx;display:inline-block;
+  position: relative;
+  top: 2rpx;
   padding: 0 10rpx 0 20rpx; 
 }
 .publish{

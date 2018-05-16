@@ -19,9 +19,13 @@ Page({
     console.log(options.cur)
   },
   select:function(e){
+    wx.setStorage({
+      key: "address",
+      data: e.target.dataset.add
+    })
     var select = e.target.dataset.add
-    wx.redirectTo({
-      url: '../index/index?address=' + select
+    wx.navigateBack({
+      delta: 1
     })
   },
 
@@ -32,12 +36,7 @@ Page({
   
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
+ 
 
   /**
    * 生命周期函数--监听页面隐藏
