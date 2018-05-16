@@ -50,7 +50,7 @@ Page({
     if (res.from === 'button') {
       // 来自页面内转发按钮
       console.log(1111)
-    } else {
+    }else{
       console.log(2222)
     }
     return {

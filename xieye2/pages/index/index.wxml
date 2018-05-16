@@ -68,7 +68,7 @@
             </block>
           </view>
           <view class='mark'>#找底</view>
-          <text class='time'>15小时前</text><image class='.icon1' src='../../img/see.png' style=''></image><text class='see'>浏览(99)</text><image class='.icon2' src='../../img/share.png' style=''></image><text class='share'>分享</text>
+          <text class='time'>15小时前</text><image class='.icon1' src='../../img/see.png' style=''></image><text class='see'>浏览(99)</text><button class='sharebtn' hover-class="none" open-type='share'><image class='.icon2' src='../../img/share.png' style=''></image><text class='share'>分享</text></button>
         </view>
       </view>
       <view class='item-one'>
@@ -84,7 +84,7 @@
             </block>
           </view>
           <view class='mark'>#找底</view>
-          <text class='time'>15小时前</text><image class='.icon1' src='../../img/see.png' style=''></image><text class='see'>浏览(99)</text><image class='.icon2' src='../../img/share.png' style=''></image><text class='share'>分享</text>
+          <text class='time'>15小时前</text><image class='.icon1' src='../../img/see.png' style=''></image><text class='see'>浏览(99)</text><button class='sharebtn' hover-class="none" open-type='share'><image class='.icon2' src='../../img/share.png' style=''></image><text class='share'>分享</text></button>
         </view>
       </view>
     </scroll-view>

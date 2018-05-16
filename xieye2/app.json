@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/banner/banner",
+    "pages/address/address",
+    "pages/personal/personal",
+    "pages/information/information"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "鞋业圈",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#7e50ff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "img/sy.png",
+        "text": "鞋业圈",
+        "selectedIconPath": "img/sy1.png"
+      },
+      {
+        "pagePath": "pages/information/information",
+        "iconPath": "img/gwc.png",
+        "text": "资讯",
+        "selectedIconPath": "img/gwc1.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "img/wd.png",
+        "text": "我的",
+        "selectedIconPath": "img/wd1.png"
+      }
+    ]
+  }
+  
+}
