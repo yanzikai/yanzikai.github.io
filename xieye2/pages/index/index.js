@@ -19,6 +19,7 @@ Page({
     ],
     localarr: []
   },
+  
   onLoad: function (options) {
     if (options.address) {
       var address = options.address;
@@ -26,6 +27,7 @@ Page({
         address: address
       })
     }
+    wx.showNavigationBarLoading()
     var localarr = this.data.localarr;
     localarr[0] = '已请求到值';
     this.setData({
@@ -78,6 +80,7 @@ Page({
       }
     })
     console.log(this.data.localarr)
+    wx.hideNavigationBarLoading()
   },
   // 拨打电话
   phone: function (e) {

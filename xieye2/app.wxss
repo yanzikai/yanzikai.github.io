@@ -8,3 +8,19 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.btnbox{
+  width: 100%;
+  text-align: center;
+}
+.btnbox .btn{
+  width: 702rpx;
+  height: 92rpx;
+  background: #e94a44;
+  color: #fff;
+  border-radius: 92rpx;
+  font-size: 30rpx;
+  line-height: 92rpx;
+}
+button[class="btn"]::after {
+  border: 0;
+} 

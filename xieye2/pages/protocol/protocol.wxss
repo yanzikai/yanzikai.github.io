@@ -1,0 +1,7 @@
+/* pages/protocol/protocol.wxss */
+.box{
+  width: 100%;
+}
+page{
+  background: #f6f6f6;
+}

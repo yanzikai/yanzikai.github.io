@@ -1,0 +1,56 @@
+<!--pages/openvip/openvip.wxml-->
+<!-- 开通会员 -->
+<view class='box'>
+  <view class='logo'>
+    <image  src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill'></image>
+  </view>
+  <view class='msg'>
+    <view class='name'>耐克旗舰店</view>
+    <view wx:if="{{vip > 0 }}" class='rightvip'><image class='rvicon' src='../../img/vipday.png'></image> 剩余{{vip}}天</view>
+    <view wx:elif="{{vip == 0 }}" class='rightvip'><image class='rvicon' src='../../img/vipnone.png'></image> 您的会员已过期</view>
+    <view wx:else="{{vip < 0 }}" class='rightvip'><image class='rvicon' src='../../img/vipnone.png'></image>会员未开通</view>
+  </view>
+</view>
+<view class='br'></view>
+<view class='mainbox'>
+  <view class='title'>
+    会员套餐 <view class='tright'><icon type='warn' size="13"></icon>会员特权</view>
+  </view>
+  <view class="linebox"></view>
+  <view class='types'>
+    <view class='tone active'>
+      <view class='tleft'>
+        <view class='price'>12元</view>
+        <view class='time'>有效期至2017.01.02</view>
+      </view>
+      <view class='tright'>月度</view>
+    </view>
+    <view class='tone'>
+      <view class='tleft'>
+        <view class='price'>12元</view>
+        <view class='time'>有效期至2017.01.02</view>
+      </view>
+      <view class='tright'>月度</view>
+    </view>
+    <view class='tone'>
+      <view class='tleft'>
+        <view class='price'>12元</view>
+        <view class='time'>有效期至2017.01.02</view>
+      </view>
+      <view class='tright'>月度</view>
+    </view>
+    <view class='tone'>
+      <view class='tleft'>
+        <view class='price'>12元</view>
+        <view class='time'>有效期至2017.01.02</view>
+      </view>
+      <view class='tright'>月度</view>
+    </view>
+  </view>
+</view>
+<view class='br'></view>
+<view class='paybox'>
+  <view class='title'>选择支付方式</view>
+  <view class="linebox"></view>
+</view>
+

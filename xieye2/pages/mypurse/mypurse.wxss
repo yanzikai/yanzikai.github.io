@@ -1,0 +1,53 @@
+/* pages/mypurse/mypurse.wxss */
+.box{
+  text-align: center;
+  padding-top: 90rpx;
+  height: 610rpx;
+}
+.box image{
+  width: 260rpx;
+  height: 260rpx;
+  display: inline-block;
+  margin-bottom: 20rpx;
+}
+.box .v1{
+  font-size:28rpx;
+  color:#626262;
+  line-height:50rpx;
+}
+.box .v2{
+  font-size: 64rpx;
+  line-height: 80rpx;
+  color: #111;
+}
+.btn1{
+  height: 96rpx;
+  width: 484rpx;
+  border-radius: 100rpx;
+  background: #e94a44;
+  color: #fff;
+  margin-bottom: 36rpx;
+  border:1rpx solid #e94a44;
+  display: inline-block;
+  line-height: 96rpx;
+  font-size: 30rpx;
+}
+.btn2{
+  height: 96rpx;
+  width: 484rpx;
+  border-radius: 100rpx;
+  background: #fff;
+  color: #767676;
+  border:1rpx solid #ddd;
+  display: inline-block;
+  
+  font-size: 30rpx;
+  line-height: 96rpx;
+}
+.bill{
+  height: 46rpx;
+  line-height: 46rpx;
+  font-size: 26rpx;
+  color: #e94a44; 
+  padding-top: 36rpx;
+}

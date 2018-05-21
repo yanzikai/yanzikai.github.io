@@ -1,0 +1,12 @@
+<!--pages/mypurse/mypurse.wxml-->
+<!-- 我的钱包  -->
+<view class='box'>
+  <image src='../../img/purse1.png'></image>
+  <view class='v1'>我的余额</view>
+  <view class="v2">￥998.00</view>
+</view>
+<view style='text-align:center;'>
+  <view class='btn1'>充值</view>
+  <view class='btn2'>提现</view>
+  <view class='bill'>我的账单</view>
+</view>

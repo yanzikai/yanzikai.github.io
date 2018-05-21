@@ -1,0 +1,37 @@
+/* pages/about/about.wxss */
+.br{
+  height: 18rpx;
+  width: 100%;
+  background: #f8f8f8;
+}
+
+.hg{
+  height: 96rpx;
+  line-height: 96rpx;
+  font-size: 28rpx;
+  background: #fff;
+  padding-left:25rpx;
+}
+.pr{
+  position: relative;
+}
+.more{
+  position: absolute;
+  width: 24rpx;
+  height: 24rpx;
+  right: 28rpx;
+  top: 34rpx;
+  border-right: 2rpx solid #c6c6c6;
+  border-bottom: 2rpx solid #c6c6c6;
+  transform: rotate(-45deg);
+}
+.linebox{
+  border-top:1rpx solid #f1f1f1;
+  border-bottom: 1rpx solid #f6f6f6;
+  width:700rpx;
+  height: 0rpx;
+  position: relative;
+  left: 25rpx;
+}
+
+

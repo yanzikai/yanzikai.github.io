@@ -33,7 +33,7 @@ page{
   height: 38rpx;
   display: inline-block;
   background: #e94a44;
-  border: 1rpx solid #d9322c;
+  border: 1rpx solid #e73832;
   color: #fff;
   margin-top: 18rpx;
   border-radius: 38rpx;
@@ -61,15 +61,15 @@ page{
 .xiala{
   width: 22rpx;
   height: 22rpx;
-  border-right:4rpx solid #8a8a8a;
-  border-top:4rpx solid #8a8a8a;
+  border-right:2rpx solid #8a8a8a;
+  border-top:2rpx solid #8a8a8a;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   position: relative;
   top: 28rpx;
   transition: .6s all;
   -webkit-transition: .6s all;
-  transform-origin: 16rpx 10rpx;
+  transform-origin: 15rpx 10rpx;
   left: 40rpx;
 }
 .xiala.active{
@@ -204,7 +204,7 @@ button[class="sharebtn"]::after {
 .mark{
   color: #2c50ea;
   font-size: 24rpx;
-  margin-top: 20rpx;
+  margin-bottom: 20rpx;
   line-height: 26rpx;
 }
 .io-right .time{

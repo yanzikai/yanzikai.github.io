@@ -6,7 +6,18 @@
     "pages/banner/banner",
     "pages/address/address",
     "pages/personal/personal",
-    "pages/information/information"
+    "pages/information/information",
+    "pages/xieyequan/xieyequan",
+    "pages/feedback/feedback",
+    "pages/about/about",
+    "pages/setting/setting",
+    "pages/protocol/protocol",
+    "pages/privilege/privilege",
+    "pages/myadvert/myadvert",
+    "pages/personaldata/personaldata",
+    "pages/pdname/pdname",
+    "pages/mypurse/mypurse",
+    "pages/openvip/openvip"
   ],
   "window": {
     "backgroundTextStyle": "light",

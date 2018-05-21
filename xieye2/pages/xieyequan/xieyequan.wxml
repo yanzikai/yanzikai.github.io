@@ -1,0 +1,18 @@
+<!--pages/xieyequan/xieyequan.wxml-->
+<!-- 鞋业圈  -->
+<view class='item-one'>
+  <navigator url="../detail/detail?tel=18357017267" style='position:relative;'>
+    <image class='io-image' src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill'></image>
+  </navigator>
+  <view class='io-right'>
+    <view class='io-title'>鞋讯通广告发布</view>
+    <view class='io-con'>找底，<text bindtap="phone" data-tel="18356416544">18356416544</text></view>
+    <view class='mark'>#找底</view>
+    <view class='imgbox'>
+      <block wx:for="{{imgarr}}" wx:key="index">
+        <image mode='aspectFill' src="{{item}}" data-src='{{item}}'  bindtap='previewImage'/>
+      </block>
+    </view>
+    <text class='time'>15小时前</text><image class='.icon1' src='../../img/see.png' style=''></image><text class='see'>浏览(99)</text><button class='sharebtn' hover-class="none" open-type='share'><image class='.icon2' src='../../img/share.png' style=''></image><text class='share'>分享</text></button> <text class='del'>删除</text>
+  </view>
+</view>

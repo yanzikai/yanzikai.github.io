@@ -1,0 +1,12 @@
+/* pages/privilege/privilege.wxss */
+page{
+  background: #f6f6f6;
+}
+.viewbox{
+  padding-left:36rpx;
+  padding-top: 16rpx;
+  font-size: 28rpx;
+}
+.viewbox view{
+  line-height: 70rpx;
+}

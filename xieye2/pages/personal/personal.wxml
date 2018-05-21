@@ -1,2 +1,38 @@
 <!--pages/personal/personal.wxml-->
-<text>pages/personal/personal.wxml</text>
+<!--个人中心  -->
+<scroll-view scroll-y>
+   <view class='head'>
+    <view class='headt'></view>
+    <view class='headb'>
+      <view class='imgbox' bindtap='personaldata'>
+        <image wx:if="{{headimg ? true :false}}" class="headimg" src='{{headimg}}'  mode='aspectFill'></image>
+        <view wx:else class='headimg' style='background:#f6f6f6;'></view>
+        <image wx:if="{{vip}}" class='vip' src='../../img/vip.png' ></image>
+      </view>
+      <view class='headname' bindtap='personaldata'>{{name}}</view>
+      <view class='headmsg' bindtap='personaldata'>个人资料</view>
+    </view>
+   </view>
+   <view class='br'></view>
+   <view class='pr hg' bindtap='mypurse'>
+    <image class="icon" src='../../img/icon.png'></image>我的钱包<view class='more'></view>
+   </view>
+   <view class='br'></view>
+   <view class='pr hgb' bindtap='xieyequan'>
+    <image class="icon" src='../../img/icon.png'></image>我的鞋业圈<view class='more'></view>
+   </view>
+   <view class='pr hg' bindtap='myadvert'>
+    <image class="icon" src='../../img/icon.png'></image>我的广告<view class='more'></view>
+   </view>
+    <view class='br'></view>
+   <view class='pr hgb' bindtap='setting'>
+    <image class="icon" src='../../img/icon.png'></image>设置<view class='more'></view>
+   </view>
+   <view class='pr hg' bindtap='feedback'>
+    <image class="icon" src='../../img/icon.png'></image>意见反馈<view class='more'></view>
+   </view>
+    <view class='br'></view>
+   <view class='pr hg'>
+    <image class="icon" src='../../img/icon.png'></image>查看更多<view class='more'></view>
+   </view>
+</scroll-view>

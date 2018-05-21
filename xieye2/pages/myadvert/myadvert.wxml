@@ -1,0 +1,44 @@
+<!--pages/myadvert/myadvert.wxml-->
+<!-- 我的广告  -->
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">投放中</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">已到期</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 44}}px" bindchange="bindChange">
+  <swiper-item>
+    <scroll-view scroll-y style='width:100%;height:100%;'>
+      <!-- 循环体 start  -->
+      <view url="../banner/banner?title=18357017267" style='position:relative;'>
+        <image src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill' style='display:block;width:100%;height:300rpx;'></image>
+        <view class='n1'>耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款</view>
+        <view class='n2'>有效期: 2018/03/09 至 2018/04/22</view>
+      </view>
+      <!-- 循环体 end  -->
+      <view url="../banner/banner?title=18357017267" style='position:relative;'>
+        <image src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill' style='display:block;width:100%;height:300rpx;'></image>
+        <view class='n1'>耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款</view>
+        <view class='n2'>有效期: 2018/03/09 至 2018/04/22</view>
+      </view>
+      <view url="../banner/banner?title=18357017267" style='position:relative;'>
+        <image src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill' style='display:block;width:100%;height:300rpx;'></image>
+        <view class='n1'>耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款</view>
+        <view class='n2'>有效期: 2018/03/09 至 2018/04/22</view>
+      </view>
+      <view url="../banner/banner?title=18357017267" style='position:relative;'>
+        <image src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill' style='display:block;width:100%;height:300rpx;'></image>
+        <view class='n1'>耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款</view>
+        <view class='n2'>有效期: 2018/03/09 至 2018/04/22</view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <!-- 我是呵呵 -->
+  <swiper-item>
+    <scroll-view scroll-y style='width:100%;height:100%;'>
+      <view url="../banner/banner?title=18357017267" style='position:relative;'>
+        <image src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill' style='display:block;width:100%;height:300rpx;'></image>
+        <view class='n1'>耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款耐克新款</view>
+        <view class='n2'>有效期: 2018/03/09 至 2018/04/22</view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>

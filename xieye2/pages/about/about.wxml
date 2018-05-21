@@ -1,0 +1,10 @@
+<!--pages/about/about.wxml-->
+<!-- 关于我们  -->
+<view class='br'></view>
+<view class='pr hg' bindtap='protocol'>
+用户注册协议<view class='more'></view>
+</view>
+<view class="linebox"></view>
+<view class='pr hg' bindtap='privilege'>
+会员特权<view class='more'></view>
+</view>

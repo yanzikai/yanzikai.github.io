@@ -1,0 +1,97 @@
+/* item-one  */
+.item-one{
+  overflow: hidden;
+  position: relative;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #f6f6f6;
+}
+.item-one .io-image{
+  width: 90rpx;
+  height: 90rpx;
+  float: left;
+}
+.item-one .io-right{
+  float: left;
+  padding-left: 20rpx;
+  width: 590rpx;
+  text-align: left;
+  overflow: hidden;
+} 
+.item-one .io-right .sharebtn{
+  border: none;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  display: inline-block;
+  background:#fff;
+  height:40rpx;
+  position:relative;
+  top:9rpx;
+  width:114rpx;
+  line-height:40rpx;
+
+}
+button[class="sharebtn"]::after {
+  border: 0;
+} 
+.item-one .io-right .io-title{
+  font-size: 30rpx;
+  color: #374970;
+  line-height: 50rpx;
+}
+.item-one .io-right .io-con{
+  font-size: 26rpx;
+  line-height: 40rpx;
+  margin-bottom: 26rpx;
+}
+.imgbox{
+  overflow: hidden;
+}
+.imgbox image{
+  width: 185rpx;
+  display: block;
+  float: left;
+  height: 185rpx;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+}
+.mark{
+  color: #2c50ea;
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+  line-height: 26rpx;
+}
+.io-right .time{
+  color: #8d8d8d;
+  font-size: 24rpx;
+}
+.io-right .del{
+  color: #1d335e;
+  font-size: 24rpx;
+  position: absolute;
+  right: 16rpx;
+  bottom: 12rpx;
+  padding: 10rpx 20rpx;
+}
+.io-right .share{
+  color: #8d8d8d;
+  font-size: 24rpx;
+}
+.io-right .see{
+  color: #8d8d8d;
+  font-size: 24rpx;
+}
+.io-right .icon2{
+  width:24rpx;height:24rpx;display:inline-block;
+  position: relative;
+  top: 2rpx;
+  padding: 0 10rpx 0 20rpx; 
+}
+.io-right .icon1{
+  width:31rpx;height:21rpx;display:inline-block;
+  position: relative;
+  top: 2rpx;
+  padding: 0 10rpx 0 20rpx; 
+}

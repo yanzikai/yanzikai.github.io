@@ -1,0 +1,19 @@
+/* pages/feedback/feedback.wxss */
+page{
+  background: #f8f8f8;
+}
+.textareabox{
+  padding-top: 30rpx;
+  font-size: 24rpx;
+  text-align: center;
+  background: #fff;
+}
+.textareabox textarea{
+  width: 702rpx;
+  height: 520rpx;
+  text-align: left;
+  display: inline-block;
+}
+.btnbox{
+  margin-top: 128rpx;
+}

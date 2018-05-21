@@ -1,0 +1,53 @@
+/* pages/myadvert/myadvert.wxss */
+.swiper-tab{  
+    width: 100%;  
+    border-bottom: 2rpx solid #f6f6f6;  
+    text-align: center;  
+    height: 80rpx;
+    overflow: hidden;
+    line-height: 80rpx;}  
+.swiper-tab-list{  font-size: 30rpx;  
+    display: inline-block;  
+    width: 50%;  
+    color: #797979;  
+    position: relative;
+}  
+.on{ color: #e52923;  
+    }  
+.swiper-tab-list.on::after{
+  content: "";
+  border-bottom: 5rpx solid #e52923;
+  width: 58rpx;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left:-29rpx;
+}
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }  
+.swiper-box view{  
+    text-align: center;  
+}
+.n1{
+  position: absolute;
+  left: 0rpx;
+  bottom: 110rpx;
+  width: 100%;
+  height: 72rpx;
+  color: #fff;
+  background: rgba(0 , 0, 0, .4);
+  text-align: center;
+  line-height: 72rpx;
+  font-size: 24rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  box-sizing: border-box;
+  padding:0 20rpx;
+}
+.n2{
+  height: 110rpx;
+  font-size: 24rpx;
+  padding-left: 24rpx;
+  line-height: 110rpx;
+}

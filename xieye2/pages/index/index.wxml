@@ -26,7 +26,7 @@
   </block>
 </view>
 <!--主体swiper  -->
-<swiper  current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 40}}px;" bindchange="bindChange">
+<swiper  current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 37}}px;" bindchange="bindChange">
   <!--内容  -->
   <swiper-item>
     <view class='publish'>发布</view>
@@ -46,12 +46,12 @@
         <view class='io-right'>
           <view class='io-title'>鞋讯通广告发布</view>
           <view class='io-con'>找底，<text bindtap="phone" data-tel="18356416544">18356416544</text></view>
+          <view class='mark'>#找底</view>
           <view class='imgbox'>
             <block wx:for="{{imgarr}}" wx:key="index">
               <image mode='aspectFill' src="{{item}}" data-src='{{item}}'  bindtap='previewImage'/>
             </block>
           </view>
-          <view class='mark'>#找底</view>
           <text class='time'>15小时前</text><image class='.icon1' src='../../img/see.png' style=''></image><text class='see'>浏览(99)</text><button class='sharebtn' hover-class="none" open-type='share'><image class='.icon2' src='../../img/share.png' style=''></image><text class='share'>分享</text></button>
         </view>
       </view>
@@ -62,12 +62,12 @@
         <view class='io-right'>
           <view class='io-title'>鞋讯通广告发布</view>
           <view class='io-con'>找底，<text bindtap="phone" data-tel="18356416544">18356416544</text></view>
+          <view class='mark'>#找底</view>
           <view class='imgbox'>
             <block wx:for="{{imgarr}}" wx:key="index">
               <image mode='aspectFill' src="{{item}}" data-src='{{item}}'  bindtap='previewImage'/>
             </block>
           </view>
-          <view class='mark'>#找底</view>
           <text class='time'>15小时前</text><image class='.icon1' src='../../img/see.png' style=''></image><text class='see'>浏览(99)</text><button class='sharebtn' hover-class="none" open-type='share'><image class='.icon2' src='../../img/share.png' style=''></image><text class='share'>分享</text></button>
         </view>
       </view>
@@ -78,12 +78,12 @@
         <view class='io-right'>
           <view class='io-title'>鞋讯通广告发布</view>
           <view class='io-con'>找底，<text bindtap="phone" data-tel="18356416544">18356416544</text></view>
+          <view class='mark'>#找底</view>
           <view class='imgbox'>
             <block wx:for="{{imgarr}}" wx:key="index">
               <image mode='aspectFill' src="{{item}}" data-src='{{item}}'  bindtap='previewImage'/>
             </block>
           </view>
-          <view class='mark'>#找底</view>
           <text class='time'>15小时前</text><image class='.icon1' src='../../img/see.png' style=''></image><text class='see'>浏览(99)</text><button class='sharebtn' hover-class="none" open-type='share'><image class='.icon2' src='../../img/share.png' style=''></image><text class='share'>分享</text></button>
         </view>
       </view>

@@ -1,13 +1,17 @@
-// pages/personal/personal.js
+// pages/personaldata/personaldata.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    vip:true,
-    headimg:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2043305675,3979419376&fm=200&gp=0.jpg',
-    name:'耐克旗舰店'
+    headimg:'',
+    name:'耐克旗舰店',
+    address:'安徽省',
+    bindwx:false,
+    vip:12,
+    xieyang:'行业变更',
+    type:'男段'
   },
 
   /**
@@ -23,6 +27,7 @@ Page({
         })
       }
     })
+    // 设置名称
     wx.getStorage({
       key: 'name',
       success: function (res) {
@@ -32,50 +37,51 @@ Page({
       }
     })
   },
-
+  chooseimage: function () {
+    var _this = this;
+    wx.chooseImage({
+      count: 1, // 默认9
+      sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+      sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+      success: function (res) {
+        // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
+        console.log(res);
+        wx.setStorage({
+          key: "headimg",
+          data: res.tempFilePaths[0]
+        })
+        // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片  
+        _this.setData({
+          headimg: res.tempFilePaths[0]
+        })
+      }
+    })
+  },
+  // 修改厂商名称
+  pdname:function(){
+    wx.navigateTo({
+      url: '../pdname/pdname'
+    })
+  },
+  // 修改所在区域     ---todo
+  address: function () {
+    wx.navigateTo({
+      url: '../address/address'
+    })
+  },
+  // 开通会员
+  openvip: function () {
+    wx.navigateTo({
+      url: '../openvip/openvip'
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
   
   },
-  // 跳转个人资料
-  personaldata: function () {
-    wx.navigateTo({
-      url: '../personaldata/personaldata'
-    })
-  },
-  // 跳转我的钱包
-  mypurse:function(){
-    wx.navigateTo({
-      url: '../mypurse/mypurse'
-    })
-  },
-  // 跳转鞋业圈
-  xieyequan:function(){
-    wx.navigateTo({
-      url: '../xieyequan/xieyequan?userid=100'
-    })
-  },
-  // 跳转意见反馈
-  feedback: function () {
-    wx.navigateTo({
-      url: '../feedback/feedback?userid=100'
-    })
-  },
-  // 跳转我的广告
-  myadvert: function() {
-    wx.navigateTo({
-      url: '../myadvert/myadvert?userid=100'
-    })
-  },
-  // 跳转设置
-  setting: function () {
-    wx.navigateTo({
-      url: '../setting/setting'
-    })
-  },
-  
+
   /**
    * 生命周期函数--监听页面显示
    */
@@ -89,6 +95,7 @@ Page({
         })
       }
     })
+    // 设置名称
     wx.getStorage({
       key: 'name',
       success: function (res) {
@@ -124,13 +131,6 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
   
   }
 })

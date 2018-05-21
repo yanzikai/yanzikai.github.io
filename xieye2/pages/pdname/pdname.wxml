@@ -1,0 +1,8 @@
+<!--pages/pdname/pdname.wxml-->
+<!-- 填写厂商名称 -->
+<view class='box'>
+  <input placeholder="这是一个可以自动聚焦的input" bindinput="inputname" value='{{name}}' auto-focus/>
+</view>
+<view class='btnbox' bindtap='commit'>
+  <button class='btn'>完成</button>
+</view>

@@ -1,5 +1,5 @@
 <!--pages/detail/detail.wxml-->
- 
+<!-- 发布者详情  -->
  <view class='imgbox'>
   <image src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill'></image>
   <view>浙江省台州市温岭市城东街道鞋讯通科技</view>

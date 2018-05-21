@@ -1,0 +1,6 @@
+<!--pages/privilege/privilege.wxml-->
+<!-- 会员特权  -->
+<view class='viewbox'>
+  <view>会员七大优惠权限:</view>
+  <view wx:for="{{arr}}" wx:key="index">{{index+1}}、{{item}}</view>
+</view>

@@ -1,0 +1,8 @@
+<!--pages/feedback/feedback.wxml-->
+<!--反馈  -->
+<view class='textareabox'>
+  <textarea placeholder="请输入您的意见或建议，我们将努力做的更好"></textarea>
+</view>
+<view class='btnbox' bindtap='commit'>
+  <button class='btn'>提交反馈</button>
+</view>

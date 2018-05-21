@@ -1,0 +1,33 @@
+<!--pages/personaldata/personaldata.wxml-->
+<!-- 个人资料  -->
+
+<view style='background:#fff;'>
+  <view class='pr hg' style='height:132rpx;line-height:132rpx;'>
+  头像<image wx:if="{{headimg}}" class='headimg' src='{{headimg}}' bindtap="chooseimage" mode='aspectFill'></image>
+  <view wx:else class='headimg' bindtap="chooseimage"></view>
+  </view>
+  <view class="linebox"></view>
+  <view class='pr hg' bindtap='pdname'>
+  厂商名称<view class='right'>{{name}}</view><view class='more'></view>
+  </view>
+  <view class="linebox"></view>
+  <view class='pr hg' bindtap='address'>
+  所在区域<view class='right'>{{address}}</view><view class='more'></view>
+  </view>
+  <view class="linebox"></view>
+  <view class='pr hg'>
+  绑定微信<view class='right'>{{bindwx?'已绑定':'未绑定'}}</view><view class='more'></view>
+  </view>
+  <view class='br'></view>
+  <view class='pr hg' bindtap='openvip'>
+  VIP<view wx:if="{{vip}}" class='rightvip'><image class='rvicon' src='../../img/vipday.png'></image> 剩余{{vip}}天</view><view wx:else class='rightvip'>未开通</view><view class='more'></view>
+  </view>
+  <view class='br'></view>
+  <view class='pr hg'>
+  鞋样店<view class='right'>{{xieyang}}</view><view class='more'></view>
+  </view>
+  <view class="linebox"></view>
+  <view class='pr hg'>
+    <view class='type'>{{type}}</view>
+  </view>
+</view>

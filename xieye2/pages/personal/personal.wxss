@@ -1,1 +1,95 @@
 /* pages/personal/personal.wxss */
+page{
+  background: #f8f8f8;
+}
+.head{
+  height: 400rpx;
+  background: #fff;
+}
+.headt{
+  height: 150rpx;
+  background: #e94a44;
+}
+.headb{
+  height: 250rpx;
+  background: #fff;
+  position: relative;
+  text-align: center;
+}
+.imgbox{
+  border:6rpx solid #fff;
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 50%;
+  position: relative;
+  top: -90rpx;
+  display: inline-block;
+}
+.imgbox .headimg{
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 50%;
+  display: block;
+}
+.imgbox .vip{
+  width: 38rpx;
+  height: 30rpx;
+  display: block;
+  position: absolute;
+  right: 10rpx;
+  bottom: 8rpx;
+}
+.headname{
+  font-size: 28rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+  position: relative;
+  top: -80rpx;
+}
+.headmsg{
+  font-size: 24rpx;
+  position: relative;
+  top: -80rpx;
+  color: #e41d16;
+}
+.br{
+  height: 18rpx;
+  width: 100%;
+  background: #f8f8f8;
+}
+
+.hg{
+  height: 96rpx;
+  line-height: 96rpx;
+  font-size: 28rpx;
+  background: #fff;
+  padding-left: 66rpx;
+}
+.hgb{
+  height: 96rpx;
+  line-height: 96rpx;
+  font-size: 28rpx;
+  background: #fff;
+  border-bottom: 1rpx solid #efefef;
+  padding-left: 66rpx;
+}
+.pr{
+  position: relative;
+}
+.more{
+  position: absolute;
+  width: 24rpx;
+  height: 24rpx;
+  right: 25rpx;
+  top: 34rpx;
+  border-right: 2rpx solid #c6c6c6;
+  border-bottom: 2rpx solid #c6c6c6;
+  transform: rotate(-45deg);
+}
+.icon{
+  position: absolute;
+  width: 31rpx;
+  height: 31rpx;
+  left: 24rpx;
+  top: 34rpx;
+}

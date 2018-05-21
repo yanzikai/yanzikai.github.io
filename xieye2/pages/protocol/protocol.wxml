@@ -1,0 +1,7 @@
+<!--pages/protocol/protocol.wxml-->
+<!-- 用户注册协议  -->
+<scroll-view scroll-y class='box'>
+<rich-text nodes="{{html}}">
+
+</rich-text>
+</scroll-view>

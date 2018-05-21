@@ -1,4 +1,5 @@
 <!--pages/address/address.wxml-->
+<!-- 选择地址  -->
 <scroll-view scroll-y class='viewbox'>
   <view class='vb'>
     <block wx:for="{{address}}" wx:key="index">

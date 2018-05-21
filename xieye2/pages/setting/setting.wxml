@@ -1,0 +1,10 @@
+<!--pages/setting/setting.wxml-->
+<!--设置  -->
+<view class='br'></view>
+<view class='pr hg'>
+密码设置<view class='more'></view>
+</view>
+<view class="linebox"></view>
+<view class='pr hg' bindtap='about'>
+关于我们<view class='more'></view>
+</view>
