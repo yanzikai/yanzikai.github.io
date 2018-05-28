@@ -1,0 +1,149 @@
+/* pages/refill/refill.wxss */
+page{
+  background: #f8f8f8;
+}
+.mons{
+  overflow: hidden;
+}
+.mons view{
+  width: 165rpx;
+  height: 71rpx;
+  font-size: 26rpx;
+  line-height: 71rpx;
+  text-align: center;
+  margin-right: 12rpx;
+  color: #7b7b7b;
+  margin-bottom: 12rpx;
+  background: #fff;
+  border: 1rpx solid #ececec;
+  float: left;
+  border-radius: 5rpx;
+}
+.mons view.active{
+  color: #fff;
+  background: #e94a44;
+  border: 1rpx solid #e52d26;
+}
+
+
+
+
+
+
+.choosebox{
+  padding: 0 24rpx;
+  padding-bottom: 30rpx;
+  background: #fff;
+  padding-right: 0;
+}
+.br{
+  height: 18rpx;
+  width: 100%;
+  background: #f8f8f8;
+}
+
+.hg{
+  height: 96rpx;
+  line-height: 96rpx;
+  font-size: 28rpx;
+  background: #fff;
+  padding-left:25rpx;
+}
+.pr{
+  position: relative;
+}
+.more{
+  position: absolute;
+  width: 24rpx;
+  height: 24rpx;
+  right: 28rpx;
+  top: 34rpx;
+  border-right: 2rpx solid #c6c6c6;
+  border-bottom: 2rpx solid #c6c6c6;
+  transform: rotate(-45deg);
+}
+
+.linebox{
+  border-top:1rpx solid #f1f1f1;
+  border-bottom: 1rpx solid #f6f6f6;
+  width:100%;
+  height: 0rpx;
+  position: relative;
+}
+.title{
+  line-height: 72rpx;
+  font-size: 24rpx;
+  color:#a2a2a2;
+}
+.paybox{
+  padding: 0 24rpx;
+  padding-bottom: 30rpx;
+  background: #fff;
+}
+.tip::after{
+  content: "推荐";
+  height: 30rpx;
+  width: 60rpx;
+  background: #e94a44;
+  color: #fff;
+  line-height: 30rpx;
+  text-align: center;
+  font-size: 22rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ptype image{
+  width: 57rpx;
+  height: 57rpx;
+  display: block;
+  float: left;
+}
+.ptype{
+  padding-top: 26rpx;
+  padding-bottom: 26rpx;
+  overflow: hidden;
+}
+.ptr{
+  float: left;
+  padding-left: 20rpx;
+}
+.ptrtitle{
+  font-size: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+}
+.ptrcon{
+  font-size: 22rpx;
+  height: 22rpx;
+  line-height: 22rpx;
+  margin-top: 9rpx;
+  color: #a2a2a2;
+}
+.ck{
+  float: right;
+}
+/* checkbox未选中时样式 */
+.ck checkbox .wx-checkbox-input{
+  border-radius: 40rpx;
+  height: 40rpx;
+  width: 40rpx;
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   border: 1rpx solid #e94a44;
+   background-color: #e94a44;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+.ck checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   border-radius: 50%;/* 圆角 */
+   width: 20rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 20rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 20rpx;
+   text-align: center;
+   font-size:0rpx; /* 对勾大小 30rpx */
+   color:#fff; /* 对勾颜色 白色 */
+   background: #fff;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}

@@ -5,15 +5,40 @@ Page({
    * 页面的初始数据
    */
   data: {
-    title:''
+    title:'',
+    itemarr:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.showLoading({
+      title: '加载中',
+    })
+    setTimeout(function () {
+      wx.hideLoading()
+    }, 500)
+    var that = this;
     this.setData({
       title: options.title
+    })
+    wx.request({
+      url: 'https://xxt.yyrjw.com/app/Shaping/ShoecircleAdsDetail', //仅为示例，并非真实的接口地址
+      data: {
+        userid: 0,
+        id:that.data.title
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data)
+        that.setData({
+          itemarr: res.data.result
+        })
+        console.log(that.data.itemarr)
+      }
     })
   },
   launchAppError: function (e) {
@@ -25,7 +50,12 @@ Page({
   onReady: function () {
   
   },
-
+  // 点击发布 跳转到webview
+  logs: function (e) {
+    wx.navigateTo({
+      url: '../logs/logs'
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */

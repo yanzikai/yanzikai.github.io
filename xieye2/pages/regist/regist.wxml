@@ -1,0 +1,27 @@
+<!--pages/regist/regist.wxml-->
+<!-- 注册  -->
+<view class='imgbox'>
+  <image src='../../img/logo.png'></image>
+</view>
+<view class='main'>
+  <view class='phone bb'>
+    <input type='text' placeholder='请输入手机号'></input>
+  </view>
+  <view class='code bb'>
+    <input type='number' placeholder='请输入验证码'></input>
+    <view>验证码</view>
+  </view>
+  <view class='pwd bb'>
+    <input type='text' placeholder='请输入密码'></input>
+    <view><image src='../../img/see.png'></image></view>
+  </view>
+  <view class='phone bb' style='color:#777;'>
+    行业选择 <view class='more'></view>
+  </view>
+
+  <view class='btnbox1' >
+    <button class='btn1'>提交反馈</button>
+  </view>
+  <view class='p'>点击注册，即代表同意 <text>《用户注册协议》</text></view>
+</view>
+

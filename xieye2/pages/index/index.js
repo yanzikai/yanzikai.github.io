@@ -11,7 +11,7 @@ Page({
     currentTab: 0,  // tab切换  
     move: 0,  // 顶部移动的距离
     imgarr: [
-      'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1665207864,746409922&fm=27&gp=0.jpg',
+      'https://qr.api.cli.im/qr?data=https%253A%252F%252Fitunes.apple.com%252Fcn%252Fapp%252F%2525E9%25259E%25258B%2525E8%2525AE%2525AF%2525E9%252580%25259A%252Fid1319178119%253Fmt%253D8&level=H&transparent=false&bgcolor=%23ffffff&forecolor=%23000000&blockpixel=12&marginblock=1&logourl=&size=280&kid=cliim&key=7e12ca0f733a0a21f027679c4ad57c69',
       'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1665207864,746409922&fm=27&gp=0.jpg',
       'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1665207864,746409922&fm=27&gp=0.jpg',
       'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1105037253,1131367531&fm=27&gp=0.jpg',
@@ -95,6 +95,11 @@ Page({
     var address = e.target.dataset.address
     wx.navigateTo({
       url: '../address/address?cur=' + address
+    })
+  },
+  regist: function (e) {
+    wx.navigateTo({
+      url: '../regist/regist'
     })
   },
   // 图片放大预览

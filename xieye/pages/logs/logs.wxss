@@ -6,3 +6,9 @@
 .log-item {
   margin: 10rpx;
 }
+page{
+  height: 100%;
+}
+image{
+  background: #f6f6f6;
+}

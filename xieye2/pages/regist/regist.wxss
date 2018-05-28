@@ -1,0 +1,117 @@
+/* pages/regist/regist.wxss */
+.imgbox{
+  width: 100%;
+  height: 280rpx;
+  text-align: center;
+  padding-top: 110rpx;
+}
+.imgbox image{
+  display: inline-block;
+  width: 210rpx;
+  height: 210rpx;
+}
+.main{
+  padding: 0 70rpx;
+}
+/*border-bottom  */
+.bb{
+  border-bottom: 1rpx solid #f2f2f2;
+  padding-left: 48rpx;
+  position: relative;
+}
+
+.phone{
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+}
+.code{
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+}
+.pwd{
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+}
+.phone input{
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+}
+.code input{
+  width: 400rpx;
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+}
+.pwd input{
+  width: 460rpx;
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+}
+.code view{
+  width: 134rpx;
+  height: 54rpx;
+  text-align: center;
+  line-height: 56rpx;
+  border-radius: 40rpx;
+  border: 1rpx solid #e94a44;
+  position: absolute;
+  right: 0;
+  top: 26rpx;
+  color: #e94a44;
+  font-size: 28rpx;
+}
+.pwd view{
+  width: 70rpx;
+  height: 108rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.pwd view image{
+  height: 27rpx;
+  width: 41rpx;
+  position: absolute;
+  top: 41rpx;
+  right: 0;
+}
+.more{
+  position: absolute;
+  width: 24rpx;
+  height: 24rpx;
+  right: 8rpx;
+  top: 42rpx;
+  border-right: 3rpx solid #c6c6c6;
+  border-bottom: 3rpx solid #c6c6c6;
+  transform: rotate(-45deg);
+}
+.btnbox1{
+  width: 100%;
+  text-align: center;
+  margin-top: 90rpx;
+}
+.btnbox1 .btn1{
+  width: 100%;
+  height: 92rpx;
+  background: #e94a44;
+  color: #fff;
+  border-radius: 92rpx;
+  font-size: 30rpx;
+  line-height: 92rpx;
+}
+button[class="btn1"]::after {
+  border: 0;
+} 
+.p{
+  font-size: 22rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #959595;
+}
+.p text{
+  color: #e94a44;
+}

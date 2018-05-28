@@ -28,7 +28,24 @@ Page({
   onShow: function () {
   
   },
-
+  // 前往充值
+  refill: function () {
+    wx.navigateTo({
+      url: '../refill/refill'
+    })
+  },
+  // 前往提现
+  withdrawcash: function () {
+    wx.navigateTo({
+      url: '../withdrawcash/withdrawcash'
+    })
+  },
+  // 前往账单
+  bill: function () {
+    wx.navigateTo({
+      url: '../bill/bill'
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

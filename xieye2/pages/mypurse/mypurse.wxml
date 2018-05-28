@@ -6,7 +6,7 @@
   <view class="v2">￥998.00</view>
 </view>
 <view style='text-align:center;'>
-  <view class='btn1'>充值</view>
-  <view class='btn2'>提现</view>
-  <view class='bill'>我的账单</view>
+  <view class='btn1' bindtap='refill'>充值</view>
+  <view class='btn2' bindtap='withdrawcash'>提现</view>
+  <view class='bill' bindtap='bill'>我的账单</view>
 </view>

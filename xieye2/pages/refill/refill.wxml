@@ -1,0 +1,37 @@
+<!--pages/refill/refill.wxml-->
+<!-- 充值  -->
+
+<view class='pr hg'>
+余额: <text style='color:#e52922;'>￥998.00</text> <view class='more'></view>
+</view>
+<view class='br'></view>
+<view class='choosebox'>
+  <view class='title'>请选择充值金额</view>
+  <view class='mons'>
+    <view class='{{focus==0? "active":""}}' bindtap='change' data-index="0">100元</view>
+    <view class='{{focus==1? "active":""}}' bindtap='change' data-index="1">200元</view>
+    <view class='{{focus==2? "active":""}}' bindtap='change' data-index="2">500元</view>
+    <view class='{{focus==3? "active":""}}' bindtap='change' data-index="3">1000元</view>
+  </view>
+  <view class='title'>其他(请输入大于100的数额)</view>
+  <view style="width: 345rpx;height: 84rpx;background: #f8f8f8;overflow: hidden;">
+    <text style="float: left;line-height: 84rpx;color:#c0c0c0;">￥</text>
+    <input style="float: left;width: 255rpx;height: 84rpx;font-size:28rpx;" type='number'></input>
+  </view>
+</view>
+<view class='br'></view>
+<view class='paybox'>
+  <view class='title'>选择支付方式</view>
+  <view class="linebox" style='margin-bottom:12rpx;'></view>
+  <view class='ptype'>
+    <image src='../../img/type2.png'></image>
+    <view class='ptr'>
+      <view class='ptrtitle'>微信支付</view>
+      <view class='ptrcon'>推荐安装w微信5.0及以上版本的使用</view>
+    </view>
+    <view class='ck'><checkbox value="1"/></view>
+  </view>
+</view>
+<view class='btnbox' style='margin-top:80rpx;'>
+  <button class='btn'>立即支付</button>
+</view>

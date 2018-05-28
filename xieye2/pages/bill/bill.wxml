@@ -1,0 +1,102 @@
+<!--pages/bill/bill.wxml-->
+<!-- 账单  -->
+<view class='billbox'>
+  <view class='bone'>
+    <view style='float:left;'>
+      <view class='btitle'>鞋面采购订单</view>
+      <view class='btime'>2016.12.23 14:15</view>
+    </view>
+    <view class='up'>+1000</view>
+  </view>
+  <view class='bone'>
+    <view style='float:left;'>
+      <view class='btitle'>鞋面采购订单</view>
+      <view class='btime'>2016.12.23 14:15</view>
+    </view>
+    <view class='up'>+1000</view>
+  </view>
+  <view class='bone'>
+    <view style='float:left;'>
+      <view class='btitle'>鞋面采购订单</view>
+      <view class='btime'>2016.12.23 14:15</view>
+    </view>
+    <view class='up'>+1000</view>
+  </view>
+  <view class='bone'>
+    <view style='float:left;'>
+      <view class='btitle'>鞋面采购订单</view>
+      <view class='btime'>2016.12.23 14:15</view>
+    </view>
+    <view class='up'>+1000</view>
+  </view>
+  <view class='bone'>
+    <view style='float:left;'>
+      <view class='btitle'>鞋面采购订单</view>
+      <view class='btime'>2016.12.23 14:15</view>
+    </view>
+    <view class='up'>+1000</view>
+  </view>
+  <view class='bone'>
+    <view style='float:left;'>
+      <view class='btitle'>鞋面采购订单</view>
+      <view class='btime'>2016.12.23 14:15</view>
+    </view>
+    <view class='up'>+1000</view>
+  </view>
+  <view class='bone'>
+    <view style='float:left;'>
+      <view class='btitle'>鞋面采购订单</view>
+      <view class='btime'>2016.12.23 14:15</view>
+    </view>
+    <view class='up'>+1000</view>
+  </view>
+  <view class='bone'>
+    <view style='float:left;'>
+      <view class='btitle'>鞋面采购订单</view>
+      <view class='btime'>2016.12.23 14:15</view>
+    </view>
+    <view class='up'>+1000</view>
+  </view>
+  <view class='bone'>
+    <view style='float:left;'>
+      <view class='btitle'>鞋面采购订单</view>
+      <view class='btime'>2016.12.23 14:15</view>
+    </view>
+    <view class='down'>-1000</view>
+  </view>
+  <view class='bone'>
+    <view style='float:left;'>
+      <view class='btitle'>鞋面采购订单</view>
+      <view class='btime'>2016.12.23 14:15</view>
+    </view>
+    <view class='up'>+1000</view>
+  </view>
+  <view class='bone'>
+    <view style='float:left;'>
+      <view class='btitle'>鞋面采购订单</view>
+      <view class='btime'>2016.12.23 14:15</view>
+    </view>
+    <view class='down'>-1000</view>
+  </view>
+  <view class='bone'>
+    <view style='float:left;'>
+      <view class='btitle'>鞋面采购订单</view>
+      <view class='btime'>2016.12.23 14:15</view>
+    </view>
+    <view class='up'>+1000</view>
+  </view>
+  <view class='bone'>
+    <view style='float:left;'>
+      <view class='btitle'>鞋面采购订单</view>
+      <view class='btime'>2016.12.23 14:15</view>
+    </view>
+    <view class='up'>+1000</view>
+  </view>
+  <view class='bone'>
+    <view style='float:left;'>
+      <view class='btitle'>鞋面采购订单</view>
+      <view class='btime'>2016.12.23 14:15</view>
+    </view>
+    <view class='up'>+1000</view>
+  </view>
+</view>

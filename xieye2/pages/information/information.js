@@ -70,6 +70,12 @@ Page({
       url: '../address/address?cur=' + address
     })
   },
+  // 跳转进入咨询详情
+  infodetail: function (e) {
+    wx.navigateTo({
+      url: '../infodetail/infodetail'
+    })
+  },
   // 图片放大预览
   previewImage: function (e) {
     var current = e.target.dataset.src;

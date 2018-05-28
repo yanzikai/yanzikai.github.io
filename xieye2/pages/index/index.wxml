@@ -29,7 +29,7 @@
 <swiper  current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 37}}px;" bindchange="bindChange">
   <!--内容  -->
   <swiper-item>
-    <view class='publish'>发布</view>
+    <view class='publish' bindtap='regist'>发布</view>
     <!--可滑动视图  -->
     <scroll-view scroll-y="{{ xiala ==1 ? false : true }}" style='height:100%;overflow:hidden;'>
       <!--广告图片  -->
@@ -61,7 +61,7 @@
         </navigator>
         <view class='io-right'>
           <view class='io-title'>鞋讯通广告发布</view>
-          <view class='io-con'>找底，<text bindtap="phone" data-tel="18356416544">18356416544</text></view>
+          <view class='io-con'>找底，https://adadjaklsdjlajqwelkqwjlekjqwlkejajsldkjaslk;djalksjdla;ksjd;alksjda;lskjdalksjdlkasjdlkajshdlakjshdaskljhdasjdhlakjsd<text bindtap="phone" data-tel="18356416544">18356416544</text></view>
           <view class='mark'>#找底</view>
           <view class='imgbox'>
             <block wx:for="{{imgarr}}" wx:key="index">

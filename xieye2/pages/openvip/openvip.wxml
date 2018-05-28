@@ -14,32 +14,32 @@
 <view class='br'></view>
 <view class='mainbox'>
   <view class='title'>
-    会员套餐 <view class='tright'><icon type='warn' size="13"></icon>会员特权</view>
+    会员套餐 <view class='tright' bindtap='showtip'><icon type='warn' size="13"></icon>会员特权</view>
   </view>
   <view class="linebox"></view>
   <view class='types'>
-    <view class='tone active'>
+    <view class='tone {{focus==0? "active":"" }} {{rec==0? "tip":"" }}' data-index="0" bindtap='cur'>
       <view class='tleft'>
         <view class='price'>12元</view>
         <view class='time'>有效期至2017.01.02</view>
       </view>
       <view class='tright'>月度</view>
     </view>
-    <view class='tone'>
+    <view class='tone {{focus==1? "active":"" }} {{rec==1? "tip":"" }}' data-index="1" bindtap='cur'>
       <view class='tleft'>
         <view class='price'>12元</view>
         <view class='time'>有效期至2017.01.02</view>
       </view>
       <view class='tright'>月度</view>
     </view>
-    <view class='tone'>
+    <view class='tone {{focus==2? "active":"" }} {{rec==2? "tip":"" }}' data-index="2" bindtap='cur'>
       <view class='tleft'>
         <view class='price'>12元</view>
         <view class='time'>有效期至2017.01.02</view>
       </view>
       <view class='tright'>月度</view>
     </view>
-    <view class='tone'>
+    <view class='tone {{focus==3? "active":"" }} {{rec==3? "tip":"" }}' data-index="3" bindtap='cur'>
       <view class='tleft'>
         <view class='price'>12元</view>
         <view class='time'>有效期至2017.01.02</view>
@@ -50,7 +50,36 @@
 </view>
 <view class='br'></view>
 <view class='paybox'>
-  <view class='title'>选择支付方式</view>
-  <view class="linebox"></view>
+  <view class='title' style='color:#a2a2a2;'>选择支付方式</view>
+  <view class="linebox" style='margin-bottom:12rpx;'></view>
+  <view class='ptype'>
+    <image src='../../img/type1.png'></image>
+    <view class='ptr'>
+      <view class='ptrtitle'>账户支付</view>
+      <view class='ptrcon'>账户余额:2800元</view>
+    </view>
+    <view class='ck'><checkbox value="1"/></view>
+  </view>
+  <view class='ptype'>
+    <image src='../../img/type2.png'></image>
+    <view class='ptr'>
+      <view class='ptrtitle'>微信支付</view>
+      <view class='ptrcon'>推荐安装w微信5.0及以上版本的使用</view>
+    </view>
+    <view class='ck'><checkbox value="1"/></view>
+  </view>
+</view>
+<view class='btnbox' style='margin-top:24rpx;'>
+  <button class='btn'>立即支付</button>
 </view>
 
+<view class="goods-detail" hidden="{{isShowSelectInfo}}">
+  <view class="mask"></view>
+  <view class="goodsdetail">
+    <view style='text-align:center;'>
+      <image class='himg' src='../../img/star1.png'></image>
+    </view>
+    <view class='server' wx:for="{{arr}}" wx:key="index">{{item}}</view>
+    <view class="dialogtip" bindtap='know'>我知道了</view>
+  </view>
+</view>

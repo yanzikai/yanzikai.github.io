@@ -1,0 +1,40 @@
+/* pages/bill/bill.wxss */
+.billbox{
+  padding: 0 24rpx;
+  background: #fff;
+}
+page{
+  background: #f8f8f8;
+}
+.bone{
+  height: 120rpx;
+  border-bottom: 2rpx solid #efefef;
+  position: relative;
+  overflow: hidden;
+}
+.btitle{
+  font-size: 28rpx;
+  line-height: 54rpx;
+  padding-top: 12rpx;
+}
+.btime{
+  line-height: 36rpx;
+  font-size: 24rpx;
+  color: #818181;
+}
+.up{
+  position: absolute;
+  right: 0;
+  top: 0rpx;
+  color: #fb9721;
+  font-size: 30rpx;
+  line-height: 120rpx;
+}
+.down{
+  position: absolute;
+  right: 0;
+  top: 0rpx;
+  color: #e31a13;
+  font-size: 30rpx;
+  line-height: 120rpx;
+}

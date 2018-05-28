@@ -1,0 +1,19 @@
+<!--pages/infodetail/infodetail.wxml-->
+<!-- 咨询详情  -->
+<view class='head'>
+  <view class='title'>阿拉斯加的企鹅和撒哈拉的沙漠阿斯达阿打算了空间拉克丝将</view>
+  <view class='time'><text>05/14 11:48</text><text style='margin-left:24rpx;'>浏览248</text></view>
+</view>
+<rich-text></rich-text>
+<view class='br'></view>
+<view class='item-one' bindtap='infodetail'>
+  <view class='io-box'>
+    <navigator url="../detail/detail?tel=18357017267" style='position:relative;'>
+      <image class='io-image' src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill'></image>
+    </navigator>
+    <view class='io-right'>
+      <text class='io-title'>这是标题的内容这是标题的内容这是标题的内容</text>
+      <view class='io-time'><text>05/14 11:48</text><text style='margin-left:24rpx;'>浏览248</text></view>
+    </view>
+  </view>
+</view>

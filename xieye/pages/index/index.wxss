@@ -1,4 +1,5 @@
 /**index.wxss**/
+
 .swiper-tab{  
     display: flex;
     flex-wrap: nowrap;
@@ -33,7 +34,7 @@ page{
   height: 38rpx;
   display: inline-block;
   background: #e94a44;
-  border: 1rpx solid #d9322c;
+  border: 1rpx solid #e73832;
   color: #fff;
   margin-top: 18rpx;
   border-radius: 38rpx;
@@ -61,15 +62,15 @@ page{
 .xiala{
   width: 22rpx;
   height: 22rpx;
-  border-right:4rpx solid #8a8a8a;
-  border-top:4rpx solid #8a8a8a;
+  border-right:2rpx solid #8a8a8a;
+  border-top:2rpx solid #8a8a8a;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   position: relative;
   top: 28rpx;
   transition: .6s all;
   -webkit-transition: .6s all;
-  transform-origin: 16rpx 10rpx;
+  transform-origin: 15rpx 10rpx;
   left: 40rpx;
 }
 .xiala.active{
@@ -153,6 +154,7 @@ image{
   width: 90rpx;
   height: 90rpx;
   float: left;
+  
 }
 .item-one .io-right{
   float: left;
@@ -160,6 +162,7 @@ image{
   width: 590rpx;
   text-align: left;
   overflow: hidden;
+  word-break:break-all;
 } 
 .item-one .io-right .sharebtn{
   border: none;
@@ -170,15 +173,17 @@ image{
   padding-right: 0;
   display: inline-block;
   background:#fff;
-  height:40rpx;
+  height:32rpx;
   position:relative;
-  top:9rpx;
+  top:3rpx;
   width:114rpx;
-  line-height:40rpx;
+  line-height:31rpx;
 
 }
 button[class="sharebtn"]::after {
   border: 0;
+  height: 0;
+  width: 0;
 } 
 .item-one .io-right .io-title{
   font-size: 30rpx;
@@ -189,6 +194,7 @@ button[class="sharebtn"]::after {
   font-size: 26rpx;
   line-height: 40rpx;
   margin-bottom: 26rpx;
+  display:inline-block;
 }
 .imgbox{
   overflow: hidden;
@@ -204,7 +210,7 @@ button[class="sharebtn"]::after {
 .mark{
   color: #2c50ea;
   font-size: 24rpx;
-  margin-top: 20rpx;
+  margin-bottom: 20rpx;
   line-height: 26rpx;
 }
 .io-right .time{
@@ -220,10 +226,11 @@ button[class="sharebtn"]::after {
   font-size: 24rpx;
 }
 .io-right .icon2{
-  width:24rpx;height:24rpx;display:inline-block;
+  width:20rpx;height:20rpx;display:inline-block;
   position: relative;
-  top: 2rpx;
+  
   padding: 0 10rpx 0 20rpx; 
+  top: 2rpx;
 }
 .io-right .icon1{
   width:31rpx;height:21rpx;display:inline-block;
@@ -243,5 +250,5 @@ button[class="sharebtn"]::after {
   bottom: 50rpx;
   right: 50rpx;
   font-size: 26rpx;
-  z-index: 10;
+  z-index: 101;
 }

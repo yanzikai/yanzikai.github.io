@@ -1,14 +1,16 @@
 <!--pages/banner/banner.wxml-->
-<image src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill' style='width:100%;height:200px;'></image><view class='bbox'>
-  <view class='btitle'>前端工程师</view>
+<image src='{{itemarr.circle_ads.thumb}}' mode='aspectFill' style='width:100%;height:200px;'></image><view class='bbox'>
+  <view class='btitle'>{{itemarr.circle_ads.description}}</view>
   <view class='box-con'>
-    <image src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill'></image>
-    <view class='bc-box'>
-      <view class='bc1'>鞋讯通广告发布</view>
-      <view class='bc2'>浙江省台州市温岭市城东街道鞋讯通科技</view>
-    </view>
+    <navigator url="../detail/detail?userid={{itemarr.user.id}}" style='position:relative;'>
+      <image src='{{itemarr.user.thumb}}' mode='aspectFill'></image>
+      <view class='bc-box'>
+        <view class='bc1'>{{itemarr.user.vendors_name}}</view>
+        <view class='bc2'>{{itemarr.user.de_address}}</view>
+      </view>
+    </navigator>
   </view>
 </view>
 <view style='text-align:center;width:100%;'>
-  <button class='openapp' open-type="launchApp" app-parameter="wechat" binderror="launchAppError">我也要发广告</button>
+  <button class='openapp' bindtap='logs' open-type="launchApp" app-parameter="wechat" binderror="launchAppError">我也要发广告</button>
 </view>

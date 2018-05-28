@@ -1,0 +1,52 @@
+/* pages/withdrawcash/withdrawcash.wxss */
+page{
+  background: #f8f8f8;
+}
+.hg{
+  height: 96rpx;
+  line-height: 96rpx;
+  font-size: 28rpx;
+  background: #fff;
+  padding-left:25rpx;
+}
+.pr{
+  position: relative;
+}
+.dbr{
+  width: 100%;
+  height: 0;
+  border-top: 1rpx solid #f0f0f0;
+  border-bottom: 1rpx solid #f6f6f6;
+  display: block;
+}
+.title{
+  line-height: 72rpx;
+  font-size: 24rpx;
+  color:#a2a2a2;
+}
+.abox{
+  padding: 15rpx 24rpx 30rpx;
+  background: #fff;
+}
+.br{
+  height: 18rpx;
+  width: 100%;
+  background: #f8f8f8;
+}
+.msgbox{
+  background: #fff;
+  padding: 0 24rpx 30rpx;
+}
+.msgbox input{
+  
+  height: 84rpx;
+  width: 100%;
+  background: #f8f8f8;
+  border: none;
+  padding-left: 18rpx;
+  font-size: 26rpx;
+}
+.msgbox .mbt{
+  line-height: 72rpx;
+  font-size: 24rpx;
+}

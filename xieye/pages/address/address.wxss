@@ -4,11 +4,9 @@
   width:100%;
 }
 .viewbox .vb{
-  display: flex;
-  display: -webkit-flex;
-  justify-content:space-between;
-  flex-wrap: wrap;
-  padding: 32rpx;
+  overflow: hidden;
+  padding: 30rpx;
+  padding-right:0rpx;
 }
 .viewbox .vb view{
   height: 58rpx;
@@ -21,6 +19,10 @@
   font-size: 24rpx;
   text-align: center;
   background: #fff;
+  float:left;
+  margin-right:18px;
+  margin-bottom:30rpx;
+
 }
 .viewbox .vb view.active{
   color: #fff;

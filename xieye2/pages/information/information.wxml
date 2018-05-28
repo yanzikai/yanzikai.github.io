@@ -36,7 +36,7 @@
         </block>
       </swiper>
       <!-- 单个容器  -->
-      <view class='item-one'>
+      <view class='item-one' bindtap='infodetail'>
         <view class='io-box'>
           <navigator url="../detail/detail?tel=18357017267" style='position:relative;'>
             <image class='io-image' src='http://img05.tooopen.com/images/20140728/sy_67611752335.jpg' mode='aspectFill'></image>

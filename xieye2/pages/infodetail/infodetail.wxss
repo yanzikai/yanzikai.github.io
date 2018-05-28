@@ -1,0 +1,76 @@
+/* pages/infodetail/infodetail.wxss */
+rich-text{
+  padding:20rpx 24rpx 40rpx;
+  min-height: 200rpx;
+  background: #eee;
+  width: 100%;
+  display: inline-block;
+}
+.head{
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+}
+.head .title{
+  line-height: 58rpx;
+  font-size: 42rpx;
+}
+.time{
+  line-height: 88rpx;
+  font-size: 24rpx;
+  color: #7e7e7e;
+}
+.br{
+  width: 100%;
+  border-top: 2rpx solid #f3f3f3;
+  height: 0;
+  display: block;
+}
+/* item-one  */
+.item-one{
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+  padding-top:28rpx; 
+}
+.item-one .io-box{
+  padding-bottom:28rpx; 
+  overflow: hidden;
+  border-bottom: 2rpx solid #f6f6f6;
+}
+.item-one .io-image{
+  width: 194rpx;
+  height: 194rpx;
+  display: block;
+}
+.io-box navigator{
+  float: left;
+}
+.item-one .io-right{
+  float: left;
+  margin-left: 26rpx;
+  width: 470rpx;
+  text-align: left;
+  overflow: hidden;
+  height: 194rpx;
+  position: relative;
+} 
+.item-one .io-right .io-time{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  line-height: 34rpx;
+  height: 34rpx;
+  font-size: 24rpx;
+  color: #7e7e7e;
+}
+.item-one .io-right .io-title{
+  line-height: 50rpx;
+  height: 150rpx;
+  font-size: 32rpx;
+  display: -webkit-box;
+  color:#000000;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:3;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}

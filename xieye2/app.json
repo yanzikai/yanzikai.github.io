@@ -17,7 +17,12 @@
     "pages/personaldata/personaldata",
     "pages/pdname/pdname",
     "pages/mypurse/mypurse",
-    "pages/openvip/openvip"
+    "pages/openvip/openvip",
+    "pages/refill/refill",
+    "pages/withdrawcash/withdrawcash",
+    "pages/bill/bill",
+    "pages/infodetail/infodetail",
+    "pages/regist/regist"
   ],
   "window": {
     "backgroundTextStyle": "light",

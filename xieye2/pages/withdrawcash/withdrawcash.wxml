@@ -1,0 +1,23 @@
+<!--pages/withdrawcash/withdrawcash.wxml-->
+<!-- 提现  -->
+<view class='pr hg'>
+可提现余额: <text style='color:#e52922;'>￥998.00</text>
+</view>
+<view class='dbr'></view>
+<view class='abox'>
+  <view class='title'>其他(请输入大于100的数额)</view>
+  <view style="width: 345rpx;height: 84rpx;background: #f8f8f8;overflow: hidden;">
+    <text style="float: left;line-height: 84rpx;color:#c0c0c0;">￥</text>
+    <input style="float: left;width: 255rpx;height: 84rpx;font-size:28rpx;" type='number'></input>
+  </view>
+</view>
+<view class='br'></view>
+<view class='msgbox'>
+  <view class='mbt'>提款人</view>
+  <input placeholder='请输入姓名'></input>
+  <view class='mbt'>支付宝提现账号</view>
+  <input placeholder='请输入姓名'></input>
+</view>
+<view class='btnbox' style='margin-top:120rpx;'>
+  <button class='btn'>确认提现</button>
+</view>

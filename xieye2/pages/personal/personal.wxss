@@ -24,6 +24,7 @@ page{
   position: relative;
   top: -90rpx;
   display: inline-block;
+  background: #f8f8f8;
 }
 .imgbox .headimg{
   width: 170rpx;
