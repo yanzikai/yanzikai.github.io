@@ -22,7 +22,14 @@
     "pages/withdrawcash/withdrawcash",
     "pages/bill/bill",
     "pages/infodetail/infodetail",
-    "pages/regist/regist"
+    "pages/regist/regist",
+    "pages/chooseindustry/chooseindustry",
+    "pages/changeindustry/changeindustry",
+    "pages/changeloginpwd/changeloginpwd",
+    "pages/changepaypwd/changepaypwd",
+    "pages/xieyepublish/xieyepublish",
+    "pages/bannerpublish/bannerpublish",
+    "pages/choosetype/choosetype"
   ],
   "window": {
     "backgroundTextStyle": "light",

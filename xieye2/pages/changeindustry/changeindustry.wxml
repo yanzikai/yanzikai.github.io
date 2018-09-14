@@ -1,0 +1,24 @@
+<!--pages/changeindustry/changeindustry.wxml-->
+<!-- 行业变更  -->
+<view hidden='{{checked}}'>
+  <view class='phone bb'>
+    <input type='text' placeholder='请输入注册手机号'></input>
+  </view>
+  <view class='code bb'>
+    <input type='number' placeholder='请输入验证码'></input>
+    <view>获取验证码</view>
+  </view>
+  <view class='t1'>1.存在未完成订单时无法完成行业变更</view>
+  <view class='t1'>2.行业变更后清除所有数据，保留余额</view>
+  <view class='btnbox' bindtap='next'>
+    <button class='btn'>下一步</button>
+  </view>
+</view>
+<view hidden='{{!checked}}'>
+  <view class='change bb' bindtap='chooseindustry'>
+    选择行业类别<view class='more'></view>
+  </view>
+  <view class='btnbox'>
+    <button class='btn'>完成</button>
+  </view>
+</view>

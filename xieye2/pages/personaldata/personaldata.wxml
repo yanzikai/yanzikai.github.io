@@ -23,7 +23,7 @@
   VIP<view wx:if="{{vip}}" class='rightvip'><image class='rvicon' src='../../img/vipday.png'></image> 剩余{{vip}}天</view><view wx:else class='rightvip'>未开通</view><view class='more'></view>
   </view>
   <view class='br'></view>
-  <view class='pr hg'>
+  <view class='pr hg' bindtap='changeindustry'>
   鞋样店<view class='right'>{{xieyang}}</view><view class='more'></view>
   </view>
   <view class="linebox"></view>

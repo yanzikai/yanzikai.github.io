@@ -1,0 +1,245 @@
+/* pages/choosetype/choosetype.wxss */
+.box{
+  padding-left: 24rpx;
+  padding-bottom: 24rpx;
+}
+.no1{
+  font-size: 28rpx;
+  color: #09c4ff;
+  line-height: 80rpx;
+}
+.no2{
+  font-size: 28rpx;
+  color: #09c4ff;
+  line-height: 80rpx;
+  height: 80rpx;
+  border-bottom: 1rpx solid #efefef;
+  padding-left: 24rpx;
+}
+.htype{
+  overflow: hidden;
+}
+.htype view{
+  width: 196rpx;
+  height: 58rpx;
+  border: 1rpx solid #ebebeb;
+  border-radius: 60rpx;
+  float: left;
+  margin: 0 25rpx 20rpx 14rpx;
+  background: #fff;
+  color: #111;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 24rpx;
+}
+.htype view.active{
+  color: #fff;
+  border: 1rpx solid #e94a44;
+  background: #e94a44;
+}
+.br{
+  height: 18rpx;
+  width: 100%;
+  background: #f8f8f8;
+}
+.warn{
+  font-size: 24rpx;
+  color: #adadad;
+  line-height: 40rpx;
+  padding-left: 35rpx;
+  height: 40rpx;
+  position: relative;
+}
+.warn image{
+  display: inline-block;
+  width: 26rpx;
+  height: 26rpx;
+  position: absolute;
+  top: 7rpx;
+  left: 0rpx;
+}
+
+/* 行业选择  */
+.indubox{
+  overflow: hidden;
+  padding-bottom: 95rpx;
+}
+.left{
+  width: 205rpx;
+  float: left;
+  background: #f6f6f6;
+}
+
+/* 默认显示的box  */
+.left .one{
+  box-sizing: border-box;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  height: 108rpx;
+  border-bottom: 1rpx solid #ebebeb;
+  border-right: 1rpx solid #ebebeb;
+  font-size: 24rpx;
+  line-height: 108rpx;
+  padding-left: 50rpx;
+}
+/* 选中 添加active显示的box  */
+.left .one.active{
+  border-left: 3rpx solid #e8413b;
+  background: #fff;
+  border-right: 1rpx solid #fff;
+}
+.left .ones{
+  border-bottom: 1rpx solid #ebebeb;
+  border-right: 1rpx solid #ebebeb;
+}
+.left .ones.active{
+  border-right: none;
+}
+
+.left .ones.active .one1{
+  border-left: 3rpx solid #e8413b;
+}
+.left .one1{
+  box-sizing: border-box;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  height: 108rpx;
+  font-size: 24rpx;
+  line-height: 108rpx;
+  padding-left: 50rpx;
+}
+.left .two{
+  background: #fafafa;
+  height: 108rpx;
+  font-size: 24rpx;
+  line-height: 108rpx;
+  padding-left: 50rpx;
+}
+.left .two.active{
+  background: #fff;
+  color: #e8413b;
+}
+/* 默认显示的下箭头  */
+.left .xia::after{
+  content: "";
+  position: absolute;
+  width: 16rpx;
+  height: 16rpx;
+  right: 28rpx;
+  top:44rpx;
+  border-right: 2rpx solid #c6c6c6;
+  border-bottom: 2rpx solid #c6c6c6;
+  transform: rotate(45deg);
+}
+.left .shang::after{
+  content: "";
+  position: absolute;
+  width: 16rpx;
+  height: 16rpx;
+  right: 28rpx;
+  top:50rpx;
+  border-right: 2rpx solid #c6c6c6;
+  border-bottom: 2rpx solid #c6c6c6;
+  transform: rotate(-135deg);
+}
+
+/*  */
+.right{
+  width: 544rpx;
+  float: left;
+  background: #fff;
+}
+
+/* right  */
+.rbox image{
+  width: 72rpx;
+  height: 72rpx;
+  display: block;
+  float: left;
+}
+.rbox{
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  overflow: hidden;
+  padding-left: 25rpx;
+}
+.ptr{
+  float: left;
+  padding-left: 20rpx;
+}
+.ptrtitle{
+  font-size: 28rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+}
+.ptrcon{
+  font-size: 22rpx;
+  height: 22rpx;
+  line-height: 22rpx;
+  margin-top: 9rpx;
+  color: #a2a2a2;
+
+}
+.ck{
+  float: right;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+}
+/* checkbox未选中时样式 */
+.ck checkbox .wx-checkbox-input{
+  border-radius: 40rpx;
+  height: 40rpx;
+  width: 40rpx;
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   border: 1rpx solid #e94a44;
+   background-color: #e94a44;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+.ck checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   border-radius: 50%;/* 圆角 */
+   width: 20rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 20rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 20rpx;
+   text-align: center;
+   font-size:0rpx; /* 对勾大小 30rpx */
+   color:#fff; /* 对勾颜色 白色 */
+   background: #fff;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+
+
+.fixed{
+  height: 92rpx;
+  line-height: 92rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1rpx solid #ebebeb;
+  width: 100%;
+  font-size: 28rpx;
+  overflow: hidden;
+}
+.fixed .sure{
+  height:92rpx;
+  float: right;
+  background: #e94a44;
+  color: #fff;
+  text-align: center;
+  width: 240rpx;
+  
+}
+.fixed .text{
+  float: left;
+  padding-left: 25rpx;
+}
+.fixed .textcon{
+  float: left;
+  color: #e94a44; 
+  width: 370rpx;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  overflow: hidden;
+}

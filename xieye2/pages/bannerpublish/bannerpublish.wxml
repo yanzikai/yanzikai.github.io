@@ -1,0 +1,27 @@
+<!--pages/bannerpublish/bannerpublish.wxml-->
+<!-- 广告发布  -->
+<view class='box'>
+  <image class='addimg' bindtap='chooseimg' mode='aspectFit' src='{{img ? img : "../../img/upload1.png"}}'></image>
+  <textarea placeholder='在此添加描述'></textarea>
+</view>
+<view class='br'></view>
+<view class='box'>
+  <view class='type' bindtap='chooseindustry'>
+    <text decode>行业分类 &emsp;</text> <view class='type_v active'>鞋底</view> <view class='more'></view>
+  </view>
+  <view class='type'>
+    <view class='type_v active'>鞋底</view><view class='type_v'>鞋底</view><view class='type_v'>鞋底</view>
+  </view>
+  <view class='time'>
+    <text decode>发布时间</text> <input type='number'></input> 天 * 7
+  </view>
+</view>
+<view class='br'></view>
+<view class='box'>
+  <view class='time'>
+    <text decode>价&emsp;&emsp;格</text> <view>￥1.00</view>
+  </view>
+</view>
+<view class='btnbox' style='margin-top:74rpx;'>
+  <button class='btn'>去支付</button>
+</view>

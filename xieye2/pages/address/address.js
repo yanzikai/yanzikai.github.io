@@ -5,23 +5,56 @@ Page({
    * 页面的初始数据
    */
   data: {
-    address: ['北京', '全国', '上海', '浙江', '广东', '安徽', '苏州', '福建', '四川', '陕西'],
-    current: ''
+    address: [],
+    currentid: '',
+    currentname: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.showLoading({
+      title: '加载中',
+    })
+    setTimeout(function () {
+      wx.hideLoading()
+    }, 500)
+    var that = this;
     this.setData({
-      current: options.cur
+      currentid: options.curid,
+      currentname: options.curname
     })
     console.log(options.cur)
+    wx.request({
+      url: 'https://xxt.yyrjw.com/app/Welcome/GetRegionList', //仅为示例，并非真实的接口地址
+      data: {
+        userid: 0
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data)
+        var address = res.data.result;
+        address.unshift({
+          id: 0,
+          name: '全国'
+        })
+        that.setData({
+          address: address
+        })
+      }
+    })
   },
   select: function (e) {
     wx.setStorage({
       key: "address",
-      data: e.target.dataset.add
+      data: e.target.dataset.addname
+    })
+    wx.setStorage({
+      key: "region_id",
+      data: e.target.dataset.addid
     })
     var select = e.target.dataset.add
     wx.navigateBack({

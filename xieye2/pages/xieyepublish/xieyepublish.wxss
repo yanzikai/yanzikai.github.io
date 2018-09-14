@@ -1,0 +1,138 @@
+/* pages/xieyepublish/xieyepublish.wxss */
+page{
+  background: #f8f8f8;
+}
+.box{
+  padding: 0 24rpx;
+  background: #fff;
+}
+.tabox{
+  position: relative;
+  font-size: 24rpx;
+  border-bottom: 1rpx solid #eeeeee;
+  padding-bottom: 50rpx;
+}
+.tabox textarea{
+  height: 220rpx;
+  width: 100%;
+}
+.total_length{
+  color: #c1c1c1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  line-height: 50rpx;
+}
+.imgbox{
+  overflow: hidden;
+  padding-top: 40rpx;
+}
+.imgbox image{
+  width: 162rpx;
+  height: 162rpx;
+  margin-right: 16rpx;
+  float: left;
+  margin-bottom: 30rpx;
+}
+.more{
+  position: absolute;
+  width: 24rpx;
+  height: 24rpx;
+  right: 8rpx;
+  top:35rpx;
+  border-right: 2rpx solid #c6c6c6;
+  border-bottom: 2rpx solid #c6c6c6;
+  transform: rotate(-45deg);
+}
+.type{
+  position: relative;
+  height: 90rpx;
+  width: 100%;
+  line-height: 90rpx;
+  font-size: 28rpx;
+  border-top: 1rpx solid #f1f1f1;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.types{
+  position: relative;
+  height: 90rpx;
+  width: 100%;
+  line-height: 90rpx;
+  font-size: 28rpx;
+}
+.type_v{
+  height: 40rpx;
+  padding: 0 20rpx;
+  line-height: 40rpx;
+  color: #1b1b1b;
+  display: inline-block;
+  border-radius: 40rpx;
+  margin-left: 20rpx;
+  border: 1rpx solid #ebebeb;
+}
+.type_v.active{
+  background: #e94a44;
+  color: #fff;
+  border: 1rpx solid #e73730;
+}
+.br{
+  height: 18rpx;
+  width: 100%;
+  background: #f8f8f8;
+}
+.bprice{
+  height: 95rpx;
+  line-height: 95rpx;
+  font-size: 28rpx;
+  color: #111;
+  overflow: hidden;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.bprice .p1{
+  float: right;
+  color: #e4231c;
+}
+.bprice .p1 view{
+  display: inline-block;
+  font-size: 24rpx;
+  line-height: 32rpx;
+  margin-left: 14rpx;
+  height: 32rpx;
+  padding: 0 10rpx;
+  color: #ffb600;
+  border: 1rpx solid #ffde6d;
+  border-radius: 5rpx;
+}
+.btype{
+  height: 95rpx;
+  line-height: 95rpx;
+  font-size: 28rpx;
+  color: #111;
+  overflow: hidden;
+}
+.btypes{
+  width: 110%;
+  background: #fff;
+  overflow: hidden;
+  font-size: 28rpx;
+}
+.btypes view{
+  width: 158rpx;
+  height: 70rpx;
+  border: 1rpx solid #f5f5f5;
+  float: left;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border-radius: 70rpx;
+}
+.fixed{
+  height: 114rpx;
+  background: #f8f8f8;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 24rpx;
+}

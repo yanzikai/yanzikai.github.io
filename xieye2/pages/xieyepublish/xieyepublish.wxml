@@ -1,0 +1,65 @@
+<!--pages/xieyepublish/xieyepublish.wxml-->
+<!-- 鞋业圈发布  -->
+<view class='box'>
+  <view class='tabox'>
+    <textarea bindinput='bindText' maxlength='300' placeholder="这一刻的想法"></textarea>
+    <view class='total_length'>{{t_length}}/300字</view>
+  </view>
+  <view class='imgbox'>
+    <image src='../../img/add1.png' bindtap='chooseimg'></image>
+    <block wx:for="{{imgarr}}" wx:key="index">
+      <image src='{{item}}' mode="aspectFit"></image>
+    </block>
+  </view>
+  <view class='type' bindtap='chooseindustry'>
+  你想要发布到 <view class='type_v active'>鞋底</view><view class='more'></view>
+  </view>
+  <view class='types'>
+    <view class='type_v active'>鞋底</view><view class='type_v'>鞋底</view><view class='type_v'>鞋底</view>
+  </view>
+</view>
+<view class='br'></view>
+<view class='box' style='padding-bottom:140rpx;'>
+  <view class='bprice'>
+    <text decode>价&emsp;&emsp;格</text>
+    <view class='p1'>
+      ￥8.00<view>会员￥5.00</view>
+    </view>
+  </view>
+  <view class='btype'>
+    <text decode>标&emsp;&emsp;签</text>
+  </view>
+  <view class='btypes'>
+    <view>出租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+    <view>求租</view>
+  </view>
+</view>
+
+<view class='fixed'>
+  <view class='btnbox'>
+    <button class='btn'>发布</button>
+  </view>
+</view>

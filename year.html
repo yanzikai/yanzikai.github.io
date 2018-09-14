@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>总览一生</title>
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<style>
+		*{
+			padding: 0;
+			margin: 0; 
+		}
+		div{
+			line-height: 0;
+			display: inline-block;
+		}
+		.box {
+			width: 800px;
+			margin: 0 auto;
+		}
+		.box div{
+			border-left: 1px solid #c3c1e9;
+		}
+		div.active{
+			border-top: 1px solid #c3c1e9;
+		}
+		span{
+			width: 22px;
+			display: inline-block;
+			height: 22px;
+			border-right: 1px solid #c3c1e9;
+			border-bottom: 1px solid #c3c1e9;
+
+		}
+		span.active{
+			background: #e63a60;
+		}
+		p{
+			padding-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div style="text-align: center;width: 100%;">
+		<div style="padding: 20px;width: 100%;"><input placeholder="单位：年" type="tel"><a href="javascript:;" style="color: #333;text-decoration: none;margin-left: 20px;border: 1px solid #ddd;font-size: 14px;padding: 2px 5px;">输入年龄</a></div>
+		<div class="box">
+			
+		</div>
+		<p>一共900个月</p>
+	</div>
+	<script>
+		draw(0);
+		function draw(age){
+			var age = age;
+			var time = age * 12;
+			var width = 30;
+			var allstr = '';
+			for (var i = 0; i < width; i++) {
+				var str = '';
+				if(i==0){
+					str += '<div class="active">';
+				}else{
+					str += '<div>';
+				}
+				for (var j = 0; j < width; j++) {
+					if(time >i * width + j){
+						str+='<span class="active"></span>';
+					}else{
+						str+='<span></span>';
+					}
+				}
+				str += '</div>';
+				allstr += str;
+			}
+			$('.box').html(allstr);
+		}
+		$('a').on('click',function(){
+			var age = $('input').val();
+			draw(age)
+		})
+	</script>
+</body>
+</html>

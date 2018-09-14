@@ -1,0 +1,9 @@
+<!--pages/chooseindustry/chooseindustry.wxml-->
+<!-- 选择行业  -->
+<scroll-view scroll-y class='viewbox'>
+  <view class='vb'>
+    <block wx:for="{{industry}}" wx:key="index">
+      <view data-addid="{{item}}" data-addname="{{item}}" >{{item}}</view>
+    </block>
+  </view>
+</scroll-view>

@@ -1,0 +1,85 @@
+/* pages/bannerpublish/bannerpublish.wxss */
+page{
+  background: #f8f8f8;
+}
+.box{
+  background: #fff;
+  padding: 0 24rpx;
+  overflow: hidden;
+}
+.addimg{
+  width: 700rpx;
+  height: 300rpx;
+  display: block;
+}
+.box textarea{
+  margin: 30rpx 0;
+  height: 126rpx;
+  font-size: 28rpx;
+  width: 700rpx;
+}
+.br{
+  height: 18rpx;
+  width: 100%;
+  background: #f8f8f8;
+}
+.type{
+  position: relative;
+  height: 90rpx;
+  width: 100%;
+  line-height: 90rpx;
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.more{
+  position: absolute;
+  width: 24rpx;
+  height: 24rpx;
+  right: 8rpx;
+  top:35rpx;
+  border-right: 2rpx solid #c6c6c6;
+  border-bottom: 2rpx solid #c6c6c6;
+  transform: rotate(-45deg);
+}
+.time{
+  position: relative;
+  height: 90rpx;
+  width: 100%;
+  line-height: 90rpx;
+  font-size: 28rpx;
+}
+
+.type_v{
+  height: 40rpx;
+  padding: 0 20rpx;
+  line-height: 40rpx;
+  color: #1b1b1b;
+  display: inline-block;
+  border-radius: 40rpx;
+  margin-right: 20rpx;
+  border: 1rpx solid #ebebeb;
+}
+.type_v.active{
+  background: #e94a44;
+  color: #fff;
+  border: 1rpx solid #e73730;
+}
+.time input{
+  width: 220rpx;
+  height: 55rpx;
+  display: inline-block;
+  background: #f8f8f8;
+  text-align: center;
+  position: relative;
+  top: 18rpx;
+  margin: 0 20rpx;
+}
+.time view{
+  height: 90rpx;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  line-height: 90rpx;
+  width: auto;
+  color: #e94a44;
+}

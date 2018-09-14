@@ -105,19 +105,19 @@ Page({
     that.setData({
       currentTab: e.detail.current
     })
-    if (e.detail.current >= 3 && e.detail.current <= that.data.nav.length - 3) {
+    if (e.detail.current >= 4 && e.detail.current <= that.data.nav.length - 3) {
       var a = e.detail.current - 2;
       console.log(e.detail.current)
       that.setData({
-        move: -40 * a
+        move: -45 * a
       })
-    } else if (e.detail.current <= 2) {
+    } else if (e.detail.current <= 3) {
       that.setData({
         move: 0
       })
     } else if (e.detail.current >= that.data.nav.length - 2) {
       that.setData({
-        move: (320 - 40 * that.data.nav.length)
+        move: (320 - 60 * that.data.nav.length)
       })
     }
   },

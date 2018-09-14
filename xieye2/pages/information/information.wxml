@@ -70,5 +70,24 @@
   <swiper-item>
     <view>{{localarr[6]}}</view>
   </swiper-item>
+   <swiper-item>
+    <view>{{localarr[7]}}</view>
+  </swiper-item> <swiper-item>
+    <view>{{localarr[8]}}</view>
+  </swiper-item> <swiper-item>
+    <view>{{localarr[9]}}</view>
+  </swiper-item> <swiper-item>
+    <view>{{localarr[10]}}</view>
+  </swiper-item> <swiper-item>
+    <view>{{localarr[11]}}</view>
+  </swiper-item> <swiper-item>
+    <view>{{localarr[12]}}</view>
+  </swiper-item> <swiper-item>
+    <view>{{localarr[13]}}</view>
+  </swiper-item>
   <!-- 我是吼吼 -->
 </swiper>
+
+
+
+

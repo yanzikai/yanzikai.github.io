@@ -5,17 +5,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-    tel: ''
+    userid: '',
+    thumb: '',
+    tel: '',
+    vendors_name: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
     this.setData({
-      tel: options.tel
+      userid: options.userid
     })
-    console.log(this.data.tel)
+    console.log(this.data.userid)
+    var that = this;
+    wx.request({
+      url: 'https://xxt.yyrjw.com/app/Shaping/getMerch',
+      data: {
+        userid: that.data.userid
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data);
+        that.setData({
+          tel: res.data.result.merch.mobile,
+          thumb: res.data.result.merch.thumb,
+          vendors_name: res.data.result.merch.vendors_name
+        })
+      }
+    })
   },
 
   /**

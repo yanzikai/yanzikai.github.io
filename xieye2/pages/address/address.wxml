@@ -1,9 +1,8 @@
 <!--pages/address/address.wxml-->
-<!-- 选择地址  -->
 <scroll-view scroll-y class='viewbox'>
   <view class='vb'>
     <block wx:for="{{address}}" wx:key="index">
-      <view data-add="{{item}}" class="{{ item==current ? 'active':'' }}" bindtap='select' >{{item}}</view>
+      <view data-addid="{{item.id}}" data-addname="{{item.name}}" class="{{ item.name==currentname ? 'active':'' }}" bindtap='select' >{{item.name}}</view>
     </block>
   </view>
 </scroll-view>

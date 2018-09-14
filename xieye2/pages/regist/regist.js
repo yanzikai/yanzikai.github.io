@@ -14,7 +14,11 @@ Page({
   onLoad: function (options) {
   
   },
-
+  protocol: function(e) {
+    wx.navigateTo({
+      url: '../protocol/protocol'
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

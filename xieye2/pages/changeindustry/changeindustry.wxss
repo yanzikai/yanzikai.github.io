@@ -1,0 +1,76 @@
+/* pages/changeindustry/changeindustry.wxss */
+page{
+  background: #f5f5f5;
+}
+
+
+
+
+.bb{
+  position: relative;
+  padding-left: 24rpx;
+  background: #fff;
+}
+.phone{
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+  
+}
+.code{
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+  margin-bottom: 26rpx;
+}
+.phone input{
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+}
+.code input{
+  width: 400rpx;
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+}
+.code view{
+  width: 200rpx;
+  height: 52rpx;
+  text-align: center;
+  line-height: 52rpx;
+  border-radius: 40rpx;
+  border: 1rpx solid #e94a44;
+  position: absolute;
+  right: 25rpx;
+  top: 26rpx;
+  color: #e94a44;
+  font-size: 28rpx;
+}
+.t1{
+  font-size: 22rpx;
+  color: #858585;
+  padding-left: 26rpx;
+  line-height: 38rpx;
+}
+
+.btnbox{
+  margin-top: 90rpx;
+}
+.change{
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+  color: #b5b5b5;
+}
+.more{
+  position: absolute;
+  width: 24rpx;
+  height: 24rpx;
+  right: 28rpx;
+  top:44rpx;
+  border-right: 2rpx solid #c6c6c6;
+  border-bottom: 2rpx solid #c6c6c6;
+  transform: rotate(-45deg);
+}

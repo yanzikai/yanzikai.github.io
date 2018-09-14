@@ -63,6 +63,12 @@ Page({
       url: '../pdname/pdname'
     })
   },
+  // 行业变更
+  changeindustry: function () {
+    wx.navigateTo({
+      url: '../changeindustry/changeindustry'
+    })
+  },
   // 修改所在区域     ---todo
   address: function () {
     wx.navigateTo({

@@ -1,0 +1,117 @@
+/* pages/changeloginpwd/changeloginpwd.wxss */
+page{
+  background: #f5f5f5;
+}
+.bb{
+  position: relative;
+  padding-left: 24rpx;
+  background: #fff;
+}
+.phone{
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+  
+}
+.newpwd{
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+}
+.rpwd{
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+}
+.code{
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+  margin-bottom: 26rpx;
+}
+.phone input{
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+}
+.code input{
+  width: 400rpx;
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+}
+.code view{
+  width: 200rpx;
+  height: 52rpx;
+  text-align: center;
+  line-height: 52rpx;
+  border-radius: 40rpx;
+  border: 1rpx solid #e94a44;
+  position: absolute;
+  right: 25rpx;
+  top: 26rpx;
+  color: #e94a44;
+  font-size: 28rpx;
+}
+.btnbox{
+  margin-top: 90rpx;
+}
+.change{
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+  color: #b5b5b5;
+}
+.more{
+  position: absolute;
+  width: 24rpx;
+  height: 24rpx;
+  right: 28rpx;
+  top:44rpx;
+  border-right: 2rpx solid #c6c6c6;
+  border-bottom: 2rpx solid #c6c6c6;
+  transform: rotate(-45deg);
+}
+
+
+
+
+.newpwd{
+   height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+}
+.rpwd{
+   height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+}
+.newpwd input{
+  width: 400rpx;
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+}
+.rpwd input{
+  width: 400rpx;
+  height: 108rpx;
+  line-height: 108rpx;
+  font-size: 28rpx;
+}
+.pwd view{
+  width:100rpx;
+  height: 108rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.pwd view image{
+  height: 28rpx;
+  width: 40rpx;
+  position: absolute;
+  top: 40rpx;
+  right: 25rpx;
+}

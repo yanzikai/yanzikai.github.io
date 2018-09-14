@@ -1,0 +1,52 @@
+<!--pages/choosetype/choosetype.wxml-->
+<!-- 厂商类别  -->
+<view class='box'>
+  <view class='no1'>第一步：选择您的码段</view>
+  <view class='htype'>
+    <view class='active'>男段</view>
+    <view>女段</view>
+    <view>童段</view>
+  </view>
+  <view class='warn'><image src='../../img/warn.png'></image>如果你是做男鞋相关的就请选择男段</view>
+</view>
+<view class='br'></view>
+<view class='no2'>第二步：选择您的行业</view>
+<view class='indubox'>
+  <scroll scroll-y class='left'>
+    <view class='one active'>
+      鞋样店
+    </view>
+    <view class='ones active'>
+      <view class='one1 xia'>
+        鞋样店
+      </view>
+      <view class='two active'>
+        鞋底
+      </view>
+      <view class='two'>
+        鞋底
+      </view>
+      <view class='two'>
+        鞋底
+      </view>
+    </view>
+    <view class='one shang'>
+      鞋样店
+    </view>
+
+  </scroll>
+
+  <scroll scroll-y class='right'>
+    <view class='rbox'>
+      <image src='../../img/type1.png'></image>
+      <view class='ptr'>
+        <view class='ptrtitle'>账户支付</view>
+        <view class='ptrcon'>账户余额:2800元</view>
+      </view>
+      <view class='ck'><checkbox value="1"/></view>
+    </view>
+  </scroll>
+</view>
+<view class='fixed'>
+  <text class='text'>已选择： </text><text class='textcon'>鞋样店鞋样店鞋样店鞋样店鞋样店鞋样店鞋样店鞋样店鞋样店</text> <view class='sure'>确认选择</view>
+</view>
