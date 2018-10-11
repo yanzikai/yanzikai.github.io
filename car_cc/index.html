@@ -156,6 +156,39 @@
 			text-align: center;
 			padding: 0.1rem 0;
 		}
+
+		.pc .dbox{
+			width: 50%;
+			float: left;
+		}
+		.pc .dbox input{
+			width: 40%;
+		}
+		.pc .dbox select{
+			width: 40%;
+		}
+		.pc .dbox:nth-of-type(1){
+			text-align: right;	
+			margin-bottom: 40px;
+		}
+		.pc .dbox:nth-of-type(1) input{
+			margin-right: 20px;
+		}
+		.pc .dbox:nth-of-type(2){
+			text-align: left;
+			margin-bottom: 40px;
+		}
+		.pc .dbox:nth-of-type(3){
+			text-align: right;
+			margin-bottom: 40px;
+		}
+		.pc .dbox:nth-of-type(3) select{
+			margin-right: 20px;
+		}
+		.pc .dbox:nth-of-type(4){
+			text-align: left;
+			margin-bottom: 40px;
+		}
 	</style>
 </head>
 <body>
@@ -230,6 +263,22 @@
 		</div>
 	</div>
 	<script>
+		function getClientInfo(){  
+		   var userAgentInfo = navigator.userAgent;  
+		   var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+		   var agentinfo = null;  
+		   for (var i = 0; i < Agents.length; i++) {  
+		       if (userAgentInfo.indexOf(Agents[i]) > 0) { agentinfo = userAgentInfo; break; }  
+		   }  
+		   if(agentinfo){
+		        return agentinfo;
+		   }else{
+		   		console.log('PC')
+		   		$('.form').addClass('pc');
+		        return "PC"; 
+		   }     
+		}
+		getClientInfo();
 		// 提示框
 		(function($) {
 			$.extend({
