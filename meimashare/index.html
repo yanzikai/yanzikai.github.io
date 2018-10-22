@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>美妈讲绘本</title>
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="./rem.js"></script>
+	<style>
+		*{
+			padding: 0;
+			margin: 0; 
+		}
+		html,body{
+			height: 100%;
+		}
+		a{
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			text-decoration: none;
+			-webkit-tap-highlight-color:rgba(0,0,0,0);
+		}
+		input{
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			outline: none;
+			border: none;
+		}
+		.borderbox{
+		  -webkit-box-sizing: border-box;
+		  box-sizing: border-box;
+		}
+		body{
+			font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+			width: 100%;
+		    min-height: 100%;
+		    max-width: 750px;
+		    margin: 0 auto;
+		    overflow-x: hidden;
+		    overscroll-behavior-x: none;
+		    position: relative;
+		    font-size: 0.24rem;
+		    background: #f6f6f6;
+		}
+		.fix{
+			display: none;
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: rgba(0,0,0,.5);
+		}
+		.fix img{
+			position: absolute;
+			top: 20px;
+			right: 30px;
+			width: 120px;
+		}
+		.video{
+			width: 100%; 
+			display: block;
+		}
+		.upload{
+			height: 1.4rem;
+			width: 6.3rem;
+			background: url('./a.png') center no-repeat;
+			background-size: contain;
+			
+		}
+		.abox{
+			text-align: center;
+			padding-top: 0.3rem;
+
+		}
+		.abox a{
+			width: 6.3rem;
+			height: 100%;display: inline-block;line-height: 60px;text-align: center;font-style: normal;text-decoration: none; color: #f49503;
+		}
+		.text{
+			width: 5.9rem;
+			display: inline-block;
+		}
+		.textbox{
+			text-align: center;
+		}
+		.white{
+			background: #fff;
+			padding-bottom: 0.3rem;
+		}
+		.btmtext p{
+			text-align: center;
+			font-size: 0.34rem;
+			line-height: 0.74rem;
+			padding-top: 0.3rem;
+
+		}
+		.btmtext div{
+			padding: 0 0.4rem;
+			font-size: 0.28rem;
+			line-height: 0.46rem;
+			color: #3c3c3c;
+		}
+	</style>
+</head>
+<body>
+	<video class="video" src="a.mp4" controls="controls"></video>
+	<div class="fix"><img src="right.png" alt=""></div>
+	<div class="white">
+		<div class="abox">
+			<a class="upload" href="javascript:;" style="">&nbsp;</a>
+		</div>
+		<div class="textbox">
+			<img class="text" src="./t1.png" alt="">
+		</div>
+	</div>
+	<div class="btmtext">
+		<p>— 美妈讲绘本 —</p>
+		<div>
+			美妈讲绘本美妈讲绘本美妈讲绘本美妈讲绘本美妈讲绘本美妈讲绘本美妈讲绘本美妈讲绘本美妈讲绘本美妈讲绘本美妈讲绘本美妈讲绘本美妈讲绘本
+		</div>
+	</div>
+	<script>
+		function is_weixn(){  
+		    var ua = navigator.userAgent.toLowerCase();  
+		    if(ua.match(/MicroMessenger/i)=="micromessenger") {  
+		    	$('.fix').show();
+		        return true;  
+		    } else {  
+		        return false;  
+		    }  
+		}
+		$(function () {
+		    var u = navigator.userAgent, app = navigator.appVersion;
+		    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+		    var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		    if (isAndroid) {
+		        $('.upload').attr('href','http://www.yyrjw.com/app/xxt1130.apk')
+		        $('.upload').on('click',function(){
+					is_weixn()
+				}) 
+		    }
+		    if (isIOS) {
+		        $('.upload').attr('href','https://itunes.apple.com/cn/app/%E9%9E%8B%E8%AE%AF%E9%80%9A/id1319178119?mt=8')
+		    }
+		});  
+	</script>
+</body>
+</html>
