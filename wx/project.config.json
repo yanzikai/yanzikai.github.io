@@ -12,6 +12,8 @@
 	"appid": "wx28ec8be8a8b714f8",
 	"projectname": "winekey",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
