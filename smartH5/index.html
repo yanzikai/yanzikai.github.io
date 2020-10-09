@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>邀请</title>
+		<script src="./rem.js"></script>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0; 
+			}
+			html,body{
+				height: 100%;
+				
+			}
+			a{
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				text-decoration: none;
+				-webkit-tap-highlight-color:rgba(0,0,0,0);
+			}
+			input{
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				outline: none;
+				border: none;
+			}
+			.borderbox{
+			  -webkit-box-sizing: border-box;
+			  box-sizing: border-box;
+			}
+			body{
+				font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+				width: 100%;
+			    min-height: 100%;
+			    max-width: 750px;
+			    margin: 0 auto;
+			    overflow-x: hidden;
+			    overscroll-behavior-x: none;
+			    position: relative;
+			    font-size: 0.24rem;
+			    background: #f6f6f6;
+			}
+			/* *{
+				padding: 0;
+				margin:0;
+			}
+			html,body{
+				height: 100%;
+			} */
+			.invite{
+				background:url(bg.png) no-repeat;
+				background-size: 100% 100%;
+				width: 100%;
+				height: 100%;
+				height: 13.32rem;
+				position: relative;
+			}
+			.main{
+				margin-left: .8rem;
+				/* position: absolute; */
+				width:5.98rem;
+				height: 7.2rem;
+				/* margin-left: -2.98rem; */
+				text-align: center;
+				padding: 0.32rem 0 0;
+				padding-top: 5.52rem;
+			}
+			.title{
+				color: #007FFF;
+				font-weight:bold;
+				font-size: 0.36rem;
+				margin-bottom: 0.32rem;
+				margin-top: 0.12rem;
+			}
+			.type{
+				margin-top: 1rem;
+				display: none;
+			}
+			.type>div{
+				width:4rem;
+				height: 0.8rem;
+				border-radius: 0.4rem;
+				background: #fff;
+				color: #007FFF;
+				box-shadow: 0 0px 8px rgba(28,75,255,.4);
+				text-align: center;
+				line-height: 0.8rem;
+				margin:0 auto 0.3rem;
+				font-size: 0.32rem;
+			}
+			.type .activeType{
+				background: #5EAEFF;
+				box-shadow: 0 0px 8px rgba(28,75,255,.4);
+				color: #fff;
+			}
+			.type .btn{
+				background: linear-gradient(to right, #1C4BFF, #5EAEFF);
+				margin-top: 1.6rem;
+				color: #fff;
+			}
+			.registe{
+				/* display: none; */
+				padding: 0 .48rem 0;
+			}
+			.common{
+				background: #F5F6FA;
+				border-radius: 0.4rem;
+				margin-bottom: 0.3rem;
+				padding:0 0.64rem;
+				box-sizing: border-box;
+			}
+			.common input{
+				border: none;
+				background: #F5F6FA;
+				border-radius: 0.4rem;
+				height: 0.8rem;
+				line-height: 0.8rem;
+				width: 100%;
+				font-size: .28rem;
+				box-sizing: border-box;
+				outline: none;
+				display: block;
+			}
+			.common .verify{
+				color: #007FFF;
+				font-size: 0.28rem;
+			}
+			.common .xia{
+				width: 0.34rem;
+				height: 0.34rem;
+			}
+			.chooseBox{
+				position: relative;
+			}
+			.chooseBox .typeList{
+				position: absolute;
+				top: 0.8rem;
+				left: 0;
+				width: 100%;
+				background: #fff;
+				box-shadow: 0 2px 0.16rem rgba(0,0,0,.3);
+				display: none;
+			}
+			.chooseBox .typeList>div{
+				padding: 0.2rem 0;
+				color: #333;
+				font-size: 0.28rem;
+			}
+			.chooseBox .typeList>.blue{
+				color: #3389FF;
+			}
+			.chooseBox .typeList .flex{
+				justify-content: space-around;
+				border-top: 1px solid #F5F6FA;
+			}
+			.chooseBox .typeList .flex div{
+				font-size: 0.28rem;
+				color: #007FFF;
+			}
+			.chooseBox .typeList .flex div:first-child{
+				color: #999;
+			}
+			.flex{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			.flex input{
+				width: 60%;
+			}
+			.btn{
+				width: 5rem;
+				height: 0.8rem;
+				line-height: 0.8rem;
+				color: #fff;
+				background: linear-gradient(to right, #1C4BFF, #5EAEFF);
+				box-shadow: 0px 2px 0.2rem 0px rgba(51, 99, 255, 0.4);
+				border-radius: 0.4rem;
+				font-size: 0.32rem;
+			}
+			.agree{
+				color: #828899;
+				font-size: 0.28rem;
+				margin-top: 0.36rem;
+			}
+			.agree span{
+				color: #3389FF;
+			}
+			.agree img{
+				width: 0.3rem;
+				height: 0.3rem;
+				vertical-align: middle;
+				margin-top: -2px;
+				margin-right: 5px;
+			}
+			.tips{
+				position: absolute;
+				width: 2.4rem;
+				min-height: 0.8rem;
+				border-radius: 5px;
+				background: #333333;
+				color: #fff;
+				font-size: 0.28rem;
+				text-align: center;
+				line-height: 0.8rem;
+				top:2rem;
+				left: 50%;
+				margin-left: -1.2rem;
+				box-shadow: 0 2px 8px rgba(0,0,0,.3);
+				display: none;
+				padding:0 0.2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="invite">
+			<div class="main">
+				<div class="title">快速注册</div>
+				<div class="type">
+					<!-- <div class="typeItem">资源合伙人</div>
+					<div class="typeItem">营销合伙人</div> -->
+					<div class="btn">下一步</div>
+				</div>
+				<div class="registe">
+					<div class="common">
+						<input type="text" class="name" placeholder="请输入姓名"/>
+					</div>
+					<div class="common chooseBox">
+						<div class="flex chooseChildType">
+							<input type="text" class="partnerType" disabled placeholder="选择合伙人类型"/>
+							<img src="xia.png" class="xia">
+						</div>
+						<div class="typeList">
+							<!-- <div class="">哈哈哈</div> -->
+							<!-- <div class="flex">
+								<div class="operBtn cancleBtn">取消</div>
+								<div class="operBtn sureBtn">确定</div>
+							</div> -->
+						</div>
+					</div>
+					<div class="common">
+						<input type="number" class="tel" maxlength="11" placeholder="请输入手机号"/>
+					</div>
+					<div class="common flex">
+						<input type="number" class="verifyCode" placeholder="输入验证码"/>
+						<div class="verify">获取验证码</div>
+					</div>
+					<div class="btn registeBtn">立即注册</div>
+					<div class="agree"><img src="agree2.png" >同意<span>《用户协议》</span></div>
+				</div>
+			</div>
+			<div class="tips">哈哈哈哈</div>
+		</div>
+		<script src="jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//定义数据
+			var countSeconds=60
+			var typeArr=[]
+			var typeChildArr=[]
+			var agreement=true
+			$(function(){
+				let alreadyChoose=[]
+				let partnerId=''
+				//请求合伙人类型
+				// getTypeList()
+				let chooseType=''
+				//选择合伙人类型的样式
+				$('.typeItem').click(function(){
+					console.log("点击事件")
+					$('.typeItem').removeClass("activeType")
+					$(this).addClass("activeType")
+					chooseType=$(this).html()
+				})
+				//选择类型和注册的显示切换（点击“下一步”,"完成"）
+				$('.btn').click(function(){
+					if(!chooseType){
+						showTip('请选择合伙人')
+					}else{
+						$('.type').css('display','none')
+						$('.registe').css('display','block')
+						//获取合伙人类型下的详细类型
+						getChildType(partnerId)
+					}
+				})
+				//选择合伙人类型
+				$('body').on('click','.typeItem',function(){
+					partnerId=$(this).attr('partnerid')
+					console.log('选择的合伙人',partnerId)
+				})
+				//选择合伙人下的详细类型
+				$('body').on('click','.childItem',function(){
+					//资源合伙人可多选
+					if(partnerId==5){
+						if($(this).hasClass('blue')){
+							$(this).removeClass('blue')
+						}else{
+							$(this).addClass('blue')
+						}
+						typeChildArr.map((val,index)=>{
+							console.log("选择aaa",val['title'],$(this).html())
+							if(val['title']==$(this).html()){
+								val['choose']=!val['choose']
+							}
+						})
+						console.log("选中的多个",typeChildArr)
+					}else{
+						//营销合伙人单选
+						$('.childItem').removeClass('blue')
+						$(this).addClass('blue')
+					}
+				})
+				//是否同意用户协议
+				$('.agree').click(function(){
+					agreement=!agreement
+					if(agreement){
+						$(this).find('img').attr('src','agree2.png')
+					}else{
+						$(this).find('img').attr('src','agree.png')
+					}
+				})
+				//选择详细合伙人列表的显示和隐藏
+				$('.chooseChildType').click(function(){
+					$('.typeList').css('display','block')
+				})
+				$('body').on('click','.operBtn',function(){
+					$('.typeList').css('display','none')
+				})
+				//取消按钮
+				$('body').on('click','.cancleBtn',function(){
+					typeChildArr.map((val,index)=>{
+						val['choose']=false
+					})
+				})
+				//确定按钮
+				$('body').on('click','.sureBtn',function(){
+					alreadyChoose=[]
+					typeChildArr.map((val,index)=>{
+						if(val['choose']){
+							alreadyChoose.push(val['title'])
+						}
+					})
+					$('.partnerType').val(alreadyChoose.join(','))
+				})
+				//获取验证码
+				$('.verify').click(function(){
+					if(!$('.tel').val()){
+						showTip('请输入手机号')
+					}else if(!(/^1[3456789]\d{9}$/.test($('.tel').val()))){
+						showTip('请输入标准手机号')
+					}else{
+						if($('.verify').html()=="获取验证码"){
+							getVerify()
+						}else{
+							showTip('短时间内请勿重复获取')
+						}
+					}
+				})
+				//注册提交
+				$('.registeBtn').click(function(){
+					if(!$('.name').val()){
+						showTip('请输入姓名')
+					}else if(alreadyChoose.length==0){
+						showTip('请选择合伙人类型')
+					}else if(!$('.tel').val()){
+						showTip('请输入手机号')
+					}else if(!(/^1[3456789]\d{9}$/.test($('.tel').val()))){
+						showTip('请输入标准手机号')
+					}else if(!$('.verifyCode').val()){
+						showTip('请输入验证码')
+					}else if(!agreement){
+						showTip('请同意用户协议')
+					}else{
+						let params={
+							partnername:$('.name').val(),
+							partnerfatherid:'202009151458236091',
+							partnertel:$('.tel').val(),
+							partnertype:partnerId==5?'资源':'营销',
+							partnerlabe:alreadyChoose.join(','),
+							smscode:$('.verifyCode').val()
+						}
+						myAjax('/mobile/h5/register','post',params,function(res){
+							alert('注册成功')
+						})
+					}
+				});
+				
+			})
+			function showTip(tip){
+				$('.tips').css('display','block')
+				$('.tips').html(tip)
+				setTimeout(function(){
+					$('.tips').css('display','none')
+				},2000)
+			}
+			function getVerify(){
+				const params={
+					mobile:$('.tel').val()
+				}
+				myAjax('/sys/sendregsms','get',params,function(res){
+					console.log("获取验证码",res)
+					countDown()
+				})
+			}
+			function getChildType(partnerId){
+				typeChildArr=[]
+				const params={
+					baseid:partnerId
+				}
+				myAjax('/mobile/sys/getdatabaseidconfig','get',params,function(res){
+					res.Data.map((val,index)=>{
+						val['choose']=false
+					})
+					typeChildArr=res.Data
+					console.log("获取类型",res.Data,typeChildArr)
+					let str=''
+					for(let i=0;i<typeChildArr.length;i++){
+						str+='<div class="childItem">'+typeChildArr[i]['title']+'</div>'
+					}
+					str+='<div class="flex"><div class="operBtn cancleBtn">取消</div><div class="operBtn sureBtn">确定</div></div>'
+					$('.typeList').html(str)
+				})
+			}
+			function getTypeList(){
+				const params={
+					title:'partnertype'
+				}
+				myAjax('/mobile/configuration/getconfigurationid','get',params,function(res){
+					console.log("获取类型",JSON.parse(res.Data))
+					typeArr=JSON.parse(res.Data)
+					let str=''
+					for(let i=0;i<typeArr.length;i++){
+						str+='<div class="typeItem" partnerid='+typeArr[i]['id']+'>'+typeArr[i]['title']+'合伙人</div>'
+					}
+					$('.type').prepend(str)
+				})
+			}
+			function myAjax(url,type,params,callback){
+				$.ajax({
+					type: type,
+					headers: {
+						'Accept': "application/json; charset=utf-8",
+						'Content-Type': 'application/x-www-form-urlencoded'
+					},
+					async: false,
+					url: 'http://192.168.101.12:8087/api'+url,
+					data: params,
+					success: function (res) {
+						if(res.Status==0){
+							callback(res)
+						}else{
+							$('.tip').html(res.Message)
+						}
+					}
+				});
+			}
+			function countDown(){
+				var timer=''
+				if(countSeconds==0){
+					$('.verify').html('获取验证码')
+				    countSeconds=60;
+				    return;
+				}else{
+					// countTip=countSeconds+'S'
+					countSeconds=countSeconds-1;
+					$('.verify').html(countSeconds+'S')
+				}
+				timer=setTimeout(()=>{
+					countDown()
+				},1000)
+			}
+		</script>
+	</body>
+</html>
