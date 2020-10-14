@@ -1,0 +1,15 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.canvasbox{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 20px 0;
+}
+#myCanvas{
+	background: #963;
+	border-radius: 10px;
+}
