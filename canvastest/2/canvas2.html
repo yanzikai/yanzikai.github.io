@@ -80,6 +80,18 @@
 				ctx.arc(x, y, 10, 0, 2 * Math.PI)
 				ctx.fill()
 			}
+			ctx.fillStyle = '#111';
+			arcle(4, 4);
+			arcle(4, 12);
+			arcle(12, 12);
+			arcle(8, 8);
+			arcle(12, 4);
+			function arcle(x, y) {
+			    ctx.beginPath();
+			    ctx.arc(x*25, y*25, 4, 0, 2 * Math.PI);
+			    ctx.closePath();
+			    ctx.fill();
+			}
 			document.querySelector('button').addEventListener('click',function(){
 				ctx.clearRect(0,0,400,400)
 				// 绘制棋盘 15*15
@@ -93,6 +105,12 @@
 					ctx.lineTo(375, 25 * i);
 					ctx.stroke();
 				}
+				ctx.fillStyle = '#111';
+				arcle(4, 4);
+				arcle(4, 12);
+				arcle(12, 12);
+				arcle(8, 8);
+				arcle(12, 4);
 				if(chess_rec.length>0){
 					chess_rec.pop()
 					chess = chess_rec.length%2
