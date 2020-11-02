@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>邀请</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<script src="js/swiper.min.js"></script>
+		<script src="js/swiper.animate.min.js"></script>
+		<script src="js/rem.js"></script>
+		<script src="https://lib.baomitu.com/jquery/2.2.4/jquery.min.js"></script>
+		<!--<link rel="stylesheet" href="/dist/css/swiper.min.css">
+<link rel="stylesheet" href="/dist/css/animate.min.css">
+<script src="/dist/js/swiper.min.js"></script>
+<script src="/dist/js/swiper.animate.min.js"></script>-->
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			html,
+			body {
+				height: 100%;
+			}
+			body {
+				font-family: "microsoft yahei";
+				max-width: 750px;
+				margin: 0 auto;
+				overflow-x: hidden;
+				overscroll-behavior-x: none;
+				position: relative;
+				font-size: 0.24rem;
+				background: #f6f6f6;
+			}
+
+			.swiper-container {
+				width: 100%;
+				height: 100%;
+				background: #fff;
+				background: url(upload/indexbg.png) no-repeat left top;
+				background-size: 100% 100%;
+				background-size: cover;
+			}
+
+			.swiper-slide {}
+
+			.swiper-slide {
+				width: 100%;
+				height: 100%;
+				background: url(upload/indexbg.png) no-repeat left top;
+				background-size: 100% 100%;
+				background-size: cover;
+				/* background: url(upload/indexbg.png) no-repeat left top;
+				background-size: 100% 100%; */
+			}
+			.otherbg{
+				background: url(images/otherbg.png) no-repeat left top;
+			}
+			img {
+				display: block;
+			}
+			.swiper-pagination-bullet {
+				width: 6px;
+				height: 6px;
+				background: #fff;
+				opacity: .4;
+			}
+			.swiper-pagination-bullet-active {
+				opacity: 1;
+			}
+			@-webkit-keyframes rotate{
+			    100% {
+			           transform: rotate(1turn);
+			        }
+			}
+			.animation-start{
+			    animation: rotate 5s linear infinite;
+			}
+			@-webkit-keyframes scales {
+				0% {
+					transform: scale(1);
+				}
+			
+				50% {
+					transform: scale(1.1);
+				}
+			
+				100% {
+					transform: scale(1);
+				}
+			}
+			@-webkit-keyframes tipmove {
+				0% {
+					bottom: 1rem;
+					opacity: 0
+				}
+
+				50% {
+					bottom: 1.1rem;
+					opacity: 1
+				}
+
+				100% {
+					bottom: 1rem;
+					opacity: 0
+				}
+			}
+			.ani {
+				/* position: absolute; */
+			}
+			.txt {
+				position: absolute;
+			}
+			#array {
+				cursor: none;
+				position: absolute;
+				z-index: 999;
+				-webkit-animation: tipmove 1.5s infinite ease-in-out;
+			}
+			.suspended{
+			    animation-play-state: paused;
+			}
+			#video{
+				
+			}
+			#mc_play{
+				right: .6rem;
+				z-index:10;width: 0.6rem;height: 0.6rem;background: #fff;position: absolute;
+				top: .6rem;
+			}
+			
+			.index1{
+				height: 0.30rem;
+				font-size: 0.30rem;
+				font-weight: 400;
+				color: #D7E1E3;
+				padding-left: 0.35rem;
+				margin-top: 2.02rem;
+			}
+			.index2{
+				margin-top: 0.23rem;
+				margin-left: 0.35rem;
+				width: 1.78rem;
+				height: 0.08rem;
+				background: #FFFFFF;
+			}
+			.namebox{
+				padding-top: 0.22rem;
+				padding-left: 0.35rem;
+				color: #fff;
+				font-weight: 700;
+				display: inline-block;
+			}
+			.name{
+				
+			}
+			.name1{
+				font-size: 0.78rem;
+				line-height: 0.8rem;
+				font-weight: 700;
+			}
+			.name2{
+				font-size: 0.5rem;
+				line-height: 0.8rem;
+			}
+			.name3{
+				text-align: center;
+				font-size: 0.32rem;
+				line-height: 0.3rem;
+			}
+			.indexp1{
+				margin-top: 1.5rem;
+				padding-left: 0.35rem;
+				color: #D7E1E3;
+				font-size: 0.28rem;
+				line-height: 0.32rem;
+				margin-bottom: 0.16rem;
+			}
+			.indexp2{
+				margin-left: 0.35rem;
+				width: 3.5rem;
+				height: 2px;
+				/* border-bottom: 1px dashed #D7E1E3; */
+				margin-bottom: 0.16rem;
+				background: url(images/index1.png) no-repeat;
+				background-size: 100% 2px ;
+			}
+			.indexp3{
+				padding-left: 0.35rem;
+				color: #D7E1E3;
+				font-size: 0.24rem;
+				line-height: 0.24rem;
+				margin-bottom: 0.16rem;
+			}
+			.indexp3{
+				padding-left: 0.35rem;
+				color: #D7E1E3;
+				font-size: 0.24rem;
+				line-height: 0.24rem;
+				margin-bottom: 0.16rem;
+			}
+			.indeximg{
+				position: absolute;
+				height: 5.2rem;
+				width: 2.12rem;
+				top: 1.7rem;
+				right: .43rem;
+				
+			}
+			.indeximg img{
+				height: 5.2rem;
+				width: 2.12rem;
+				-webkit-animation: scales 1.5s infinite ease-in-out;
+			}
+			.finger{
+				position: absolute;
+				bottom: 3rem;
+				left: 50%;
+				margin-left: -0.6rem;
+			}
+			.finger img{
+				width: 1.2rem;
+				height: 1.5rem;
+				-webkit-animation: scales 1.5s infinite ease-in-out;
+				
+			}
+			
+			
+			
+			.inviteimg{
+				width: 5.50rem;
+				height: 1px;
+				object-fit: cover;
+				position: absolute;
+				left: 50%;
+				margin-left: -2.75rem;
+				top: 0.94rem;
+			}
+			.title{
+				height: 0.39rem;
+				font-size: 0.42rem;
+				font-weight: 400;
+				color: #D7E1E3;
+				padding-top: 0.66rem;
+				width: 100%;
+				text-align: center;
+			}
+			.title1{
+				
+			}
+			.title2{
+				line-height: 0.16rem;
+				font-size: 0.18px;
+				font-weight: 400;
+				color: #D7E1E3;
+			}
+			.overbg{
+				width: 6.08rem;
+				position: absolute;
+				left: 50%;
+				height: 10.5rem;
+				margin-left: -3.04rem;
+				background: url(./images/overbg1.png) no-repeat;
+				background-size: 100% 100% ;
+				top: 1.72rem;
+			}
+			.overbg2{
+				background: url(./images/overbg2.png) no-repeat;
+				background-size: 100% 100% ;
+			}
+			.overtext{
+				padding:1.36rem 0.58rem 0;
+				text-indent: 20px;
+				letter-spacing: 2px;
+				color: #110246;
+				line-height: 0.82rem;
+				font-size: 0.28px;
+			}
+			.btmtext{
+				position: absolute;
+				bottom: 0.42rem;
+				left: 0;
+				text-align: center;
+				width: 100%;
+				font-size: 0.22rem;
+				color: #E8E6EE;
+			}
+			.overtext2{
+				padding:0 0.58rem 0;
+				color: #fff;
+			}
+			.stitle{
+				margin-top: 1rem;
+				font-size: 0.34rem;
+				font-weight: 700;
+				line-height: 0.4rem;
+				color: #fff;
+				position: relative;
+				padding-left: 0.26rem;
+			}
+			.stitle:after{
+				height: 0.40rem;
+				width: 0.13rem;
+				background: #FFB87A;
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			.stext{
+				padding-left: 0.26rem;
+				margin-top: 0.44rem;
+				font-size: 0.26rem;
+			}
+			.people{
+				position: relative;
+				margin-top: 3rem;
+				height: 2.2rem;
+				width: 6rem;
+				margin-left: 0.7rem;
+				
+				
+			}
+			.pbtm{
+				width: 100%;
+				position: absolute;
+				left: 0.2rem;
+				top: 0;
+				height: 100%;
+				background: #2a1d5b;
+				transform: skewX(-10deg);
+			}
+			.pbtmtext{
+				padding-left: 2.4rem;
+				color: #fff;
+				position: relative;
+				z-index: 10;
+				text-align: center;
+			}
+			.headimg{
+				position: absolute;
+				bottom: 0 ;
+				left: 0;
+				height: 3.43rem;
+				width: 2.28rem;
+				display: block;
+				z-index: 10;
+			}
+			.borderimg{
+				position: absolute;
+				bottom: 0.25rem ;
+				left: 0.13rem;
+				height: 3.36rem;
+				width: 2.33rem;
+				display: block;
+				z-index: 4;
+			}
+			.pname1{
+				padding-top: .55rem;
+				font-size: 0.28rem;
+				padding-bottom: .24rem;
+			}
+			.pname2{
+				font-size: .24rem;
+				line-height: .3rem;
+			}
+			.pname3{
+				font-size: .24rem;
+				line-height: .3rem;
+			}
+			.guest{
+				padding: 0.5rem 0.9rem 0;
+				height: 1.7rem;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+			.guest img{
+				height: 1.7rem;
+				width: 1.18rem;
+				object-fit: cover;
+				
+			}
+			.gleft{
+				justify-content: flex-start;
+			}
+			.gright{
+				justify-content: flex-end;
+			}
+			.guest .flex{
+				height: 100%;
+				color: #fff;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			.gright img{
+				padding-left: 0.2rem;
+			}
+			.gright .flex{
+				text-align: right;
+			}
+			.gleft img{
+				padding-right: 0.2rem;
+			}
+			.flexname{
+				font-size: 0.5rem;
+			}
+			.desc{
+				font-size: 0.22rem;
+			}
+			
+			.lasttitle{
+				font-size: 0.34rem;
+				padding-top: 2.9rem;
+				text-align: center;
+				width: 100%;
+				color: #fff;
+			}
+			.lasttext{
+				position: relative;
+				margin-top: 1.02rem;
+				text-align: center;
+				color: #fff;
+				height: 0.57rem;
+				line-height: 0.57rem;
+			}
+			.lasttext .lasttext1{
+				position: absolute;
+				width: 80%;
+				left: 10%;
+				transform: skewX(-10deg);
+				background: #2A1C59;
+				height: 0.57rem;
+				
+			}
+			.lasttext .lasttext2{
+				position: relative;
+				z-index: 10;
+				font-size: 0.26rem;
+			}
+			
+			.lasttitle2{
+				font-size: 0.34rem;
+				padding-top: 1.3rem;
+				text-align: center;
+				width: 100%;
+				color: #fff;
+			}
+			.lasttext2{
+				position: relative;
+				margin-top: 0.3rem;
+				text-align: center;
+				color: #fff;
+				height: 0.57rem;
+				line-height: 0.57rem;
+			}
+			.lasttext2 .lasttext1{
+				position: absolute;
+				width: 80%;
+				left: 10%;
+				transform: skewX(-10deg);
+				background: #2A1C59;
+				height: 0.57rem;
+				
+			}
+			.lasttext2 .lasttext2{
+				position: relative;
+				z-index: 10;
+				font-size: 0.26rem;
+			}
+			.lasttext2width{
+				position: relative;
+				margin-top: 0.3rem;
+				text-align: center;
+				color: #fff;
+				height: 1rem;
+				padding: 0.1rem 0;
+				line-height: 0.5rem;
+			}
+			.lasttext2width .lasttext1{
+				position: absolute;
+				width: 80%;
+				left: 10%;
+				transform: skewX(-10deg);
+				background: #2A1C59;
+				padding: 0.1rem 0;
+				height: 1rem;
+				
+			}
+			.lasttext2width .lasttext2{
+				position: relative;
+				margin-top: 0.2rem;
+				z-index: 10;
+				line-height: 0.4rem;
+				font-size: 0.26rem;
+			}
+			.lp-title{
+				text-align: center;
+				padding-top: 2.6rem;
+				font-weight: 700;
+				margin-bottom: 3rem;
+			}
+			.lp-title .lp-name1{
+				font-size: 0.4rem;
+				line-height: 0.52rem;
+				color: #D7E1E3;
+			}
+			.lp-title .lp-name2{
+				font-size: 0.4rem;
+				line-height: 0.52rem;
+				color: #fff;
+				letter-spacing:0.11rem;
+			}
+			.textimg{
+				padding-left: 0.8rem;
+				height: 1rem;
+				margin-bottom: 0.34rem;
+			}
+			.textimg img{
+				width: 4.33rem;
+				height: 1rem;
+			}
+			.line{
+				width:6.5rem;
+				margin-left: 0.5rem;
+				height: 0;
+				border-bottom: 1px solid #fff;
+				margin-bottom: 0.3rem;
+			}
+			
+			.lp-title2{
+				text-align: left;
+				font-size: 0.3rem;
+				padding-left: 0.76rem;
+			}
+			.lp-title2 .lp-name1{
+				line-height: 0.36rem;
+				color: #D7E1E3;
+				margin-bottom: 0.16rem;
+			}
+			.lp-title2 .lp-name2{
+				line-height: 0.36rem;
+				color: #fff;
+			}
+			
+			
+			.loadww{
+			    position: absolute;
+			    width: 100%;
+			    height: 100%;
+			    top: 0;
+			    left: 0;
+			    z-index: 99999;
+			    background: #f0fdff;
+			}
+			.progress{
+				    width: 3.6rem;
+				    height: 0.3rem;
+				    position: absolute;
+				    left: 1.9rem;
+				    top: 4.8rem;
+				    right: auto;
+				    margin: auto;
+				    border-radius: 0.2rem;
+			}
+			.percent{
+				    display: block;
+				    margin: 0 auto;
+				    width: 100%;
+				    height: 30px;
+				    font-size: 0.3rem;
+				    color: #4b64a4;
+				    position: absolute;
+				    text-align: center;
+				    top: 0.5rem;
+				    font-weight: bold;
+				    left: 0.1rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- <div class="loadww" >
+		      <div class="progress">
+		          <div class="percent">loading...</div>
+		      </div>
+		  </div> -->
+		<div class="swiper-container">
+			<!-- 音乐 -->
+			<!-- <div id="mc_play"  class="music animation-start" style="">
+				<img style="width: 0.6rem;height: 0.6rem;" src="./images/icon_music_on2.png" alt="">
+			</div>
+			<audio autoplay="autoplay" id="musicfx" loop="loop">
+			      <source src="https://www.w3school.com.cn/i/song.mp3" type="audio/mpeg">
+				  <source src="https://www.w3school.com.cn/i/song.ogg" type="audio/ogg" />
+			</audio>  -->
+			
+			<div class="swiper-wrapper">
+				<!-------------slide1----------------->
+				<section class="swiper-slide">
+					<!-- <div class="ani" style="color: #fff;" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s">杭州高新区（滨江）</div> -->
+					<div class="fixed1" style="position: relative;z-index: 10;width: 100%;height: 100%;">
+						<div class="ani index1" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".5s">杭州高新区（滨江）</div>
+						<div class="ani index2" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s"></div>
+						<div class="ani namebox">
+							<div class="name">
+								<span style="display: inline-block;" class="ani name1" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".5s">2020</span>
+								<span style="display: inline-block;" class="ani name2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">第十五期</span>
+							</div>
+							<div class="ani name3" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">
+						        硅谷精英沙龙暨人才活动周
+							</div>
+						</div>
+						<div class="ani indexp1" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".5s">“滨”朋远至· “江”成大业</div>
+						<div class="ani indexp2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s"></div>
+						<div class="ani indexp3" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".5s">杭州市滨江区长江南路336号</div>
+						<div class="ani indexp3" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">2020年11月9日10:00—12:00</div>
+						
+						<div class="indeximg ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="2s" swiper-animate-delay=".5s">
+							<img src="./images/INVITATION.png" >
+						</div>
+						<div class="finger ani" id="play" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">
+							<img src="images/finger.png" >
+						</div>
+					</div>
+					<img class="fixed1" src="./upload/indexbg.png"  style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 2;">
+					<video id="video" style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 1;">
+					    <source type="video/mp4" src="./video/2.mp4">
+					</video>
+				</section>
+				<!---------------slide2-------------->
+				<!-- <section class="swiper-slide">
+					<video style="width: 100%;height: 100%;">
+					    <source type="video/mp4" src="./video/2.mp4">
+					</video>
+				</section> -->
+				<!----------------slide3-------------->
+				<section class="swiper-slide otherbg">
+					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<div class="title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="title1">诚挚·邀请</div>
+						<div class="title2">Sincere invitation</div>
+					</div>
+					
+					<div class="ani overbg" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+                         <div class="ani overtext" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">
+							 高新三十正当潮，滨江搏击创一流。杭州高新区（滨江）汇聚天下英才，勇当窗口，打造一流人才生态区。为继续在滨江和人才之间构筑坚实的桥梁，高新区（滨江）将于11月9日举办第十五期硅谷精英沙龙暨人才活动周。杭州高新区（滨江）第十五期硅谷精英沙龙暨人才活动周诚邀君来！
+						 </div>
+					</div>
+					<div class="ani btmtext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">
+						杭州高新技术产业开发区（滨江）党委、管委会、政府
+					</div>
+				</section>
+				<!-------------slide4----------------->
+				<section class="swiper-slide otherbg">
+					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<div class="title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="title1">活动·流程</div>
+						<div class="title2">activity  process</div>
+					</div>
+					
+					<div class="ani overbg overbg2" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="overtext2">
+							<div class="ani stitle" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">潮起</div>
+							<div class="ani stext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">1、滨江人才品牌宣传片全球首发</div>
+							<div class="ani stext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">2、人才TALK SHOW脱口秀</div>
+							<div class="ani stitle" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">潮涌</div>
+							<div class="ani stext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">3、人才新政重磅发布</div>
+							<div class="ani stext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">4、“顶尖人才战略专家伙伴”及公推项目制度震撼发布</div>
+							<div class="ani stext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".9s">5、阿里、网易 巨头领衔企业HR智库 联盟</div>
+							<div class="ani stitle" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">潮汇</div>
+							<div class="ani stext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">6、滨江“才财说”  人才与资本的碰撞</div>
+						</div>
+					</div>
+				</section>
+				<!-------------slide5----------------->
+				<section class="swiper-slide otherbg">
+					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<div class="title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="title1">脱口秀·嘉宾</div>
+						<div class="title2">TALK SHOW GUEST</div>
+					</div>
+					<div class="ani people" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<img class="ani headimg" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s" src="images/p1.png" style="object-fit: contain;">
+						<img class="ani borderimg" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s" src="images/border.png" >
+						<div class="pbtm">
+							
+						</div>
+						<div class="ani pbtmtext">
+							<div class="ani pname1"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">康达维</div>
+							<div class="ani pname2"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">杭州普利复健科技有限公司</div>
+							<div class="ani pname3"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">联合创始人</div>
+						</div>
+					</div>
+					<div class="ani people" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<img class="ani headimg" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s" src="images/p1.png" style="object-fit: contain;">
+						<img class="ani borderimg" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s" src="images/border.png" >
+						<div class="pbtm">
+							
+						</div>
+						<div class="ani pbtmtext">
+							<div class="ani pname1"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">康达维</div>
+							<div class="ani pname2"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">杭州普利复健科技有限公司</div>
+							<div class="ani pname3"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">联合创始人</div>
+						</div>
+					</div>
+				</section>
+				<!-------------slide6----------------->
+				<section class="swiper-slide otherbg">
+					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<div class="title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="title1">才财说·嘉宾</div>
+						<div class="title2">caicaishuo guest</div>
+					</div>
+					<div class="ani guest gleft" style="padding-top: 0.8rem;">
+						<img src="images/p1.png" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".1s" >
+						<div class="flex">
+							<div class="ani flexname" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">尤其敏</div>
+							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">最美浙江人、最美科技人</div>
+							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".7s">杭州优思达生物技术有限公司创始人</div>
+						</div>
+					</div>
+					<div class="ani guest gright" >
+						<div class="flex">
+							<div class="ani flexname" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">尤其敏</div>
+							<div class="ani desc" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".4s">最美浙江人、最美科技人</div>
+							<div class="ani desc" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".7s">杭州优思达生物技术有限公司创始人</div>
+						</div>
+						<img src="images/p1.png" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".1s">
+					</div>
+					<div class="ani guest gleft"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".1s" >
+						<img src="images/p1.png" class="ani">
+						<div class="flex">
+							<div class="ani flexname" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">尤其敏</div>
+							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">最美浙江人、最美科技人</div>
+							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".7s">杭州优思达生物技术有限公司创始人</div>
+						</div>
+					</div>
+					<div class="ani guest gright"   >
+						<div class="flex">
+							<div class="ani flexname" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">尤其敏</div>
+							<div class="ani desc" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".4s">最美浙江人、最美科技人</div>
+							<div class="ani desc" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".7s">杭州优思达生物技术有限公司创始人</div>
+						</div>
+						<img src="images/p1.png" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".1s">
+					</div>
+					<div class="ani guest gleft"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".1s" >
+						<img src="images/p1.png" class="ani">
+						<div class="flex">
+							<div class="ani flexname" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">尤其敏</div>
+							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">最美浙江人、最美科技人</div>
+							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".7s">杭州优思达生物技术有限公司创始人</div>
+						</div>
+					</div>
+				</section>
+				<!-------------slide7----------------->
+				<section class="swiper-slide otherbg">
+					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<div class="title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="title1">活动·单位</div>
+						<div class="title2">activity company</div>
+					</div>
+					<div class="ani lasttitle" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						主办单位
+					</div>
+					<div class="ani lasttext"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="lasttext1">
+							
+						</div>
+						<div class="ani lasttext2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">
+							杭州高新技术产业开发区（滨江）党委
+						</div>
+					</div>
+					<div class="ani lasttext"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="lasttext1">
+							
+						</div>
+						<div class="ani lasttext2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">
+							杭州高新技术产业开发区（滨江）党委
+						</div>
+					</div>
+					<div class="ani lasttext"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="lasttext1">
+							
+						</div>
+						<div class="ani lasttext2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">
+							杭州高新技术产业开发区（滨江）党委
+						</div>
+					</div>
+				</section>
+				<!-------------slide8----------------->
+				<section class="swiper-slide otherbg">
+					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<div class="title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="title1">活动·地址</div>
+						<div class="title2">activity location</div>
+					</div>
+					<div class="ani lasttitle2" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						活动时间
+					</div>
+					<div class="ani lasttext2" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="lasttext1"></div>
+						<div class="ani lasttext2" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".4s">
+							杭州高新技术产业开发区（滨江）党委
+						</div>
+					</div>
+					<div class="ani lasttitle2" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						活动时间
+					</div>
+					<div class="ani lasttext2width" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="lasttext1"></div>
+						<div class="ani lasttext2" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".4s">
+							杭州高新技术产业开发区（滨江）党委 <br>
+							杭州高新技术产业开发区（滨江）党委
+						</div>
+					</div>
+					<div class="ani lasttitle2" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						活动时间
+					</div>
+					<div class="ani lasttext2" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="lasttext1"></div>
+						<div class="ani lasttext2" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".4s">
+							杭州高新技术产业开发区（滨江）党委
+						</div>
+					</div>
+				</section>
+				<!-------------slide9----------------->
+				<section class="swiper-slide">
+					<div class="ani lp-title">
+						<div class="lp-name1 ani " swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">2020杭州高新区（滨江）第十五期</div>
+						<div class="lp-name2 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">硅谷精英沙龙暨人才活动周</div>
+					</div>
+					<div class="ani textimg"  swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<img src="images/text.png" >
+					</div>
+					<div class="ani line"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						
+					</div>
+					<div class="ani lp-title2">
+						<div class="lp-name1 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".5s">2020年11月9日10:00—12:00</div>
+						<div class="lp-name2 ani"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">杭州市滨江区长江南路336号白马湖建国饭店<br>白马宴会厅</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- <img src="images/web-swipe-tip.png" style="background-size: 1px;top:auto;width:1rem;height:0.5rem; bottom:2rem; left: 50%;margin-left: -0.5rem;" id="array" class="resize swiper-button-next"> -->
+			<!-- <div class="swiper-pagination"></div> -->
+		</div>
+
+
+		<script>
+			let playAudio = true;
+			var elevideo = document.getElementById("video");
+			// var audioplay = document.getElementById("musicfx");
+			// $('#mc_play').on('click',function(){
+			// 	if(playAudio){
+			// 		$(this).addClass('suspended')
+			// 		audioplay.pause();
+			// 		playAudio = false
+			// 	}else{
+			// 		audioplay.play();
+			// 		playAudio = true
+			// 		$(this).removeClass('suspended')
+			// 	}
+			// })
+			
+			elevideo.addEventListener('loadedmetadata', function () { //加载数据
+			        //视频的总长度
+			        console.log(elevideo.duration);
+			    });
+				var elevideo = document.getElementById("video");
+				    elevideo.addEventListener('play', function () { //播放开始执行的函数
+				        console.log("开始播放");
+				    });
+				 var elevideo = document.getElementById("video");
+				    elevideo.addEventListener('playing', function () { //播放中
+				       console.log("播放中");
+				    });
+					var elevideo = document.getElementById("video");
+					    elevideo.addEventListener('waiting', function () { //加载
+					        console.log("加载中");
+					    });
+						var elevideo = document.getElementById("video");
+						    elevideo.addEventListener('pause', function () { //暂停开始执行的函数
+						        console.log("暂停播放");
+						    });
+						var elevideo = document.getElementById("video");
+						    elevideo.addEventListener('ended', function () { //结束
+						        console.log("播放结束");
+								setTimeout(function(){
+									$('.fixed1').show()
+								},700)
+								mySwiper.params.allowSlidePrev = true;
+								mySwiper.slideTo(1, 500, true);
+						    }, false);
+							
+							
+				
+				setTimeout(function(){
+					$('.loadww').hide()
+				},1000)
+			var mySwiper = new Swiper('.swiper-container', {
+				direction: 'vertical',
+				pagination: '.swiper-pagination',
+				mousewheelControl: true,
+				observer:true,
+				observeParents:true,
+				allowSlidePrev : false,
+				resistanceRatio : 0,
+				onInit: function(swiper) {
+					swiperAnimateCache(swiper);
+					swiperAnimate(swiper);
+				},
+				nextButton:'.swiper-button-next',//绑定下一页的控制按钮
+				onSlideChangeEnd: function(swiper) {
+					swiperAnimate(swiper);
+				}
+			})
+			
+			$('#play').on('click',function(){
+				// mySwiper.slideTo(1, 0, false);//切换到第一个slide，速度为1秒
+				elevideo.play();
+				$('.fixed1').hide()
+			})
+		</script>
+	</body>
+</html>
