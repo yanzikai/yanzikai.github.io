@@ -631,7 +631,7 @@
 					<video webkit-playsinline id="video" muted x5-video-orientation="portrait" playsinline x5-playsinline x5-video-player-type="h5"  style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: -1;object-fit: cover;">
 					    <source type="video/mp4" src="./video/2.mp4">
 					</video>
-					<canvas style="z-index: 1;" id="myCanvas" width="100" height="200"></canvas>
+					<canvas style="position: relative;z-index: 10;" id="myCanvas" width="100" height="200"></canvas>
 				</section>
 				<!---------------slide2-------------->
 				<!-- <section class="swiper-slide">
@@ -948,10 +948,11 @@
 			var context = canvas.getContext("2d");
 			canvas.width = elevideo.offsetWidth;
 			canvas.height = elevideo.offsetHeight;
-			// elevideo.oncanplay = function() {
-			//     video.play();
-			//     switchToCanvas();
-			// }
+			elevideo.oncanplay = function() {
+			    // video.play();
+			    // switchToCanvas();
+				alert('视频好了')
+			}
 			elevideo.addEventListener('ended', function () { //结束
 			    console.log("播放结束");
 				// canvasVideo.pause();
