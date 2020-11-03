@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>邀请</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 		<link rel="stylesheet" href="css/swiper.min.css">
 		<link rel="stylesheet" href="css/animate.min.css">
 		<script src="js/swiper.min.js"></script>
@@ -23,6 +23,7 @@
 			html,
 			body {
 				height: 100%;
+				 padding-bottom: env(safe-area-inset-bottom);
 			}
 			body {
 				font-family: "microsoft yahei";
@@ -137,7 +138,7 @@
 				font-weight: 400;
 				color: #D7E1E3;
 				padding-left: 0.35rem;
-				margin-top: 2.02rem;
+				
 			}
 			.index2{
 				margin-top: 0.23rem;
@@ -205,7 +206,7 @@
 				position: absolute;
 				height: 5.2rem;
 				width: 2.12rem;
-				top: 1.7rem;
+				top: 0;
 				right: .43rem;
 				
 			}
@@ -260,7 +261,7 @@
 				width: 6.08rem;
 				position: absolute;
 				left: 50%;
-				height: 10.5rem;
+				height: 9.5rem;
 				margin-left: -3.04rem;
 				background: url(./images/overbg1.png) no-repeat;
 				background-size: 100% 100% ;
@@ -271,12 +272,12 @@
 				background-size: 100% 100% ;
 			}
 			.overtext{
-				padding:1.36rem 0.58rem 0;
+				padding:1.06rem 0.58rem 0;
 				text-indent: 20px;
 				letter-spacing: 2px;
 				color: #110246;
 				line-height: 0.82rem;
-				font-size: 0.28px;
+				font-size: 0.28rem;
 			}
 			.btmtext{
 				position: absolute;
@@ -292,7 +293,7 @@
 				color: #fff;
 			}
 			.stitle{
-				margin-top: 1rem;
+				margin-top: .8rem;
 				font-size: 0.34rem;
 				font-weight: 700;
 				line-height: 0.4rem;
@@ -316,7 +317,7 @@
 			}
 			.people{
 				position: relative;
-				margin-top: 3rem;
+				margin-top: 2.6rem;
 				height: 2.2rem;
 				width: 6rem;
 				margin-left: 0.7rem;
@@ -371,7 +372,7 @@
 				line-height: .3rem;
 			}
 			.guest{
-				padding: 0.5rem 0.9rem 0;
+				padding: 0.3rem 0.9rem 0;
 				height: 1.7rem;
 				display: flex;
 				flex-direction: row;
@@ -602,34 +603,35 @@
 				<!-------------slide1----------------->
 				<section class="swiper-slide">
 					<!-- <div class="ani" style="color: #fff;" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s">杭州高新区（滨江）</div> -->
-					<div class="fixed1" style="position: relative;z-index: 10;width: 100%;height: 100%;">
-						<div class="ani index1" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".5s">杭州高新区（滨江）</div>
-						<div class="ani index2" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s"></div>
+					<div class="fixed1" style="position: relative;z-index: 10;width: 100%;height: 100%;margin-top: 2.02rem;">
+						<div class="ani index1" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">杭州高新区（滨江）</div>
+						<div class="ani index2" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".1s"></div>
 						<div class="ani namebox">
 							<div class="name">
-								<span style="display: inline-block;" class="ani name1" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".5s">2020</span>
-								<span style="display: inline-block;" class="ani name2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">第十五期</span>
+								<span style="display: inline-block;" class="ani name1" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".3s">2020</span>
+								<span style="display: inline-block;" class="ani name2" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".3s">第十五期</span>
 							</div>
-							<div class="ani name3" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">
+							<div class="ani name3" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".2s">
 						        硅谷精英沙龙暨人才活动周
 							</div>
 						</div>
-						<div class="ani indexp1" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".5s">“滨”朋远至· “江”成大业</div>
-						<div class="ani indexp2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s"></div>
-						<div class="ani indexp3" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".5s">杭州市滨江区长江南路336号</div>
-						<div class="ani indexp3" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">2020年11月9日10:00—12:00</div>
+						<div class="ani indexp1" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">“滨”朋远至· “江”成大业</div>
+						<div class="ani indexp2" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s"></div>
+						<div class="ani indexp3" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">杭州市滨江区长江南路336号</div>
+						<div class="ani indexp3" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">2020年11月9日10:00—12:00</div>
 						
-						<div class="indeximg ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="2s" swiper-animate-delay=".5s">
+						<div class="indeximg ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".7s">
 							<img src="./images/INVITATION.png" >
 						</div>
-						<div class="finger ani" id="play" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">
+						<div class="finger ani" id="play" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s">
 							<img src="images/finger.png" >
 						</div>
 					</div>
 					<img class="fixed1" src="./upload/indexbg.png"  style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 2;">
-					<video id="video" style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 1;">
+					<video webkit-playsinline id="video" x5-video-orientation="portrait" x5-playsinline  style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: -1;object-fit: cover;">
 					    <source type="video/mp4" src="./video/2.mp4">
 					</video>
+					<canvas style="z-index: 1;" id="myCanvas" width="100" height="200"></canvas>
 				</section>
 				<!---------------slide2-------------->
 				<!-- <section class="swiper-slide">
@@ -684,7 +686,7 @@
 						<div class="title2">TALK SHOW GUEST</div>
 					</div>
 					<div class="ani people" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
-						<img class="ani headimg" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s" src="images/p1.png" style="object-fit: contain;">
+						<img class="ani headimg" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s" src="images/kdw.png" style="object-fit: contain;">
 						<img class="ani borderimg" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s" src="images/border.png" >
 						<div class="pbtm">
 							
@@ -696,15 +698,15 @@
 						</div>
 					</div>
 					<div class="ani people" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
-						<img class="ani headimg" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s" src="images/p1.png" style="object-fit: contain;">
+						<img class="ani headimg" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s" src="images/qns.png" style="object-fit: contain;">
 						<img class="ani borderimg" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s" src="images/border.png" >
 						<div class="pbtm">
 							
 						</div>
 						<div class="ani pbtmtext">
-							<div class="ani pname1"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">康达维</div>
-							<div class="ani pname2"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">杭州普利复健科技有限公司</div>
-							<div class="ani pname3"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">联合创始人</div>
+							<div class="ani pname1"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">钱煜帆</div>
+							<div class="ani pname2"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">宸帆集团 </div>
+							<div class="ani pname3"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">COO</div>
 						</div>
 					</div>
 				</section>
@@ -716,43 +718,39 @@
 						<div class="title2">caicaishuo guest</div>
 					</div>
 					<div class="ani guest gleft" style="padding-top: 0.8rem;">
-						<img src="images/p1.png" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".1s" >
+						<img src="images/yqm.png" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".1s" >
 						<div class="flex">
 							<div class="ani flexname" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">尤其敏</div>
 							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">最美浙江人、最美科技人</div>
-							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".7s">杭州优思达生物技术有限公司创始人</div>
+							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".7s">杭州优思达生物技术有限公司<br> 创始人</div>
 						</div>
 					</div>
 					<div class="ani guest gright" >
 						<div class="flex">
-							<div class="ani flexname" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">尤其敏</div>
-							<div class="ani desc" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".4s">最美浙江人、最美科技人</div>
-							<div class="ani desc" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".7s">杭州优思达生物技术有限公司创始人</div>
+							<div class="ani flexname" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">江涛</div>
+							<div class="ani desc" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".5s">杭州华迈医疗器械有限公司 <br>创始人</div>
 						</div>
-						<img src="images/p1.png" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".1s">
+						<img src="images/jt.png" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".1s">
 					</div>
 					<div class="ani guest gleft"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".1s" >
-						<img src="images/p1.png" class="ani">
+						<img src="images/hzy.png" class="ani">
 						<div class="flex">
-							<div class="ani flexname" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">尤其敏</div>
-							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">最美浙江人、最美科技人</div>
-							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".7s">杭州优思达生物技术有限公司创始人</div>
+							<div class="ani flexname" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">鸿志远</div>
+							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">Nihub众创空间<br>创始人</div>
 						</div>
 					</div>
 					<div class="ani guest gright"   >
 						<div class="flex">
-							<div class="ani flexname" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">尤其敏</div>
-							<div class="ani desc" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".4s">最美浙江人、最美科技人</div>
-							<div class="ani desc" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".7s">杭州优思达生物技术有限公司创始人</div>
+							<div class="ani flexname" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">曹国熊</div>
+							<div class="ani desc" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".5s">普华资本<br>董事长</div>
 						</div>
-						<img src="images/p1.png" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".1s">
+						<img src="images/cgx.png" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".1s">
 					</div>
 					<div class="ani guest gleft"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".1s" >
-						<img src="images/p1.png" class="ani">
+						<img src="images/yy.png" class="ani">
 						<div class="flex">
-							<div class="ani flexname" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">尤其敏</div>
-							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">最美浙江人、最美科技人</div>
-							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".7s">杭州优思达生物技术有限公司创始人</div>
+							<div class="ani flexname" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">余涌</div>
+							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">阿里巴巴<br>副总裁</div>
 						</div>
 					</div>
 				</section>
@@ -779,7 +777,7 @@
 							
 						</div>
 						<div class="ani lasttext2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">
-							杭州高新技术产业开发区（滨江）党委
+							杭州高新技术产业开发区（滨江）管委会
 						</div>
 					</div>
 					<div class="ani lasttext"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
@@ -787,7 +785,7 @@
 							
 						</div>
 						<div class="ani lasttext2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">
-							杭州高新技术产业开发区（滨江）党委
+							杭州高新技术产业开发区（滨江）政府
 						</div>
 					</div>
 				</section>
@@ -804,28 +802,29 @@
 					<div class="ani lasttext2" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
 						<div class="lasttext1"></div>
 						<div class="ani lasttext2" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".4s">
-							杭州高新技术产业开发区（滨江）党委
+							2020年11月9日（周一）10:00—12:00
 						</div>
 					</div>
 					<div class="ani lasttitle2" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
-						活动时间
+						活动地点
 					</div>
 					<div class="ani lasttext2width" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
 						<div class="lasttext1"></div>
 						<div class="ani lasttext2" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".4s">
-							杭州高新技术产业开发区（滨江）党委 <br>
-							杭州高新技术产业开发区（滨江）党委
+							杭州市滨江区长江南路336号 <br>
+							白马湖建国饭店-白马宴会厅
 						</div>
 					</div>
 					<div class="ani lasttitle2" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
-						活动时间
+						联系电话
 					</div>
 					<div class="ani lasttext2" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
 						<div class="lasttext1"></div>
 						<div class="ani lasttext2" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".4s">
-							杭州高新技术产业开发区（滨江）党委
+							18888888888
 						</div>
 					</div>
+					
 				</section>
 				<!-------------slide9----------------->
 				<section class="swiper-slide">
@@ -850,7 +849,81 @@
 			<!-- <div class="swiper-pagination"></div> -->
 		</div>
 
-
+<script type="text/javascript">
+	// var VideoToCanvas = (function (window, document) {
+	//     function VideoToCanvas(videoElement,back) {
+	//         if (!videoElement) {
+	//             return;
+	//         }
+	//         // 创建一个canvas元素
+	//         var canvas = document.getElementById('myCanvas');
+	//         // 获取视频的宽高
+	//         canvas.width = videoElement.offsetWidth;
+	//         canvas.height = videoElement.offsetHeight;
+	//         // 获取画笔
+	//         ctx = canvas.getContext('2d');
+	//         // 对视频标签进行浅的拷贝
+	//         var newVideo = videoElement.cloneNode(false);
+	//         // 定时器
+	//         var timer = null;
+	//         var requestAnimationFrame =
+	//             window.requestAnimationFrame ||
+	//             window.mozRequestAnimationFrame ||
+	//             window.webkitRequestAnimationFrame ||
+	//             window.msRequestAnimationFrame;
+	//         // 清除定时器
+	//         var cancelAnimationFrame =
+	//             window.cancelAnimationFrame || window.mozCancelAnimationFrame;
+	//         // 画视频
+	//         function drawCanvas() {
+	//             ctx.drawImage(newVideo, 0, 0, canvas.width, canvas.height);
+	//             // 每秒执行60次
+	//             timer = requestAnimationFrame(drawCanvas);
+	//         }
+	//         // 取消定时器
+	//         function stopDrawing() {
+	//             cancelAnimationFrame(timer);
+	//         }
+	//         // 点击开始就画视频
+	//         newVideo.addEventListener(
+	//             'play',
+	//             function () {
+	//                 drawCanvas();
+	//             },
+	//             false
+	//         );
+	//         newVideo.addEventListener('pause', stopDrawing);
+	//         newVideo.addEventListener('ended', function(){
+	// 			cancelAnimationFrame(timer);
+	// 			back()
+	// 		});
+	//         // 使用canvas替换video标签，传入一个video元素并克隆，
+	//         videoElement.parentNode.replaceChild(canvas, video);
+	//         // this指向new出来的对象
+	//         this.play = function () {
+	//             newVideo.play();
+	//         };
+	//         this.pause = function () {
+	//             newVideo.pause();
+	//         };
+	//         this.playPause = function () {
+	//             if (newVideo.paused) {
+	//                 this.play();
+	//             } else {
+	//                 this.pause();
+	//             }
+	//         };
+	//         this.change = function (src) {
+	//             if (!src) {
+	//                 return;
+	//             }
+	//             newVideo.src = src;
+	//         };
+	//         this.drawFrame = drawCanvas;
+	//     }
+	//     return VideoToCanvas;
+	// })(window, document);
+</script>
 		<script>
 			let playAudio = true;
 			var elevideo = document.getElementById("video");
@@ -866,49 +939,85 @@
 			// 		$(this).removeClass('suspended')
 			// 	}
 			// })
+			// var video = document.getElementById('video');
+			// // 传入一个video对象并克隆，将浅拷贝的对象的画出来，将创建的canvas替换掉video标签
+			// var canvasVideo = new VideoToCanvas(video,function(){
+			// 	console.log(1111)
+			// });
+			var canvas = document.getElementById("myCanvas");
+			var context = canvas.getContext("2d");
+			canvas.width = elevideo.offsetWidth;
+			canvas.height = elevideo.offsetHeight;
+			// elevideo.oncanplay = function() {
+			//     video.play();
+			//     switchToCanvas();
+			// }
+			elevideo.addEventListener('ended', function () { //结束
+			    console.log("播放结束");
+				// canvasVideo.pause();
+				setTimeout(function(){
+					$('.fixed1').show()
+				},700)
+				mySwiper.params.allowSwipeToNext = true;
+				mySwiper.slideTo(1, 500, true);
+			}, false);
+			function switchToCanvas() {
+			    if (elevideo.ended) {
+			        return;
+			    }
+			    // 将video上的图片的每一帧以图片的形式绘制的canvas上
+			    context.drawImage(elevideo, 0, 0, canvas.width, canvas.height);
 			
-			elevideo.addEventListener('loadedmetadata', function () { //加载数据
-			        //视频的总长度
-			        console.log(elevideo.duration);
-			    });
-				var elevideo = document.getElementById("video");
-				    elevideo.addEventListener('play', function () { //播放开始执行的函数
-				        console.log("开始播放");
-				    });
-				 var elevideo = document.getElementById("video");
-				    elevideo.addEventListener('playing', function () { //播放中
-				       console.log("播放中");
-				    });
-					var elevideo = document.getElementById("video");
-					    elevideo.addEventListener('waiting', function () { //加载
-					        console.log("加载中");
-					    });
-						var elevideo = document.getElementById("video");
-						    elevideo.addEventListener('pause', function () { //暂停开始执行的函数
-						        console.log("暂停播放");
-						    });
-						var elevideo = document.getElementById("video");
-						    elevideo.addEventListener('ended', function () { //结束
-						        console.log("播放结束");
-								setTimeout(function(){
-									$('.fixed1').show()
-								},700)
-								mySwiper.params.allowSlidePrev = true;
-								mySwiper.slideTo(1, 500, true);
-						    }, false);
+			    window.requestAnimationFrame(switchToCanvas);
+			}
+			
+			
+			// elevideo.addEventListener('loadedmetadata', function () { //加载数据
+			//         //视频的总长度
+			//         console.log(elevideo.duration);
+			//     });
+			// 	var elevideo = document.getElementById("video");
+			// 	    elevideo.addEventListener('play', function () { //播放开始执行的函数
+			// 	        console.log("开始播放");
+			// 	    });
+			// 	 var elevideo = document.getElementById("video");
+			// 	    elevideo.addEventListener('playing', function () { //播放中
+			// 	       console.log("播放中");
+			// 	    });
+			// 		var elevideo = document.getElementById("video");
+			// 		    elevideo.addEventListener('waiting', function () { //加载
+			// 		        console.log("加载中");
+			// 		    });
+			// 			var elevideo = document.getElementById("video");
+			// 			    elevideo.addEventListener('pause', function () { //暂停开始执行的函数
+			// 			        console.log("暂停播放");
+			// 			    });
+			// 			var elevideo = document.getElementById("video");
+			// 			    elevideo.addEventListener('ended', function () { //结束
+			// 			        console.log("播放结束");
+			// 					// canvasVideo.pause();
+			// 					setTimeout(function(){
+			// 						$('.fixed1').show()
+			// 					},700)
+			// 					mySwiper.params.allowSwipeToNext = true;
+			// 					mySwiper.slideTo(1, 500, true);
+			// 			    }, false);
 							
 							
 				
 				setTimeout(function(){
 					$('.loadww').hide()
 				},1000)
+				
+				var stop = true;
 			var mySwiper = new Swiper('.swiper-container', {
 				direction: 'vertical',
 				pagination: '.swiper-pagination',
 				mousewheelControl: true,
 				observer:true,
 				observeParents:true,
-				allowSlidePrev : false,
+				// allowSwipeToPrev  : false,
+				allowSwipeToNext   : false,
 				resistanceRatio : 0,
 				onInit: function(swiper) {
 					swiperAnimateCache(swiper);
@@ -917,12 +1026,64 @@
 				nextButton:'.swiper-button-next',//绑定下一页的控制按钮
 				onSlideChangeEnd: function(swiper) {
 					swiperAnimate(swiper);
-				}
+					console.log(swiper.activeIndex);
+					mySwiper.params.allowSwipeToNext = false;
+					clearTimeout(stop);
+					
+					if(swiper.activeIndex == 0){
+						
+					}
+					if(swiper.activeIndex == 1){
+						setTimeout(function(){
+							mySwiper.params.allowSwipeToNext = true;
+						},2000)
+					}
+					if(swiper.activeIndex == 2){
+						setTimeout(function(){
+							mySwiper.params.allowSwipeToNext = true;
+						},2000)
+					}
+					if(swiper.activeIndex == 3){
+						setTimeout(function(){
+							mySwiper.params.allowSwipeToNext = true;
+						},2000)
+					}
+					if(swiper.activeIndex == 4){
+						
+						setTimeout(function(){
+							mySwiper.params.allowSwipeToNext = true;
+						},2000)
+					}
+					if(swiper.activeIndex == 5){
+						setTimeout(function(){
+							mySwiper.params.allowSwipeToNext = true;
+						},1500)
+					}
+					if(swiper.activeIndex == 6){
+						setTimeout(function(){
+							mySwiper.params.allowSwipeToNext = true;
+						},1500)
+					}
+					if(swiper.activeIndex == 7){
+						setTimeout(function(){
+							mySwiper.params.allowSwipeToNext = true;
+						},2000)
+					}
+					if(swiper.activeIndex == 8){
+						setTimeout(function(){
+							mySwiper.params.allowSwipeToNext = true;
+						},2000)
+					}
+				},
+				
 			})
 			
 			$('#play').on('click',function(){
 				// mySwiper.slideTo(1, 0, false);//切换到第一个slide，速度为1秒
 				elevideo.play();
+				// video.play();
+				switchToCanvas();
+				// canvasVideo.play();
 				$('.fixed1').hide()
 			})
 		</script>
