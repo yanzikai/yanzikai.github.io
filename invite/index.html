@@ -628,7 +628,7 @@
 						</div>
 					</div>
 					<img class="fixed1" src="./upload/indexbg.png"  style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 2;">
-					<video webkit-playsinline id="video" x5-video-player-type="h5-page" muted  playsinline  style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 1;object-fit: cover;">
+					<video webkit-playsinline id="video" x5-video-player-type="h5-page" controls="controls" muted  playsinline  style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 1;object-fit: cover;">
 					    <source type="video/mp4" src="./video/2.mp4">
 					</video>
 					<canvas style="position: relative;z-index: 0;" id="myCanvas" width="100" height="200"></canvas>
@@ -951,7 +951,7 @@
 			elevideo.oncanplay = function() {
 			    // video.play();
 			    // switchToCanvas();
-				alert('视频好了')
+				// alert('视频好了')
 			}
 			elevideo.addEventListener('ended', function () { //结束
 			    console.log("播放结束");
