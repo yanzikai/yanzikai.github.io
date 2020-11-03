@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>硅谷精英沙龙暨人才活动周</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="stylesheet" href="css/swiper.min.css">
 		<link rel="stylesheet" href="css/animate.min.css">
@@ -12,12 +12,20 @@
 		<script src="js/rem.js"></script>
 		<script src="https://lib.baomitu.com/jquery/2.2.4/jquery.min.js"></script>
 		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 		<!--<link rel="stylesheet" href="/dist/css/swiper.min.css">
 <link rel="stylesheet" href="/dist/css/animate.min.css">
 <script src="/dist/js/swiper.min.js"></script>
 <script src="/dist/js/swiper.animate.min.js"></script>-->
 
 		<style>
+			/* 去除百度logo */
+			.anchorBL{
+				display:none;
+			} 
+			    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+			    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+
 			* {
 				margin: 0;
 				padding: 0;
@@ -116,6 +124,19 @@
 					transform: scale(1);
 				}
 			}
+			@-webkit-keyframes scales1 {
+				0% {
+					transform: translateY(0);
+				}
+			
+				50% {
+					transform: translateY(10px);
+				}
+			
+				100% {
+					transform: translateY(0);
+				}
+			}
 			@-webkit-keyframes tipmove {
 				0% {
 					bottom: 1rem;
@@ -152,13 +173,16 @@
 			}
 			#mc_play{
 				right: .6rem;
-				z-index:10;width: 0.6rem;height: 0.6rem;background: #fff;position: absolute;
+				z-index:10;width: 0.8rem;height: 0.8rem;position: absolute;
 				top: .6rem;
 			}
-			
+			#mc_play img{
+				width: 0.8rem;height: 0.8rem;
+				display: block;
+			}
 			.index1{
-				height: 0.30rem;
-				font-size: 0.30rem;
+				height: 0.38rem;
+				font-size: 0.38rem;
 				font-weight: 400;
 				color: #D7E1E3;
 				padding-left: 0.35rem;
@@ -182,7 +206,7 @@
 				
 			}
 			.name1{
-				font-size: 0.78rem;
+				font-size: 0.58rem;
 				line-height: 0.8rem;
 				font-weight: 700;
 			}
@@ -191,9 +215,10 @@
 				line-height: 0.8rem;
 			}
 			.name3{
-				text-align: center;
+				text-align: left;
 				font-size: 0.32rem;
-				line-height: 0.3rem;
+				line-height: 0.4rem;
+				font-weight: 400;
 			}
 			.indexp1{
 				margin-top: 1.5rem;
@@ -247,8 +272,8 @@
 			}
 			.finger img{
 				width: 1.2rem;
-				height: 1.5rem;
-				-webkit-animation: scales 1.5s infinite ease-in-out;
+				height: 1.2rem;
+				-webkit-animation: scales1 1s infinite ease-in-out;
 				
 			}
 			
@@ -277,7 +302,7 @@
 			}
 			.title2{
 				line-height: 0.16rem;
-				font-size: 0.18px;
+				font-size: 0.18rem;
 				font-weight: 400;
 				color: #D7E1E3;
 			}
@@ -383,17 +408,18 @@
 				z-index: 4;
 			}
 			.pname1{
-				padding-top: .55rem;
-				font-size: 0.28rem;
+				padding-top: .45rem;
+				font-size: 0.40rem;
 				padding-bottom: .24rem;
+				font-weight: 600;
 			}
 			.pname2{
-				font-size: .24rem;
-				line-height: .3rem;
+				font-size: .3rem;
+				line-height: .32rem;
 			}
 			.pname3{
-				font-size: .24rem;
-				line-height: .3rem;
+				font-size: .3rem;
+				line-height: .32rem;
 			}
 			.guest{
 				padding: 0.3rem 0.9rem 0;
@@ -439,14 +465,14 @@
 			
 			.lasttitle{
 				font-size: 0.34rem;
-				padding-top: 2.9rem;
+				padding-top: .9rem;
 				text-align: center;
 				width: 100%;
 				color: #fff;
 			}
 			.lasttext{
 				position: relative;
-				margin-top: 1.02rem;
+				margin-top: .5rem;
 				text-align: center;
 				color: #fff;
 				height: 0.57rem;
@@ -709,43 +735,48 @@
 									<div class="scom">杭州华迈医疗器械有限公司</div>-->
 		<div class="swiper-container">
 			<!-- 音乐 -->
-			<!-- <div id="mc_play"  class="music animation-start" style="">
-				<img style="width: 0.6rem;height: 0.6rem;" src="./images/icon_music_on2.png" alt="">
+			<div id="mc_play" class="music animation-start" style="">
+				<img style="width: 0.8rem;height: 0.8rem;" src="./images/icon_music_on2.png" alt="">
 			</div>
-			<audio autoplay="autoplay" id="musicfx" loop="loop">
-			      <source src="https://www.w3school.com.cn/i/song.mp3" type="audio/mpeg">
-				  <source src="https://www.w3school.com.cn/i/song.ogg" type="audio/ogg" />
-			</audio>  -->
-			
+			<audio autoplay="autoplay" id="musicfx" loop="loop" preload="auto">
+				<source src="http://qncdn.zhumei.net/npmp/1.mp3" type="audio/mpeg">
+				<!-- <source src="https://www.w3school.com.cn/i/song.ogg" type="audio/ogg" /> -->
+			</audio>
+
 			<div class="swiper-wrapper">
 				<!-------------slide1----------------->
 				<section class="swiper-slide">
 					<!-- <div class="ani" style="color: #fff;" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s">杭州高新区（滨江）</div> -->
 					<div class="fixed1" style="position: relative;z-index: 10;width: 100%;height: 100%;margin-top: 2.02rem;">
 						<div class="ani index1" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">杭州高新区（滨江）</div>
-						<div class="ani index2" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".1s"></div>
+						<!-- <div class="ani index2" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".1s"></div> -->
 						<div class="ani namebox">
 							<div class="name">
-								<span style="display: inline-block;" class="ani name1" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".3s">2020</span>
-								<span style="display: inline-block;" class="ani name2" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".3s">第十五期</span>
+								<span style="display: inline-block;" class="ani name1" swiper-animate-effect="fadeInLeft"
+								 swiper-animate-duration="1s" swiper-animate-delay=".3s">"一流人才生态"</span>
+								<!-- <span style="display: inline-block;" class="ani name2" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".3s">第十五期</span> -->
 							</div>
 							<div class="ani name3" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".2s">
-						        硅谷精英沙龙暨人才活动周
+								新一轮发布暨第十五期硅<br>谷精英沙龙
 							</div>
 						</div>
-						<div class="ani indexp1" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">“滨”朋远至· “江”成大业</div>
+						<div class="ani indexp1" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">"滨"朋远至
+							· "江"成大业</div>
 						<div class="ani indexp2" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s"></div>
 						<div class="ani indexp3" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">杭州白马湖建国饭店白马宴会厅</div>
-						<div class="ani indexp3" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">2020.11.9 10:00—12:00</div>
-						
+						<div class="ani indexp3" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">2020.11.9
+							10:00—12:00</div>
+
 						<div class="indeximg ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".7s">
-							<img src="./images/INVITATION.png" >
+							<img src="./images/INVITATION.png">
 						</div>
-						<div class="finger ani" id="play" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s">
-							<img src="images/finger.png" >
+						<div class="finger ani" id="play" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s"
+						 swiper-animate-delay="1.5s">
+							<!-- <img src="images/finger.png" > -->
+							<img src="images/up.png">
 						</div>
 					</div>
-					<img class="fixed1" src="./upload/indexbg.jpg"  style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 2;">
+					<img class="fixed1" src="./upload/indexbg.jpg" style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 2;">
 					<!-- <video webkit-playsinline id="video" x5-video-player-type="h5-page" controls="controls" muted  playsinline  style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 1;object-fit: cover;">
 					    <source type="video/mp4" src="http://zmcrm.zhumei.net/web/video/2.mp4">
 					</video>
@@ -759,16 +790,17 @@
 				</section> -->
 				<!----------------slide3-------------->
 				<section class="swiper-slide otherbg">
-					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s"
+					 swiper-animate-delay=".1s">
 					<div class="title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
 						<div class="title1">诚挚·邀请</div>
-						<div class="title2">Sincere invitation</div>
+						<div class="title2">SINCERE INVITATION</div>
 					</div>
-					
+
 					<div class="ani overbg" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">
-                         <div class="ani overtext" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">
-							 高新三十正当潮，滨江搏击创一流。杭州高新区（滨江）汇聚天下英才，勇当窗口，打造一流人才生态区。为继续在滨江和人才之间构筑坚实的桥梁，高新区（滨江）将于11月9日举办第十五期硅谷精英沙龙暨人才活动周。杭州高新区（滨江）第十五期硅谷精英沙龙暨人才活动周诚邀君来！
-						 </div>
+						<div class="ani overtext" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">
+							高新三十正当潮，滨江搏击创一流。杭州高新区（滨江）汇聚天下英才，勇当窗口，打造一流人才生态区。为继续在滨江和人才之间构筑坚实的桥梁，高新区（滨江）将于11月9日举办第十五期硅谷精英沙龙暨人才活动周。杭州高新区（滨江）第十五期硅谷精英沙龙暨人才活动周诚邀君来！
+						</div>
 					</div>
 					<div class="ani btmtext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">
 						杭州高新技术产业开发区（滨江）党委、管委会、政府
@@ -776,113 +808,125 @@
 				</section>
 				<!-------------slide4----------------->
 				<section class="swiper-slide otherbg">
-					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s"
+					 swiper-animate-delay=".1s">
 					<div class="title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
 						<div class="title1">活动·流程</div>
-						<div class="title2">activity  process</div>
+						<div class="title2">ACTIVITY PROCESS</div>
 					</div>
-					
-					<div class="ani overbg overbg2" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+
+					<div class="ani overbg overbg2" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s"
+					 swiper-animate-delay=".1s">
 						<div class="overtext2">
 							<div class="ani stitle" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">潮起</div>
 							<div class="ani stext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">1、滨江人才品牌宣传片全球首发</div>
-							<div class="ani stext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">2、人才TALK SHOW脱口秀</div>
+							<div class="ani stext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">2、人才TALK
+								SHOW脱口秀</div>
 							<div class="ani stitle" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">潮涌</div>
 							<div class="ani stext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">3、人才新政重磅发布</div>
 							<div class="ani stext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">4、“顶尖人才战略专家伙伴”及公推项目制度震撼发布</div>
-							<div class="ani stext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".9s">5、阿里、网易 巨头领衔企业HR智库 联盟</div>
+							<div class="ani stext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".9s">5、阿里、网易
+								巨头领衔企业HR智库 联盟</div>
 							<div class="ani stitle" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">潮汇</div>
-							<div class="ani stext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">6、滨江“才财说”  人才与资本的碰撞</div>
+							<div class="ani stext" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">6、滨江“才财说”
+								人才与资本的碰撞</div>
 						</div>
 					</div>
 				</section>
 				<!-------------slide5----------------->
 				<section class="swiper-slide otherbg">
-					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s"
+					 swiper-animate-delay=".1s">
 					<div class="title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
 						<div class="title1">脱口秀·嘉宾</div>
 						<div class="title2">TALK SHOW GUEST</div>
 					</div>
 					<div class="child">
 						<div></div>
-						<img  class="c1" src="./images/child.png" alt="">
-						
+						<img class="c1" src="./images/child.png" alt="">
+
 					</div>
-					
+
 					<div class="swiper-container1" style="width: 100%;height: 100%;color: #fff;">
-						<img class="c2" src="images/move.png" >
-					    <div class="swiper-wrapper">
-					        <div class="swiper-slide">
+						<img class="c2" src="images/move.png">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
 								<div class="smalls">
-									<img src="./images/yqm.png" >
+									<img src="./images/yqm.png">
 									<div class="sname"><span class="sp1">尤其敏</span><span class="sp2">创始人</span></div>
 									<div class="scom">杭州优思达生物技术有限公司</div>
 								</div>
 							</div>
-					        <div class="swiper-slide">
-					        	<div class="smalls">
-					        		<img src="./images/jt.png" >
-					        		<div class="sname"><span class="sp1">江涛</span><span class="sp2">创始人</span></div>
-					        		<div class="scom">杭州华迈医疗器械有限公司</div>
-					        	</div>
-					        </div>
-					        <div class="swiper-slide">
-					        	<div class="smalls">
-					        		<img src="./images/hzy.png" >
-					        		<div class="sname"><span class="sp1">鸿志远</span><span class="sp2">创始人</span></div>
-					        		<div class="scom">Nihub众创空间</div>
-					        	</div>
-					        </div>
 							<div class="swiper-slide">
 								<div class="smalls">
-									<img src="./images/kdw.png" >
+									<img src="./images/jt.png">
+									<div class="sname"><span class="sp1">江涛</span><span class="sp2">创始人</span></div>
+									<div class="scom">杭州华迈医疗器械有限公司</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="smalls">
+									<img src="./images/hzy.png">
+									<div class="sname"><span class="sp1">鸿志远</span><span class="sp2">创始人</span></div>
+									<div class="scom">Nihub众创空间</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="smalls">
+									<img src="./images/kdw.png">
 									<div class="sname"><span class="sp1">康达维</span><span class="sp2">联合创始人</span></div>
 									<div class="scom">杭州普利复健科技有限公司</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
 								<div class="smalls">
-									<img src="./images/qns.jpg" >
+									<img src="./images/qns.jpg">
 									<div class="sname"><span class="sp1">钱昱帆</span><span class="sp2">COO</span></div>
 									<div class="scom">宸帆集团</div>
 								</div>
 							</div>
-					    </div>
+						</div>
 					</div>
 				</section>
 				<!-------------slide6----------------->
 				<section class="swiper-slide otherbg" style="position: relative;">
-					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s"
+					 swiper-animate-delay=".1s">
 					<div class="title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
 						<div class="title1">才财说·嘉宾</div>
-						<div class="title2">caicaishuo guest</div>
+						<div class="title2">CAICAISHUO GUEST</div>
 					</div>
 					<div class="ani people" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
-						<img class="ani headimg" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s" src="images/cgx.jpg" style="object-fit: cover;">
-						<img class="ani borderimg" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s" src="images/border.png" >
+						<img class="ani headimg" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s"
+						 src="images/cgx.jpg" style="object-fit: cover;">
+						<img class="ani borderimg" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s"
+						 src="images/border.png">
 						<div class="pbtm">
-							
+
 						</div>
 						<div class="ani pbtmtext">
-							<div class="ani pname1"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">曹国熊</div>
-							<div class="ani pname2"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">普华资本</div>
-							<div class="ani pname3"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">董事长</div>
+							<div class="ani pname1" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">曹国熊</div>
+							<div class="ani pname2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">普华资本</div>
+							<div class="ani pname3" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">董事长</div>
 						</div>
 					</div>
 					<div class="ani people" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
-						<img class="ani headimg" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s" src="./images/yy.png" style="object-fit: cover;">
-						<img class="ani borderimg" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s" src="images/border.png" >
+						<img class="ani headimg" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s"
+						 src="./images/yy.png" style="object-fit: cover;">
+						<img class="ani borderimg" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s"
+						 src="images/border.png">
 						<div class="pbtm">
-							
+
 						</div>
 						<div class="ani pbtmtext">
-							<div class="ani pname1"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">余涌</div>
-							<div class="ani pname2"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">阿里巴巴 </div>
-							<div class="ani pname3"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">副总裁</div>
+							<div class="ani pname1" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">余涌</div>
+							<div class="ani pname2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">阿里巴巴
+							</div>
+							<div class="ani pname3" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">副总裁</div>
 						</div>
 					</div>
-					
-					
+
+
 					<!-- <div class="ani guest gleft" style="padding-top: 0.8rem;">
 						<img src="images/yqm.png" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".1s" >
 						<div class="flex">
@@ -922,45 +966,79 @@
 				</section>
 				<!-------------slide7----------------->
 				<section class="swiper-slide otherbg">
-					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s"
+					 swiper-animate-delay=".1s">
 					<div class="title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
 						<div class="title1">活动·单位</div>
-						<div class="title2">activity company</div>
+						<div class="title2">ACTIVITY COMPANY</div>
 					</div>
 					<div class="ani lasttitle" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
-						主办单位
+						合作机构
 					</div>
-					<div class="ani lasttext"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<div class="ani lasttext" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
 						<div class="lasttext1">
-							
+
 						</div>
 						<div class="ani lasttext2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">
-							杭州高新技术产业开发区（滨江）党委
+							北航杭州创新研究院
 						</div>
 					</div>
-					<div class="ani lasttext"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<div class="ani lasttext" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
 						<div class="lasttext1">
-							
+
 						</div>
 						<div class="ani lasttext2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">
-							杭州高新技术产业开发区（滨江）管委会
+							杭州中科国家技术转移中心
 						</div>
 					</div>
-					<div class="ani lasttext"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<div class="ani lasttext" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
 						<div class="lasttext1">
-							
+
 						</div>
 						<div class="ani lasttext2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">
-							杭州高新技术产业开发区（滨江）政府
+							启迪外创园
+						</div>
+					</div>
+					<div class="ani lasttext" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="lasttext1">
+
+						</div>
+						<div class="ani lasttext2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">
+							六和桥
+						</div>
+					</div>
+					<div class="ani lasttext" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="lasttext1">
+
+						</div>
+						<div class="ani lasttext2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">
+							贝壳社
+						</div>
+					</div>
+					<div class="ani lasttext" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="lasttext1">
+
+						</div>
+						<div class="ani lasttext2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">
+							H2中瑞创新中心
+						</div>
+					</div>
+					<div class="ani lasttext" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div class="lasttext1">
+
+						</div>
+						<div class="ani lasttext2" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".4s">
+							诺奖工作站
 						</div>
 					</div>
 				</section>
 				<!-------------slide8----------------->
 				<section class="swiper-slide otherbg">
-					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<img class="ani inviteimg" src="images/index2.png" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s"
+					 swiper-animate-delay=".1s">
 					<div class="title ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
 						<div class="title1">活动·地址</div>
-						<div class="title2">activity location</div>
+						<div class="title2">ACTIVITY LOCATION</div>
 					</div>
 					<div class="ani lasttitle2" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
 						活动时间
@@ -981,7 +1059,7 @@
 							白马湖建国饭店-白马宴会厅
 						</div>
 					</div>
-					<div class="ani lasttitle2" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+					<!-- <div class="ani lasttitle2" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay=".1s">
 						联系电话
 					</div>
 					<div class="ani lasttext2" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
@@ -989,11 +1067,12 @@
 						<div class="ani lasttext2" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".4s">
 							18888888888
 						</div>
+					</div> -->
+					<div class="ani mapbox" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<div style="height: 2.97rem;width: 6.16rem;border:#ccc solid 1px;display: inline-block;" id="dituContent"></div>
+						<!-- <img class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".4s" src="images/map.png" > -->
 					</div>
-					<div class="mapbox">
-						<img class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".4s" src="images/map.png" >
-					</div>
-					
+
 				</section>
 				<!-------------slide9----------------->
 				<section class="swiper-slide">
@@ -1001,15 +1080,15 @@
 						<div class="lp-name1 ani " swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">2020杭州高新区（滨江）第十五期</div>
 						<div class="lp-name2 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">硅谷精英沙龙暨人才活动周</div>
 					</div>
-					<div class="ani textimg"  swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
-						<img src="images/text.png" >
+					<div class="ani textimg" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+						<img src="images/text.png">
 					</div>
-					<div class="ani line"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
-						
+					<div class="ani line" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">
+
 					</div>
 					<div class="ani lp-title2">
 						<div class="lp-name1 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".5s">2020年11月9日10:00—12:00</div>
-						<div class="lp-name2 ani"  swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">杭州市滨江区长江南路336号白马湖建国饭店<br>白马宴会厅</div>
+						<div class="lp-name2 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">杭州市滨江区长江南路336号白马湖建国饭店<br>白马宴会厅</div>
 					</div>
 				</section>
 			</div>
@@ -1018,20 +1097,58 @@
 			<!-- <div class="swiper-pagination"></div> -->
 		</div>
 		<script>
-			// let playAudio = true;
+			let playAudio = true;
 			// var elevideo = document.getElementById("video");
-			// var audioplay = document.getElementById("musicfx");
-			// $('#mc_play').on('click',function(){
-			// 	if(playAudio){
-			// 		$(this).addClass('suspended')
-			// 		audioplay.pause();
-			// 		playAudio = false
-			// 	}else{
-			// 		audioplay.play();
-			// 		playAudio = true
-			// 		$(this).removeClass('suspended')
-			// 	}
-			// })
+			var audioplay = document.getElementById("musicfx");
+			$('#mc_play').on('click', function() {
+				if (playAudio) {
+					$(this).addClass('suspended')
+					audioplay.pause();
+					playAudio = false
+				} else {
+					audioplay.play();
+					playAudio = true
+					$(this).removeClass('suspended')
+				}
+			})
+			// function audioAutoPlay(id) {
+			//     var audio = document.getElementById(id);
+			//     document.addEventListener("WeixinJSBridgeReady", function() {
+			//         //setTimeout(function(){
+			//         audio.load();
+			//         audio.play();
+			//         audio.pause();
+			//         //},500);
+			//     },false);
+			// }
+			
+			$(function(){
+				audioAutoPlay('musicfx');
+			})
+			function audioAutoPlay(id){
+			    var audio = document.getElementById(id);
+			 
+			    var play = function() {
+			        document.removeEventListener("WeixinJSBridgeReady", play);
+			        document.removeEventListener("YixinJSBridgeReady", play);
+			 
+			        audio.play();
+			        // audio.pause();
+			        // document.removeEventListener("touchstart", play, false);
+			    };
+			    
+			    audio.play();
+			    // audio.pause();
+			 
+			    //weixin
+			    document.addEventListener("WeixinJSBridgeReady", play, false);
+			    //yixin
+			    document.addEventListener('YixinJSBridgeReady', play, false);
+			 
+			    // document.addEventListener("touchstart", play, false);
+			}
+			// audioAutoPlay('audio1');
+			
 			// var video = document.getElementById('video');
 			// // 传入一个video对象并克隆，将浅拷贝的对象的画出来，将创建的canvas替换掉video标签
 			// var canvasVideo = new VideoToCanvas(video,function(){
@@ -1061,11 +1178,11 @@
 			//     }
 			//     // 将video上的图片的每一帧以图片的形式绘制的canvas上
 			//     context.drawImage(elevideo, 0, 0, canvas.width, canvas.height);
-			
+
 			//     window.requestAnimationFrame(switchToCanvas);
 			// }
-			
-			
+
+
 			// elevideo.addEventListener('loadedmetadata', function () { //加载数据
 			//         //视频的总长度
 			//         console.log(elevideo.duration);
@@ -1096,102 +1213,107 @@
 			// 					mySwiper.params.allowSwipeToNext = true;
 			// 					mySwiper.slideTo(1, 500, true);
 			// 			    }, false);
-							
-							
-				
-				// setTimeout(function(){
-				// 	$('.loadww').hide()
-				// },1000)
-				
-				var stop = true;
-				
+
+
+
+			// setTimeout(function(){
+			// 	$('.loadww').hide()
+			// },1000)
+
+			var stop = true;
+
 			var mySwiper = new Swiper('.swiper-container', {
 				direction: 'vertical',
 				pagination: '.swiper-pagination',
 				mousewheelControl: true,
-				observer:true,
-				observeParents:true,
+				observer: true,
+				observeParents: true,
 				// allowSwipeToPrev  : false,
-				allowSwipeToNext   : false,
-				resistanceRatio : 0,
+				allowSwipeToNext: false,
+				resistanceRatio: 0,
 				onInit: function(swiper) {
 					swiperAnimateCache(swiper);
 					swiperAnimate(swiper);
+					setTimeout(function() {
+						mySwiper.params.allowSwipeToNext = true;
+					}, 3000)
 				},
-				nextButton:'.swiper-button-next',//绑定下一页的控制按钮
+				nextButton: '.swiper-button-next', //绑定下一页的控制按钮
 				onSlideChangeEnd: function(swiper) {
 					swiperAnimate(swiper);
 					console.log(swiper.activeIndex);
-					mySwiper.params.allowSwipeToNext = false;
 					clearTimeout(stop);
-					
-					if(swiper.activeIndex == 0){
-						
-					}
-					if(swiper.activeIndex == 1){
-						setTimeout(function(){
+					mySwiper.params.allowSwipeToNext = false;
+
+					if (swiper.activeIndex == 0) {
+						setTimeout(function() {
 							mySwiper.params.allowSwipeToNext = true;
-						},2000)
+						}, 3000)
 					}
-					if(swiper.activeIndex == 2){
-						setTimeout(function(){
+					if (swiper.activeIndex == 1) {
+						setTimeout(function() {
 							mySwiper.params.allowSwipeToNext = true;
-						},2000)
+						}, 2000)
 					}
-					if(swiper.activeIndex == 3){
-						setTimeout(function(){
+					if (swiper.activeIndex == 2) {
+						setTimeout(function() {
 							mySwiper.params.allowSwipeToNext = true;
-						},2000)
+						}, 2000)
 					}
-					if(swiper.activeIndex == 4){
-						
-						setTimeout(function(){
+					if (swiper.activeIndex == 3) {
+						setTimeout(function() {
 							mySwiper.params.allowSwipeToNext = true;
-						},2000)
+						}, 2000)
 					}
-					if(swiper.activeIndex == 5){
+					if (swiper.activeIndex == 4) {
 						mySwiper1.slideTo(0)
-						setTimeout(function(){
+						setTimeout(function() {
 							mySwiper.params.allowSwipeToNext = true;
-						},1500)
+						}, 2000)
 					}
-					if(swiper.activeIndex == 6){
-						setTimeout(function(){
+					if (swiper.activeIndex == 5) {
+
+						setTimeout(function() {
 							mySwiper.params.allowSwipeToNext = true;
-						},1500)
+						}, 1500)
 					}
-					if(swiper.activeIndex == 7){
-						setTimeout(function(){
+					if (swiper.activeIndex == 6) {
+						setTimeout(function() {
 							mySwiper.params.allowSwipeToNext = true;
-						},2000)
+						}, 1500)
 					}
-					if(swiper.activeIndex == 8){
-						setTimeout(function(){
+					if (swiper.activeIndex == 7) {
+						setTimeout(function() {
 							mySwiper.params.allowSwipeToNext = true;
-						},2000)
+						}, 2000)
+					}
+					if (swiper.activeIndex == 8) {
+						setTimeout(function() {
+							mySwiper.params.allowSwipeToNext = true;
+						}, 2000)
 					}
 				},
-				
+
 			})
 			var mySwiper1 = new Swiper('.swiper-container1', {
-				direction : 'vertical',
-				 resistanceRatio : 0,
-				 nested:true,
-				 // effect : 'flip',
-				 // flip: {
-				 //             slideShadows : true,
-				 //             limitRotation : true,
-				 //         },
-						 effect: 'flip',
-						         grabCursor: true,
-						        
-				 // onInit: function(swiper) {
-				 // 	swiperAnimateCache(swiper);
-				 // 	swiperAnimate(swiper);
-				 // },
+				direction: 'vertical',
+				resistanceRatio: 0,
+				nested: true,
+				// effect : 'flip',
+				// flip: {
+				//             slideShadows : true,
+				//             limitRotation : true,
+				//         },
+				effect: 'flip',
+				grabCursor: true,
+
+				// onInit: function(swiper) {
+				// 	swiperAnimateCache(swiper);
+				// 	swiperAnimate(swiper);
+				// },
 			})
-			$('#play').on('click',function(){
-				mySwiper.slideTo(1, 500, true);//切换到第一个slide，速度为1秒
+			$('#play').on('click', function() {
+				mySwiper.slideTo(1, 500, true); //切换到第一个slide，速度为1秒
 				// elevideo.play();
 				// video.play();
 				// switchToCanvas();
@@ -1199,74 +1321,207 @@
 				// $('.fixed1').hide()
 			})
 		</script>
+
 		<script type="text/javascript">
 			$(function() {
-			        var url = location.href.split('#')[0];
-			        //alert(url);
-			
-			        $.ajax({
-			            url : "http://bbb.zhumei.net/index.php?g=Wxnm&m=Wx&a=getSignpackage",
-			            data : {
-			                "url" : url
-			            },
-			            success : function(data, textStatus) {
-							console.log(data)
-			                // if (textStatus == "success") { // 请求成功
-			                //     //alert(data.nonceStr);
-			                //     //alert(data.timestamp);
-			                //     //alert(data.signature);  
-			                wx.config({
-			                        debug : false,
-			                        appId : data.appId,
-			                        timestamp : data.timestamp,
-			                        nonceStr : data.nonceStr,
-			                        signature : data.signature,
-			                        jsApiList : [ 'onMenuShareAppMessage',
-			                                'onMenuShareTimeline' ]
-			                    });
-			                }
-			            })
-			        });
+				var url = location.href.split('#')[0];
+				//alert(url);
+
+				$.ajax({
+					url: "http://bbb.zhumei.net/index.php?g=Wxnm&m=Wx&a=getSignpackage",
+					// url : "./wx.php",
+					data: {
+						"url": url
+					},
+					success: function(data, textStatus) {
+						console.log(data)
+						// if (textStatus == "success") { // 请求成功
+						//     //alert(data.nonceStr);
+						//     //alert(data.timestamp);
+						//     //alert(data.signature);  
+						wx.config({
+							debug: false,
+							appId: data.appId,
+							timestamp: data.timestamp,
+							nonceStr: data.nonceStr,
+							signature: data.signature,
+							jsApiList: ['onMenuShareAppMessage',
+								'onMenuShareTimeline'
+							]
+						});
+					}
+				})
+			});
 		</script>
 		<script type="text/javascript">
 			wx.ready(function() {
-			
-			        /*  wx.checkJsApi({
-			            jsApiList: ['onMenuShareAppMessage'],
-			            success:function(res){
-			                alert(res.checkResult.chooseImage);
-			            }
-			        }) ; */
-			        var title = "硅谷精英沙龙暨人才活动周";
-			        var myurl = "http://bbb.zhumei.net/web/";
-			        //分享给朋友
-			        wx.onMenuShareAppMessage({
-			            title : title, // 分享标题
-			            desc : '硅谷精英沙龙暨人才活动周', // 分享描述
-			            link : myurl, // 分享链接
-			            imgUrl : './images/hzy.png', // 分享图标
-			            type : 'link', // 分享类型,music、video或link，不填默认为link
-			            success : function() {
-			                // 用户确认分享后执行的回调函数
-			            },
-			            cancel : function() {
-			                // 用户取消分享后执行的回调函数
-			            }
-			        });
-			
-			        wx.onMenuShareTimeline({
-			            title : title, // 分享标题
-			            link : myurl, // 分享链接
-			            imgUrl : './images/hzy.png', // 分享图标
-			            success : function() {
-			                // 用户确认分享后执行的回调函数
-			            },
-			            cancel : function() {
-			                // 用户取消分享后执行的回调函数
-			            }
-			        });
-			
-			    });
+
+				/*  wx.checkJsApi({
+				    jsApiList: ['onMenuShareAppMessage'],
+				    success:function(res){
+				        alert(res.checkResult.chooseImage);
+				    }
+				}) ; */
+				var title = "硅谷精英沙龙暨人才活动周";
+				var myurl = "http://bbb.zhumei.net/web/";
+				//分享给朋友
+				wx.onMenuShareAppMessage({
+					title: title, // 分享标题
+					desc: '硅谷精英沙龙暨人才活动周', // 分享描述
+					link: myurl, // 分享链接
+					imgUrl: './images/hzy.png', // 分享图标
+					type: 'link', // 分享类型,music、video或link，不填默认为link
+					success: function() {
+						// 用户确认分享后执行的回调函数
+					},
+					cancel: function() {
+						// 用户取消分享后执行的回调函数
+					}
+				});
+
+				wx.onMenuShareTimeline({
+					title: title, // 分享标题
+					link: myurl, // 分享链接
+					imgUrl: './images/hzy.png', // 分享图标
+					success: function() {
+						// 用户确认分享后执行的回调函数
+					},
+					cancel: function() {
+						// 用户取消分享后执行的回调函数
+					}
+				});
+
+			});
+		</script>
+		<script type="text/javascript">
+			//创建和初始化地图函数：
+			function initMap() {
+				createMap(); //创建地图
+				setMapEvent(); //设置地图事件
+				addMapControl(); //向地图添加控件
+				// addMarker();//向地图中添加marker
+				addRemark()
+			}
+
+			//创建地图函数：
+			function createMap() {
+				var map = new BMap.Map("dituContent"); //在百度地图容器中创建一个地图
+				var point = new BMap.Point(120.208484, 30.167313); //定义一个中心点坐标
+				map.centerAndZoom(point, 17); //设定地图的中心点和坐标并将地图显示在地图容器中
+				window.map = map; //将map变量存储在全局
+			}
+
+			//地图事件设置函数：
+			function setMapEvent() {
+				map.enableDragging(); //启用地图拖拽事件，默认启用(可不写)
+				map.disableScrollWheelZoom(); //禁用地图滚轮放大缩小，默认禁用(可不写)
+				map.enableDoubleClickZoom(); //启用鼠标双击放大，默认启用(可不写)
+				map.disableKeyboard(); //禁用键盘上下左右键移动地图，默认禁用(可不写)
+			}
+
+			//地图控件添加函数：
+			function addMapControl() {}
+
+			//标注点数组
+			var markerArr = [{
+				title: "我的标记",
+				content: "我的备注",
+				point: "120.208484|30.167313",
+				isOpen: 0,
+				icon: {
+					w: 21,
+					h: 21,
+					l: 0,
+					t: 0,
+					x: 6,
+					lb: 5
+				}
+			}];
+			//创建marker
+			function addMarker() {
+				for (var i = 0; i < markerArr.length; i++) {
+					var json = markerArr[i];
+					var p0 = json.point.split("|")[0];
+					var p1 = json.point.split("|")[1];
+					var point = new BMap.Point(p0, p1);
+					var iconImg = createIcon(json.icon);
+					var marker = new BMap.Marker(point, {
+						icon: iconImg
+					});
+					var iw = createInfoWindow(i);
+					var label = new BMap.Label(json.title, {
+						"offset": new BMap.Size(json.icon.lb - json.icon.x + 10, -20)
+					});
+					marker.setLabel(label);
+					map.addOverlay(marker);
+					label.setStyle({
+						borderColor: "#808080",
+						color: "#333",
+						cursor: "pointer"
+					});
+
+					(function() {
+						var index = i;
+						var _iw = createInfoWindow(i);
+						var _marker = marker;
+						_marker.addEventListener("click", function() {
+							this.openInfoWindow(_iw);
+						});
+						_iw.addEventListener("open", function() {
+							_marker.getLabel().hide();
+						})
+						_iw.addEventListener("close", function() {
+							_marker.getLabel().show();
+						})
+						label.addEventListener("click", function() {
+							_marker.openInfoWindow(_iw);
+						})
+						if (!!json.isOpen) {
+							label.hide();
+							_marker.openInfoWindow(_iw);
+						}
+					})()
+				}
+			}
+			//创建InfoWindow
+			function createInfoWindow(i) {
+				var json = markerArr[i];
+				var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title +
+					"</b><div class='iw_poi_content'>" + json.content + "</div>");
+				return iw;
+			}
+			//创建一个Icon
+			function createIcon(json) {
+				var icon = new BMap.Icon("http://api.map.baidu.com/lbsapi/creatmap/images/us_mk_icon.png", new BMap.Size(json.w,
+					json.h), {
+					imageOffset: new BMap.Size(-json.l, -json.t),
+					infoWindowOffset: new BMap.Size(json.lb + 5, 1),
+					offset: new BMap.Size(json.x, json.h)
+				})
+				return icon;
+			}
+			var lbPoints = [{
+				point: "120.208241|30.16736",
+				content: "白马宴会厅"
+			}];
+			//向地图中添加文字标注函数
+			function addRemark() {
+				for (var i = 0; i < lbPoints.length; i++) {
+					var json = lbPoints[i];
+					var p1 = json.point.split("|")[0];
+					var p2 = json.point.split("|")[1];
+					var label = new BMap.Label("<div style='padding:2px;'>" + json.content + "</div>", {
+						point: new BMap.Point(p1, p2),
+						offset: new BMap.Size(3, -6)
+					});
+					map.addOverlay(label);
+					label.setStyle({
+						borderColor: "#999"
+					});
+				}
+			}
+
+			initMap(); //创建和初始化地图
 		</script>
 	</body>
 </html>
