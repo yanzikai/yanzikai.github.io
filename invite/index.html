@@ -2,8 +2,9 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>邀请</title>
+		<title>硅谷精英沙龙暨人才活动周</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no" />
 		<link rel="stylesheet" href="css/swiper.min.css">
 		<link rel="stylesheet" href="css/animate.min.css">
 		<script src="js/swiper.min.js"></script>
@@ -40,24 +41,33 @@
 				width: 100%;
 				height: 100%;
 				background: #fff;
-				background: url(upload/indexbg.png) no-repeat left top;
+				background: url(upload/indexbg.jpg) no-repeat left top;
 				background-size: 100% 100%;
 				background-size: cover;
 			}
 
 			.swiper-slide {}
 
-			.swiper-slide {
+			.swiper-container .swiper-slide {
 				width: 100%;
 				height: 100%;
-				background: url(upload/indexbg.png) no-repeat left top;
+				background: url(upload/indexbg.jpg) no-repeat left top;
 				background-size: 100% 100%;
 				background-size: cover;
-				/* background: url(upload/indexbg.png) no-repeat left top;
+				/* background: url(upload/indexbg.jpg) no-repeat left top;
 				background-size: 100% 100%; */
 			}
-			.otherbg{
-				background: url(images/otherbg.png) no-repeat left top;
+			.swiper-container1 .swiper-slide {
+				width: 100%;
+				height: 100%;
+				background: none;
+				background-size: 100% 100%;
+				background-size: cover;
+				/* background: url(upload/indexbg.jpg) no-repeat left top;
+				background-size: 100% 100%; */
+			}
+			.swiper-container .otherbg{
+				background: url(images/otherbg.jpg) no-repeat left top;
 			}
 			img {
 				display: block;
@@ -78,6 +88,19 @@
 			}
 			.animation-start{
 			    animation: rotate 5s linear infinite;
+			}
+			@-webkit-keyframes updown {
+				0% {
+					top: 8.4rem;
+				}
+			
+				50% {
+					top: 8.6rem;
+				}
+			
+				100% {
+					top: 8.4rem;
+				}
 			}
 			@-webkit-keyframes scales {
 				0% {
@@ -445,7 +468,7 @@
 			
 			.lasttitle2{
 				font-size: 0.34rem;
-				padding-top: 1.3rem;
+				padding-top: .8rem;
 				text-align: center;
 				width: 100%;
 				color: #fff;
@@ -580,15 +603,109 @@
 				    font-weight: bold;
 				    left: 0.1rem;
 			}
+			
+			.child{
+				width: 5.2rem;
+				height: 9rem;
+				object-fit: cover;
+				position: absolute;
+				top: 2rem;
+				left: 50%;
+				z-index: -1;
+				margin-left: -2.6rem;
+			}
+			.child img.c1{
+				width: 5.2rem;
+				height: 9rem;
+				position: absolute;
+				z-index: 0;
+				top: 0;
+				left: 0;
+			}
+			.child img.c2{
+				position: absolute;
+				z-index: 10;
+				top: 8.4rem;
+				height: 0.86rem;
+				width: 1.14rem;
+				left: 50%;
+				margin-left: -0.57rem;
+				
+				-webkit-animation: updown 1.5s infinite ease-in-out;
+			}
+			.child div{
+				position: absolute;
+				top: 0.18rem;
+				left: 50%;
+				margin-left: -0.44rem;
+				width: 0.88rem;
+				height: 0.13rem;
+				background: #16044F;
+				border-radius: 7px;
+				z-index: 1;
+			}
+			.smalls{
+				width: 5.2rem;
+				height: 9rem;
+				object-fit: cover;
+				position: absolute;
+				top: 1rem;
+				left: 50%;
+				z-index: 1;
+				margin-left: -2.6rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+			}
+			.smalls img{
+				height: 5.22rem;
+				width: 3.46rem;
+				position: relative;
+				object-fit: cover;
+				margin-top: 0.8rem;
+				margin-bottom: 0.4rem;
+			}
+			.sname{
+				font-size: 0.46rem;
+				line-height: 0.46rem;
+				text-align: left;
+				width: 100%;
+				padding-left: 0.86rem;
+				box-sizing: border-box;
+				color: #120348;
+			}
+			.sname .sp1{
+				margin-right: 0.14rem;
+			}
+			.sname .sp2{
+				font-size: 0.23rem;
+			}
+			.scom{
+				color: #120348;
+				text-align: left;
+				width: 100%;
+				padding-left: 0.86rem;
+				box-sizing: border-box;
+				margin-top: 0.22rem;
+				font-size: 0.23rem;
+			}
+			.mapbox{
+				padding-top: 0.8rem;
+				width: 100%;
+				text-align: center;
+			}
+			.mapbox img{
+				display: inline-block;
+				height: 2.97rem;
+				width: 6.16rem;
+			}
 		</style>
 	</head>
 
 	<body>
-		<!-- <div class="loadww" >
-		      <div class="progress">
-		          <div class="percent">loading...</div>
-		      </div>
-		  </div> -->
+		<!-- <div class="sname"><span class="sp1">油漆面</span><span class="sp2">创始人</span></div>
+									<div class="scom">杭州华迈医疗器械有限公司</div>-->
 		<div class="swiper-container">
 			<!-- 音乐 -->
 			<!-- <div id="mc_play"  class="music animation-start" style="">
@@ -627,11 +744,11 @@
 							<img src="images/finger.png" >
 						</div>
 					</div>
-					<img class="fixed1" src="./upload/indexbg.png"  style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 2;">
-					<video webkit-playsinline id="video" x5-video-player-type="h5-page" controls="controls" muted  playsinline  style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 1;object-fit: cover;">
-					    <source type="video/mp4" src="./video/2.mp4">
+					<img class="fixed1" src="./upload/indexbg.jpg"  style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 2;">
+					<!-- <video webkit-playsinline id="video" x5-video-player-type="h5-page" controls="controls" muted  playsinline  style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 1;object-fit: cover;">
+					    <source type="video/mp4" src="http://zmcrm.zhumei.net/web/video/2.mp4">
 					</video>
-					<canvas style="position: relative;z-index: 0;" id="myCanvas" width="100" height="200"></canvas>
+					<canvas style="position: relative;z-index: 0;" id="myCanvas" width="100" height="200"></canvas> -->
 				</section>
 				<!---------------slide2-------------->
 				<!-- <section class="swiper-slide">
@@ -717,7 +834,52 @@
 						<div class="title1">才财说·嘉宾</div>
 						<div class="title2">caicaishuo guest</div>
 					</div>
-					<div class="ani guest gleft" style="padding-top: 0.8rem;">
+					<div class="child">
+						<div></div>
+						<img  class="c1" src="./images/child.png" alt="">
+						<img class="c2" src="images/move.png" >
+					</div>
+					<div class="swiper-container1" style="width: 100%;height: 100%;color: #fff;">
+					    <div class="swiper-wrapper">
+					        <div class="swiper-slide">
+								<div class="smalls">
+									<img src="./images/yqm.png" >
+									<div class="sname"><span class="sp1">尤其敏</span><span class="sp2">创始人</span></div>
+									<div class="scom">杭州优思达生物技术有限公司</div>
+								</div>
+							</div>
+					        <div class="swiper-slide">
+					        	<div class="smalls">
+					        		<img src="./images/jt.png" >
+					        		<div class="sname"><span class="sp1">江涛</span><span class="sp2">创始人</span></div>
+					        		<div class="scom">杭州华迈医疗器械有限公司</div>
+					        	</div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<div class="smalls">
+					        		<img src="./images/hzy.png" >
+					        		<div class="sname"><span class="sp1">鸿志远</span><span class="sp2">创始人</span></div>
+					        		<div class="scom">Nihub众创空间</div>
+					        	</div>
+					        </div>
+							<div class="swiper-slide">
+								<div class="smalls">
+									<img src="./images/cgx.jpg" >
+									<div class="sname"><span class="sp1">曹国熊</span><span class="sp2">董事长</span></div>
+									<div class="scom">普华资本</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="smalls">
+									<img src="./images/yy.png" >
+									<div class="sname"><span class="sp1">余涌</span><span class="sp2">副总裁</span></div>
+									<div class="scom">阿里巴巴</div>
+								</div>
+							</div>
+					    </div>
+					</div>
+					
+					<!-- <div class="ani guest gleft" style="padding-top: 0.8rem;">
 						<img src="images/yqm.png" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".1s" >
 						<div class="flex">
 							<div class="ani flexname" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">尤其敏</div>
@@ -744,7 +906,7 @@
 							<div class="ani flexname" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".1s">曹国熊</div>
 							<div class="ani desc" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay=".5s">普华资本<br>董事长</div>
 						</div>
-						<img src="images/cgx.png" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".1s">
+						<img src="images/cgx.jpg" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay=".1s">
 					</div>
 					<div class="ani guest gleft"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay=".1s" >
 						<img src="images/yy.png" class="ani">
@@ -752,7 +914,7 @@
 							<div class="ani flexname" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".1s">余涌</div>
 							<div class="ani desc" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay=".5s">阿里巴巴<br>副总裁</div>
 						</div>
-					</div>
+					</div> -->
 				</section>
 				<!-------------slide7----------------->
 				<section class="swiper-slide otherbg">
@@ -824,6 +986,9 @@
 							18888888888
 						</div>
 					</div>
+					<div class="mapbox">
+						<img class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay=".4s" src="images/map.png" >
+					</div>
 					
 				</section>
 				<!-------------slide9----------------->
@@ -848,85 +1013,9 @@
 			<!-- <img src="images/web-swipe-tip.png" style="background-size: 1px;top:auto;width:1rem;height:0.5rem; bottom:2rem; left: 50%;margin-left: -0.5rem;" id="array" class="resize swiper-button-next"> -->
 			<!-- <div class="swiper-pagination"></div> -->
 		</div>
-
-<script type="text/javascript">
-	// var VideoToCanvas = (function (window, document) {
-	//     function VideoToCanvas(videoElement,back) {
-	//         if (!videoElement) {
-	//             return;
-	//         }
-	//         // 创建一个canvas元素
-	//         var canvas = document.getElementById('myCanvas');
-	//         // 获取视频的宽高
-	//         canvas.width = videoElement.offsetWidth;
-	//         canvas.height = videoElement.offsetHeight;
-	//         // 获取画笔
-	//         ctx = canvas.getContext('2d');
-	//         // 对视频标签进行浅的拷贝
-	//         var newVideo = videoElement.cloneNode(false);
-	//         // 定时器
-	//         var timer = null;
-	//         var requestAnimationFrame =
-	//             window.requestAnimationFrame ||
-	//             window.mozRequestAnimationFrame ||
-	//             window.webkitRequestAnimationFrame ||
-	//             window.msRequestAnimationFrame;
-	//         // 清除定时器
-	//         var cancelAnimationFrame =
-	//             window.cancelAnimationFrame || window.mozCancelAnimationFrame;
-	//         // 画视频
-	//         function drawCanvas() {
-	//             ctx.drawImage(newVideo, 0, 0, canvas.width, canvas.height);
-	//             // 每秒执行60次
-	//             timer = requestAnimationFrame(drawCanvas);
-	//         }
-	//         // 取消定时器
-	//         function stopDrawing() {
-	//             cancelAnimationFrame(timer);
-	//         }
-	//         // 点击开始就画视频
-	//         newVideo.addEventListener(
-	//             'play',
-	//             function () {
-	//                 drawCanvas();
-	//             },
-	//             false
-	//         );
-	//         newVideo.addEventListener('pause', stopDrawing);
-	//         newVideo.addEventListener('ended', function(){
-	// 			cancelAnimationFrame(timer);
-	// 			back()
-	// 		});
-	//         // 使用canvas替换video标签，传入一个video元素并克隆，
-	//         videoElement.parentNode.replaceChild(canvas, video);
-	//         // this指向new出来的对象
-	//         this.play = function () {
-	//             newVideo.play();
-	//         };
-	//         this.pause = function () {
-	//             newVideo.pause();
-	//         };
-	//         this.playPause = function () {
-	//             if (newVideo.paused) {
-	//                 this.play();
-	//             } else {
-	//                 this.pause();
-	//             }
-	//         };
-	//         this.change = function (src) {
-	//             if (!src) {
-	//                 return;
-	//             }
-	//             newVideo.src = src;
-	//         };
-	//         this.drawFrame = drawCanvas;
-	//     }
-	//     return VideoToCanvas;
-	// })(window, document);
-</script>
 		<script>
-			let playAudio = true;
-			var elevideo = document.getElementById("video");
+			// let playAudio = true;
+			// var elevideo = document.getElementById("video");
 			// var audioplay = document.getElementById("musicfx");
 			// $('#mc_play').on('click',function(){
 			// 	if(playAudio){
@@ -944,33 +1033,33 @@
 			// var canvasVideo = new VideoToCanvas(video,function(){
 			// 	console.log(1111)
 			// });
-			var canvas = document.getElementById("myCanvas");
-			var context = canvas.getContext("2d");
-			canvas.width = elevideo.offsetWidth;
-			canvas.height = elevideo.offsetHeight;
-			elevideo.oncanplay = function() {
-			    // video.play();
-			    // switchToCanvas();
-				// alert('视频好了')
-			}
-			elevideo.addEventListener('ended', function () { //结束
-			    console.log("播放结束");
-				// canvasVideo.pause();
-				setTimeout(function(){
-					$('.fixed1').show()
-				},700)
-				mySwiper.params.allowSwipeToNext = true;
-				mySwiper.slideTo(1, 500, true);
-			}, false);
-			function switchToCanvas() {
-			    if (elevideo.ended) {
-			        return;
-			    }
-			    // 将video上的图片的每一帧以图片的形式绘制的canvas上
-			    context.drawImage(elevideo, 0, 0, canvas.width, canvas.height);
+			// var canvas = document.getElementById("myCanvas");
+			// var context = canvas.getContext("2d");
+			// canvas.width = elevideo.offsetWidth;
+			// canvas.height = elevideo.offsetHeight;
+			// elevideo.oncanplay = function() {
+			//     // video.play();
+			//     // switchToCanvas();
+			// 	// alert('视频好了')
+			// }
+			// elevideo.addEventListener('ended', function () { //结束
+			//     console.log("播放结束");
+			// 	// canvasVideo.pause();
+			// 	setTimeout(function(){
+			// 		$('.fixed1').show()
+			// 	},700)
+			// 	mySwiper.params.allowSwipeToNext = true;
+			// 	mySwiper.slideTo(1, 500, true);
+			// }, false);
+			// function switchToCanvas() {
+			//     if (elevideo.ended) {
+			//         return;
+			//     }
+			//     // 将video上的图片的每一帧以图片的形式绘制的canvas上
+			//     context.drawImage(elevideo, 0, 0, canvas.width, canvas.height);
 			
-			    window.requestAnimationFrame(switchToCanvas);
-			}
+			//     window.requestAnimationFrame(switchToCanvas);
+			// }
 			
 			
 			// elevideo.addEventListener('loadedmetadata', function () { //加载数据
@@ -1006,11 +1095,12 @@
 							
 							
 				
-				setTimeout(function(){
-					$('.loadww').hide()
-				},1000)
+				// setTimeout(function(){
+				// 	$('.loadww').hide()
+				// },1000)
 				
 				var stop = true;
+				
 			var mySwiper = new Swiper('.swiper-container', {
 				direction: 'vertical',
 				pagination: '.swiper-pagination',
@@ -1056,6 +1146,7 @@
 						},2000)
 					}
 					if(swiper.activeIndex == 5){
+						mySwiper1.slideTo(0)
 						setTimeout(function(){
 							mySwiper.params.allowSwipeToNext = true;
 						},1500)
@@ -1078,14 +1169,30 @@
 				},
 				
 			})
-			
+			var mySwiper1 = new Swiper('.swiper-container1', {
+				direction : 'vertical',
+				 resistanceRatio : 0,
+				 nested:true,
+				 // effect : 'flip',
+				 // flip: {
+				 //             slideShadows : true,
+				 //             limitRotation : true,
+				 //         },
+						 effect: 'flip',
+						         grabCursor: true,
+						        
+				 // onInit: function(swiper) {
+				 // 	swiperAnimateCache(swiper);
+				 // 	swiperAnimate(swiper);
+				 // },
+			})
 			$('#play').on('click',function(){
-				// mySwiper.slideTo(1, 0, false);//切换到第一个slide，速度为1秒
-				elevideo.play();
+				mySwiper.slideTo(1, 500, true);//切换到第一个slide，速度为1秒
+				// elevideo.play();
 				// video.play();
-				switchToCanvas();
+				// switchToCanvas();
 				// canvasVideo.play();
-				$('.fixed1').hide()
+				// $('.fixed1').hide()
 			})
 		</script>
 	</body>
