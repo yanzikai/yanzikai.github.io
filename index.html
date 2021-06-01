@@ -1,5 +1,164 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>尚国女装</title><script>document.addEventListener('DOMContentLoaded', function() {
-                document.documentElement.style.fontSize = document.documentElement.clientWidth / 20 + 'px'
-            })
-            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
-            document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' + (coverSupport ? ', viewport-fit=cover' : '') + '" />')</script><link rel="stylesheet" href="/static/index.58d5e7ce.css"></head><body><noscript><strong>Please enable JavaScript to continue.</strong></noscript><div id="app"></div><script src="/static/js/chunk-vendors.f1698f45.js"></script><script src="/static/js/index.8e78eca2.js"></script></body></html>
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>welcome</title>
+<style>
+*{margin:0;padding:0;list-style-type:none;}
+/* PARALLAX */
+.body {
+  margin: -5px;
+}
+
+.keyart, .keyart_layer {
+  height: 1000px;
+}
+
+#parallax {
+  display: block;
+}
+
+.keyart {
+  position: relative;
+  z-index: 10;
+}
+
+.keyart_layer {
+  background-position: bottom center;
+  background-size: auto 1038px;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
+}
+
+.keyart_layer.parallax {
+  position: fixed;
+}
+
+#keyart-0 {
+  background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax0.png");
+  background-color: #ffaf1b;
+}
+
+#keyart-1 {
+  background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax1.png");
+}
+
+
+
+#keyart-3 {
+  background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax3.png");
+}
+
+#keyart-4 {
+  background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax4.png");
+}
+
+#keyart-5 {
+  background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax5.png");
+}
+
+#keyart-6 {
+  background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax6.png");
+}
+
+#keyart-7 {
+  background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax7.png");
+}
+
+#keyart-8 {
+  background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax8.png");
+}
+
+#keyart-scrim {
+  background-color: #ffaf00;
+  opacity: 0;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  #keyart-0 {
+    background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax0@2x.png");
+    background-color: #ffaf1b;
+  }
+
+  #keyart-1 {
+    background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax1@2x.png");
+  }
+
+  
+
+  #keyart-3 {
+    background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax3@2x.png");
+  }
+
+  #keyart-4 {
+    background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax4@2x.png");
+  }
+
+  #keyart-5 {
+    background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax5@2x.png");
+  }
+
+  #keyart-6 {
+    background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax6@2x.png");
+  }
+
+  #keyart-7 {
+    background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax7@2x.png");
+  }
+
+  #keyart-8 {
+    background-image: url("https://www.17sucai.com/preview/1/2017-03-29/sc/img/parallax8@2x.png");
+  }
+}
+</style>
+</head>
+<body>
+<div class="keyart" id="parallax">
+  <div class="keyart_layer parallax" id="keyart-0" data-speed="2"></div>
+  <!-- 00.0 -->
+  <div class="keyart_layer parallax" id="keyart-1" data-speed="5"></div>
+  <!-- 12.5 -->
+  <div class="keyart_layer parallax" id="keyart-2" data-speed="11"></div>
+  <!-- 25.0 -->
+  <div class="keyart_layer parallax" id="keyart-3" data-speed="16"></div>
+  <!-- 37.5 -->
+  <div class="keyart_layer parallax" id="keyart-4" data-speed="26"></div>
+  <!-- 50.0 -->
+  <div class="keyart_layer parallax" id="keyart-5" data-speed="36"></div>
+  <!-- 62.5 -->
+  <div class="keyart_layer parallax" id="keyart-6" data-speed="49"></div>
+  <!-- 75.0 -->
+  <div class="keyart_layer" id="keyart-scrim"></div>
+  <div class="keyart_layer parallax" id="keyart-7" data-speed="69"></div>
+  <!-- 87.5 -->
+  <div class="keyart_layer" id="keyart-8" data-speed="100"></div>
+  <!-- 100. -->
+</div>
+
+<script>
+function castParallax() {
+
+  var opThresh = 350;
+  var opFactor = 750;
+
+  window.addEventListener("scroll", function(event) {
+
+    var top = this.pageYOffset;
+
+    var layers = document.getElementsByClassName("parallax");
+    var layer, speed, yPos;
+    for (var i = 0; i < layers.length; i++) {
+      layer = layers[i];
+      speed = layer.getAttribute('data-speed');
+      var yPos = -(top * speed / 100);
+      layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
+
+    }
+  });
+}
+
+document.body.onload = castParallax();
+</script>
+
+
+<div style="position: fixed;bottom: 0;height: 60px;width: 100%;z-index: 1000;text-align: center;line-height: 60px;"><a style="text-decoration: none;color: #fff;" href="https://beian.miit.gov.cn/" target="_blank">浙ICP备2021009238号-1</a></div>
+</body></html>
