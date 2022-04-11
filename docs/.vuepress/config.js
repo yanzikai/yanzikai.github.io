@@ -1,7 +1,7 @@
 module.exports = {
   plugins: ['@vuepress/back-to-top'],
   // 网站标题
-  title: "前端默认文档",
+  title: "前端默认文档333",
   // 网站描述 <meta>
   description: "大前端规范文档，请仔细阅读",
   //
