@@ -1,3 +1,7 @@
+## 运行
+```
+npm start
+```
 ## 切换到分支
 ```
 git checkout kai
