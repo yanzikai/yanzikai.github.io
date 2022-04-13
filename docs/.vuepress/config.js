@@ -33,7 +33,7 @@ module.exports = {
       "/guide/": ["", "guide1", ["guide2", "自定义的标题"]],
       "/markdown/": [""],
       "/self/": ["", "self1", ["self2", "自定义的标题"]],
-      "/project/": ["", "project1", ["project2", "自定义的标题"],["p1", "交接文档1"],["p2", "交接文档2"]],
+      "/project/": ["","p1","p2","p3","p4"],
     },
   },
 };

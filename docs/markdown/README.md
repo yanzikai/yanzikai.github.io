@@ -1,3 +1,7 @@
+---
+sidebarDepth: 2
+---
+
 # markdown使用方法 <Badge text="基础用法"/>
 
 [Markdown](https://www.runoob.com/markdown/md-tutorial.html) 能被使用来撰写电子书，如：Gitbook。\
@@ -250,14 +254,14 @@ module.exports = {
 ```
 .
 ├─ README.md
-├─ foo
+├─ guide
 │  ├─ README.md
 │  ├─ one.md
 │  └─ two.md
-└─ bar
+└─ project
    ├─ README.md
-   ├─ three.md
-   └─ four.md
+   ├─ p1.md
+   └─ p2.md
 ```
 
 假设你现在在 `markdown/README.md` 中：
@@ -272,4 +276,11 @@ module.exports = {
 [markdown 代码块中的行高亮](./#代码块中的行高亮) <!-- 跳转到 markdown/index.html 的特定标题位置 -->
 [project - p1](../guide/p1.md) <!-- 具体文件可以使用 .md 结尾（推荐） -->
 [project - p1](../guide/p1.html) <!-- 也可以用 .html -->
+```
+
+### 外部链接
+
+> [Markdown](https://www.runoob.com/markdown/md-tutorial.html)
+``` md
+[Markdown](https://www.runoob.com/markdown/md-tutorial.html)
 ```
