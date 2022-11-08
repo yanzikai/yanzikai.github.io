@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>markdown使用方法 | 前端默认文档</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="大前端规范文档，请仔细阅读">
+    
+    <link rel="preload" href="/assets/css/0.styles.e1c68766.css" as="style"><link rel="preload" href="/assets/js/app.8f1d8519.js" as="script"><link rel="preload" href="/assets/js/2.e997342c.js" as="script"><link rel="preload" href="/assets/js/11.473645e5.js" as="script"><link rel="preload" href="/assets/js/3.5f876d3b.js" as="script"><link rel="prefetch" href="/assets/js/10.0a5cc0f6.js"><link rel="prefetch" href="/assets/js/12.0d7d2792.js"><link rel="prefetch" href="/assets/js/13.7df93222.js"><link rel="prefetch" href="/assets/js/14.51256704.js"><link rel="prefetch" href="/assets/js/15.c534999b.js"><link rel="prefetch" href="/assets/js/16.b119da53.js"><link rel="prefetch" href="/assets/js/17.f76528b8.js"><link rel="prefetch" href="/assets/js/18.359acc52.js"><link rel="prefetch" href="/assets/js/19.c8e61167.js"><link rel="prefetch" href="/assets/js/4.38ce891e.js"><link rel="prefetch" href="/assets/js/5.4cb315cc.js"><link rel="prefetch" href="/assets/js/6.7ea8a9de.js"><link rel="prefetch" href="/assets/js/7.53f28fa3.js"><link rel="prefetch" href="/assets/js/8.9227b404.js"><link rel="prefetch" href="/assets/js/9.e0b13f5c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e1c68766.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="前端默认文档" class="logo"> <span class="site-name can-hide">前端默认文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指导
+</a></div><div class="nav-item"><a href="/self/" class="nav-link">
+  个人
+</a></div><div class="nav-item"><a href="/markdown/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  markdown
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="列表" class="dropdown-title"><span class="title">列表</span> <span class="arrow down"></span></button> <button type="button" aria-label="列表" class="mobile-dropdown-title"><span class="title">列表</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/guide1/" class="nav-link">
+  列表1
+</a></li><li class="dropdown-item"><!----> <a href="/self/" class="nav-link">
+  列表2
+</a></li><li class="dropdown-item"><!----> <a href="/project/project2.html" class="nav-link">
+  列表3
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  百度
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指导
+</a></div><div class="nav-item"><a href="/self/" class="nav-link">
+  个人
+</a></div><div class="nav-item"><a href="/markdown/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  markdown
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="列表" class="dropdown-title"><span class="title">列表</span> <span class="arrow down"></span></button> <button type="button" aria-label="列表" class="mobile-dropdown-title"><span class="title">列表</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/guide1/" class="nav-link">
+  列表1
+</a></li><li class="dropdown-item"><!----> <a href="/self/" class="nav-link">
+  列表2
+</a></li><li class="dropdown-item"><!----> <a href="/project/project2.html" class="nav-link">
+  列表3
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  百度
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/markdown/" aria-current="page" class="active sidebar-link">markdown使用方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/markdown/#表格" class="sidebar-link">表格</a></li><li class="sidebar-sub-header"><a href="/markdown/#文本样式" class="sidebar-link">文本样式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/markdown/#加粗、斜体、删除线、下划线-、上标、下标、小号字体、大号字体" class="sidebar-link">加粗、斜体、删除线、下划线 、上标、下标、小号字体、大号字体</a></li></ul></li><li class="sidebar-sub-header"><a href="/markdown/#自定义容器" class="sidebar-link">自定义容器</a></li><li class="sidebar-sub-header"><a href="/markdown/#代码块中的语法高亮" class="sidebar-link">代码块中的语法高亮</a></li><li class="sidebar-sub-header"><a href="/markdown/#代码块中的行高亮" class="sidebar-link">代码块中的行高亮</a></li><li class="sidebar-sub-header"><a href="/markdown/#代码块行号" class="sidebar-link">代码块行号</a></li><li class="sidebar-sub-header"><a href="/markdown/#链接" class="sidebar-link">链接</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/markdown/#内部链接" class="sidebar-link">内部链接</a></li><li class="sidebar-sub-header"><a href="/markdown/#外部链接" class="sidebar-link">外部链接</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="markdown使用方法"><a href="#markdown使用方法" class="header-anchor">#</a> markdown使用方法 <span class="badge tip" style="vertical-align:top;" data-v-2ed2b62f>基础用法</span></h1> <p><a href="https://www.runoob.com/markdown/md-tutorial.html" target="_blank" rel="noopener noreferrer">Markdown<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 能被使用来撰写电子书，如：Gitbook。<br>
+当前许多网站都广泛使用 Markdown 来撰写帮助文档或是用于论坛上发表消息。例如：GitHub、简书、reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge等。</p> <h2 id="表格"><a href="#表格" class="header-anchor">#</a> 表格</h2> <ul><li><big><strong>-:</strong></big>  设置内容和标题栏居右对齐。</li> <li><big><strong>:-</strong></big> 设置内容和标题栏居左对齐。</li> <li><big><strong>:-:</strong></big> 设置内容和标题栏居中对齐。</li> <li>设置表格单元格宽度，在表头设置  <code>&lt;div style=&quot;width:500px&quot;&gt;样式名&lt;/div&gt;</code></li></ul> <table><thead><tr><th style="text-align:left;">左对齐</th> <th style="text-align:right;">右对齐</th> <th style="text-align:center;"><div style="width:500px;"> 居中对齐 </div></th></tr></thead> <tbody><tr><td style="text-align:left;">左对齐的内容</td> <td style="text-align:right;">右对齐的内容</td> <td style="text-align:center;">居中对齐的内容</td></tr> <tr><td style="text-align:left;">单元格</td> <td style="text-align:right;">单元格</td> <td style="text-align:center;">单元格</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>| 左对齐 | 右对齐 | &lt;div style=&quot;width:500px&quot;&gt; 居中对齐 &lt;/div&gt; |
+| :----- | -----: | :-----: |
+| 左对齐的内容 | 右对齐的内容 | 居中对齐的内容|
+| 单元格 | 单元格 | 单元格 |
+</code></pre></div><h2 id="文本样式"><a href="#文本样式" class="header-anchor">#</a> 文本样式</h2> <h3 id="加粗、斜体、删除线、下划线-、上标、下标、小号字体、大号字体"><a href="#加粗、斜体、删除线、下划线-、上标、下标、小号字体、大号字体" class="header-anchor">#</a> 加粗、斜体、删除线、下划线 、上标、下标、小号字体、大号字体</h3> <hr> <table><thead><tr><th style="text-align:center;"><div style="width:80px;">样式名</div></th> <th style="text-align:center;"><div style="width:80px;">效果</div></th> <th style="text-align:left;">Markdown</th></tr></thead> <tbody><tr><td style="text-align:center;">斜体</td> <td style="text-align:center;"><em>文本</em></td> <td style="text-align:left;"><code>*文本*</code> 或 <code>_文本_</code>，用一个*或一个_包围文本</td></tr> <tr><td style="text-align:center;">加粗</td> <td style="text-align:center;"><strong>文本</strong></td> <td style="text-align:left;"><code>**加粗**</code> 或 <code>__文本__</code>，用两个*或两个_包围文本</td></tr> <tr><td style="text-align:center;">粗斜体</td> <td style="text-align:center;"><em><strong>文本</strong></em></td> <td style="text-align:left;"><code>***文本***</code> 或 <code>___文本___</code>，用三个*或三个_包围文本</td></tr> <tr><td style="text-align:center;">删除线</td> <td style="text-align:center;"><s>文本</s></td> <td style="text-align:left;"><code>~~文本~~</code></td></tr> <tr><td style="text-align:center;">下划线</td> <td style="text-align:center;"><u>文本</u></td> <td style="text-align:left;"><code>&lt;u&gt;文本&lt;/u&gt;</code></td></tr> <tr><td style="text-align:center;">上标</td> <td style="text-align:center;">文本<sup>上标</sup></td> <td style="text-align:left;"><code>文本&lt;sup&gt;上标&lt;/sup&gt;</code></td></tr> <tr><td style="text-align:center;">下标</td> <td style="text-align:center;">文本<sub>下标</sub></td> <td style="text-align:left;"><code>文本&lt;sub&gt;下标&lt;/sub&gt;</code></td></tr> <tr><td style="text-align:center;">小号字体</td> <td style="text-align:center;"><small>小号字体</small></td> <td style="text-align:left;"><code>&lt;small&gt;小号字体&lt;/small&gt;</code></td></tr> <tr><td style="text-align:center;">大号字体</td> <td style="text-align:center;"><big>大号字体</big></td> <td style="text-align:left;"><code>&lt;big&gt;大号字体&lt;/big&gt;</code></td></tr></tbody></table> <h2 id="自定义容器"><a href="#自定义容器" class="header-anchor">#</a> 自定义容器 <span class="badge tip" style="vertical-align:top;" data-v-2ed2b62f>默认主题</span></h2> <p><strong>输入</strong></p> <div class="language-md extra-class"><pre class="language-md"><code>::: tip
+这是一个提示
+:::
+
+::: warning
+这是一个警告
+:::
+
+::: danger
+这是一个危险警告
+:::
+
+::: details
+这是一个详情块，在 IE / Edge 中不生效
+:::
+</code></pre></div><p><strong>输出</strong></p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>这是一个提示</p></div> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>这是一个警告</p></div> <div class="custom-block danger"><p class="custom-block-title">DANGER</p> <p>这是一个危险警告</p></div> <details class="custom-block details"><summary>DETAILS</summary> <p>这是一个详情块，在 IE / Edge 中不生效</p></details> <p>你也可以自定义块中的标题：</p> <div class="language-md extra-class"><pre class="language-md"><code>::: danger STOP
+危险区域，禁止通行
+:::
+
+::: details 点击查看代码
+<span class="token code"><span class="token punctuation">```</span><span class="token code-language">js</span>
+<span class="token code-block language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'你好，VuePress！'</span><span class="token punctuation">)</span></span>
+<span class="token punctuation">```</span></span>
+:::
+</code></pre></div><div class="custom-block danger"><p class="custom-block-title">STOP</p> <p>危险区域，禁止通行</p></div> <details class="custom-block details"><summary>点击查看代码</summary> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'你好，VuePress！'</span><span class="token punctuation">)</span>
+</code></pre></div></details> <p><strong>参考:</strong></p> <ul><li><a href="https://vuepress-community.netlify.app/en/plugins/container/#vuepress-plugin-container" target="_blank" rel="noopener noreferrer">vuepress-plugin-container<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="代码块中的语法高亮"><a href="#代码块中的语法高亮" class="header-anchor">#</a> 代码块中的语法高亮</h2> <p>VuePress 使用了 <a href="https://prismjs.com/" target="_blank" rel="noopener noreferrer">Prism<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 来为 markdown 中的代码块实现语法高亮。Prism 支持大量的编程语言，你需要做的只是在代码块的开始倒勾中附加一个有效的语言别名：</p> <p><strong>输入</strong></p> <div class="language- extra-class"><pre class="language-text"><code>``` js
+export default {
+  name: 'MyComponent',
+  // ...
+}
+```
+</code></pre></div><p><strong>输出</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'MyComponent'</span><span class="token punctuation">,</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>输入</strong></p> <div class="language- extra-class"><pre class="language-text"><code>``` html
+&lt;ul&gt;
+  &lt;li
+    v-for=&quot;todo in todos&quot;
+    :key=&quot;todo.id&quot;
+  &gt;
+    {{ todo.text }}
+  &lt;/li&gt;
+&lt;/ul&gt;
+```
+</code></pre></div><p><strong>输出</strong></p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span>
+    <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>todo in todos<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>todo.id<span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">&gt;</span></span>
+    {{ todo.text }}
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>在 Prism 的网站上查看 <a href="https://prismjs.com/#languages-list" target="_blank" rel="noopener noreferrer">合法的语言列表<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <h2 id="代码块中的行高亮"><a href="#代码块中的行高亮" class="header-anchor">#</a> 代码块中的行高亮</h2> <p><strong>输入</strong></p> <div class="language- extra-class"><pre class="language-text"><code>``` js {4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+</code></pre></div><p><strong>输出</strong></p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">msg</span><span class="token operator">:</span> <span class="token string">'Highlighted!'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>除了单行以外，你也可指定多行，行数区间，或是两者都指定。</p> <ul><li>行数区间: 例如 <code>{5-8}</code>, <code>{3-10}</code>, <code>{10-17}</code></li> <li>多个单行: 例如 <code>{4,7,9}</code></li> <li>行数区间与多个单行: 例如 <code>{4,7-13,16,23-27,40}</code></li></ul> <p><strong>Input</strong></p> <div class="language- extra-class"><pre class="language-text"><code>``` js{1,4,6-7}
+export default { // Highlighted
+  data () {
+    return {
+      msg: `Highlighted!
+      This line isn't highlighted,
+      but this and the next 2 are.`,
+      motd: 'VuePress is awesome',
+      lorem: 'ipsum',
+    }
+  }
+}
+```
+</code></pre></div><p><strong>Output</strong></p> <div class="language-js extra-class"><div class="highlight-lines"><div class="highlighted"> </div><br><br><div class="highlighted"> </div><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span> <span class="token comment">// Highlighted</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">msg</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Highlighted!
+      This line isn't highlighted,
+      but this and the next 2 are.</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">motd</span><span class="token operator">:</span> <span class="token string">'VuePress is awesome'</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">lorem</span><span class="token operator">:</span> <span class="token string">'ipsum'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="代码块行号"><a href="#代码块行号" class="header-anchor">#</a> 代码块行号</h2> <p>你可以通过配置来为每个代码块显示行号：全局配置位置 <code>docs/.vuepress/config.js</code></p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">markdown</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">lineNumbers</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="链接"><a href="#链接" class="header-anchor">#</a> 链接</h2> <h3 id="内部链接"><a href="#内部链接" class="header-anchor">#</a> 内部链接</h3> <p>网站内部的链接，将会被转换成 <code>&lt;router-link&gt;</code> 用于 SPA 导航。同时，站内的每一个文件夹下的 <code>README.md</code> 或者 <code>index.md</code> 文件都会被自动编译为 <code>index.html</code>，对应的链接将被视为 <code>/</code>。</p> <p>以如下的文件结构为例：</p> <div class="language- extra-class"><pre class="language-text"><code>.
+├─ README.md
+├─ guide
+│  ├─ README.md
+│  ├─ one.md
+│  └─ two.md
+└─ project
+   ├─ README.md
+   ├─ p1.md
+   └─ p2.md
+</code></pre></div><p>假设你现在在 <code>markdown/README.md</code> 中：</p> <blockquote><p><a href="/" class="router-link-active">Home</a><br> <a href="/guide/">guide</a><br> <a href="/markdown/#代码块中的行高亮">markdown 代码块中的行高亮</a><br> <a href="/project/p1.html">project - p1</a></p></blockquote> <div class="language-md extra-class"><pre class="language-md"><code><span class="token url">[<span class="token content">Home</span>](<span class="token url">/</span>)</span> <span class="token comment">&lt;!-- 跳转到根部的 README.md --&gt;</span>
+<span class="token url">[<span class="token content">guide</span>](<span class="token url">/guide/</span>)</span> <span class="token comment">&lt;!-- 跳转到 guide 文件夹的 index.html --&gt;</span>
+<span class="token url">[<span class="token content">markdown 代码块中的行高亮</span>](<span class="token url">./#代码块中的行高亮</span>)</span> <span class="token comment">&lt;!-- 跳转到 markdown/index.html 的特定标题位置 --&gt;</span>
+<span class="token url">[<span class="token content">project - p1</span>](<span class="token url">../guide/p1.md</span>)</span> <span class="token comment">&lt;!-- 具体文件可以使用 .md 结尾（推荐） --&gt;</span>
+<span class="token url">[<span class="token content">project - p1</span>](<span class="token url">../guide/p1.html</span>)</span> <span class="token comment">&lt;!-- 也可以用 .html --&gt;</span>
+</code></pre></div><h3 id="外部链接"><a href="#外部链接" class="header-anchor">#</a> 外部链接</h3> <blockquote><p><a href="https://www.runoob.com/markdown/md-tutorial.html" target="_blank" rel="noopener noreferrer">Markdown<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <div class="language-md extra-class"><pre class="language-md"><code><span class="token url">[<span class="token content">Markdown</span>](<span class="token url">https://www.runoob.com/markdown/md-tutorial.html</span>)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.8f1d8519.js" defer></script><script src="/assets/js/2.e997342c.js" defer></script><script src="/assets/js/11.473645e5.js" defer></script><script src="/assets/js/3.5f876d3b.js" defer></script>
+  </body>
+</html>
